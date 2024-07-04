@@ -66,7 +66,7 @@ export default defineUserConfig({
   ],
 
   bundler: webpackBundler(),
-
+  base:"/TimyaBPM-Documents/",
   locales: {
     '/': {
       lang: 'tr',
