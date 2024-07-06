@@ -1,4 +1,6 @@
-
+ 
+ 
+  
 # Kurulum 
 
 ## 1. Timya/BPM Kurulumu
@@ -10,8 +12,7 @@ Windows Server 2019 ve yukarısı işletim sistemlerinde IIS aşağıdaki özell
 ### 2.1. IIS Kurulumu
 
 ![alt text](/images/iss.png)
-
-
+ 
 
 ### 2.2. (.NET 7.0 Kurulumları)
 “NET 7.0 Runtime (v7.0.10) - Windows x64” ve “ASP.NET Core 7.0 Runtime (v7.0.10) - Windows Hosting Bundle” kurulumları yapılmalıdır. (indirme adresi: [https://dotnet.microsoft.com/en-us/download/dotnet/7.0](https://dotnet.microsoft.com/en-us/download/dotnet/7.0))
@@ -144,4 +145,5 @@ Aşağıdaki şekilde görünen kısım email gönderim ayarlarının yapılaca�
 
 
 
+ 
  

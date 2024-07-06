@@ -5,8 +5,7 @@ import { defaultTheme } from '@vuepress/theme-default';
 export default defineUserConfig({
   lang: 'en-US',
   title: '',
-  description: 'TimyaBPM',
-
+  description: 'TimyaBPM', 
   theme: defaultTheme({
     logo: '/bpm_logo.png',
     logoDark: '/bpm_logo-docs.png',
@@ -64,7 +63,7 @@ export default defineUserConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
-
+  markdown:{ assets : { absolutePathPrependBase : true  } } ,
   bundler: webpackBundler(),
   base:"/TimyaBPM-Documents/",
   locales: {
