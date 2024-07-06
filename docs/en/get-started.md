@@ -9,14 +9,14 @@ On Windows Server 2019 and above operating systems, IIS should be installed with
 
 ### 2.1. IIS Installation
 
-![alt text](./iss.png)
+![alt text](/images/iss.png)
 
 ### 2.2. (.NET 7.0 Installations)
 NET 7.0 Runtime (v7.0.10) - Windows x64" and "ASP.NET Core 7.0 Runtime (v7.0.10) - Windows Hosting Bundle" should be installed. (download address: [https://dotnet.microsoft.com/en-us/download/dotnet/7.0](https://dotnet.microsoft.com/en-us/download/dotnet/7.0))
 
 Where to download the installations:
 
-![alt text](./NET7.png)
+![alt text](/images/NET7.png)
 
 Installations are made by saying install.
 
@@ -24,7 +24,7 @@ Installations are made by saying install.
 
 The `TimyaBPMWeb.zip` file should be extracted to the IIS default root directory (by default `c:\inetpup\wwwroot`) or to another location to be installed. The `appsettings.json` file in the directory is opened with a text editor, configuration settings are made and saved.
 
-![IIS Kurulumu](./web.png)
+![IIS Kurulumu](/images/web.png)
 
 In the following link text, the database server access information must be written where ** appears (only works with SQL Server).
 
@@ -42,7 +42,7 @@ In the following link text, the database server access information must be writt
 Windows authentication must be enabled. Right click on the website where the web application will be installed and click on "Add Application". In the "Alias" section, type the directory name (`base href` or `base path`) in the address where the application will run (`http://www.timyabilisim.com/BPM`). The directory where the application is installed is shown as a physical path. By default "BPM" is used. If BPM is not used, see 3.3. It is run with "Browse" from the IIS screen. Different types of installations require expertise in IIS.
 
 
-![IIS Kurulumu](./ISSayarları.png)
+![IIS Kurulumu](/images/ISSayarları.png)
 
 
 ### 3.2. New Database Installation
@@ -66,7 +66,7 @@ For a user who has been granted full access to the database, the following setti
 
 `TimyaBPM.setup.exe` or `TimyaBPM.setup.msi` is run with an authorized user on Windows. (It is recommended to install with Admin privilege.)
 
-![Timya BPM Engine Installation](./enginekurulum.png)
+![Timya BPM Engine Installation](/images/enginekurulum.png)
 
 After the installation is complete, Timya BPM Engine should be listed in Windows Services opened with `services.msc` command.
 

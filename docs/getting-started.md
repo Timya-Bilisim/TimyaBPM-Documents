@@ -6,7 +6,7 @@
 Kullanıma açılmış olan süreçlerin hangi aksiyon ile başlatılabileceğini görebilirseniz. Bir aksiyonu temsil eden butona tıklayarak süreci başlatabilirsiniz. Süreçler genel olarak bir form ile başlar. Form açıldıktan sonra bir sonraki aşamaya iletilmeyen işler yapılacak işler sekmesinde kalmaya devam eder.
 
 
-![alt text](./işbaşlat.png)
+![alt text](/images/işbaşlat.png)
 
 
 ## 2. Yapılacak İşler
@@ -17,7 +17,7 @@ Başlattığınız ve tamamlamadığınız işler ya da size yapmanız için ile
 ## 3. Takip Edilen İşler
 Takip etmeniz için görüntüleyebileceğiniz işler bu ekranda listelenir.  Burada görüntülenen işlerin neler olacağı süreçlerin tasarımı aşamasında belirlenir.
 
-![alt text](./image-3.png)
+![alt text](/images/image-3.png)
 
 ## 4. Raporlar
 Devam eden ya da tamamlanmış olan işlerin önceden belirlenmiş formatlara göre raporlanabileceği ekrandır.
