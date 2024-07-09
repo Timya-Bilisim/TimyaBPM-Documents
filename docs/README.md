@@ -1,7 +1,7 @@
 ---
 home: true
 title: Anasayfa - Timya/BPM
-heroImage: 'timya_bpm.png'
+heroImage: 'timya_bpm1.png'
 heroImageDark: 'timya_bpm-dark.png'
 
 
