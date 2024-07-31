@@ -1,73 +1,43 @@
 import { defineUserConfig } from 'vuepress/cli';
 import { webpackBundler } from '@vuepress/bundler-webpack';
 import { defaultTheme } from '@vuepress/theme-default';
+import sidebar from './sidebar.js'; // İçe aktar
 
 export default defineUserConfig({
   lang: 'en-US',
   title: '',
-  description: 'TimyaBPM', 
+  description: 'TimyaBPM',
   theme: defaultTheme({
     logo: '/bpm_logo.png',
     logoDark: '/bpm_logo-docs.png',
     heroImage: 'timya_bpm1.png',
-heroImageDark: 'timya_bpm-dark.png',
-
+    heroImageDark: 'timya_bpm-dark.png',
     locales: {
       '/': {
         selectLanguageName: 'Türkçe',
         navbar: [
           { text: 'Anasayfa', link: '/' },
-          { text: 'TimyaBPM Kurulum', link: '/get-started' }
+          { text: 'TimyaBPM Kurulum', link: '/get-started' },
+        
         ],
-        sidebar: [
-          {
-            text: 'Kurulum',
-            collapsible: true,
-            children: [
-              '/get-started.md',
-            ],
-          },
-          {
-            text: 'Başlangıç',
-            collapsible: true,
-            children: [
-              '/getting-started.md',
-            ],
-          },
-        ],
+        sidebar: sidebar['/'], // Sidebar yapılandırması
       },
       '/en/': {
         selectLanguageName: 'English',
         navbar: [
           { text: 'Home', link: '/en/' },
-          { text: 'TimyaBPM Setup', link: '/en/get-started' }
+          { text: 'TimyaBPM Setup', link: '/en/get-started' },
         ],
-        sidebar: [
-          {
-            text: 'Setup',
-            collapsible: true,
-            children: [
-              '/en/get-started.md',
-            ],
-          },
-          {
-            text: 'Getting Started',
-            collapsible: true,
-            children: [
-              '/en/getting-started.md',
-            ],
-          },
-        ],
+        sidebar: sidebar['/en/'], // İngilizce sidebar yapılandırması
       },
     },
   }),
-
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
-  markdown:{ assets : { absolutePathPrependBase : true  } } ,
+  markdown: { assets: { absolutePathPrependBase: true } },
   bundler: webpackBundler(),
-  base:"/TimyaBPM-Documents/",
+  base: "/TimyaBPM-Documents/",
   locales: {
     '/': {
       lang: 'tr',
@@ -80,7 +50,6 @@ heroImageDark: 'timya_bpm-dark.png',
       description: 'Welcome to TimyaBPM.',
     },
   },
-
   plugins: [
     ['@vuepress/search', {
       searchMaxSuggestions: 10
