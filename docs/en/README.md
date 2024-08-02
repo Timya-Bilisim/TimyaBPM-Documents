@@ -1,7 +1,7 @@
 ---
 home: true
 title: Home Page - Timya/BPM
-heroImage: 'timya_bpm1.png'
+heroImage: 'timya_bpm.png'
 heroImageDark: 'timya_bpm-dark.png'
 heroAlt: 'Timya/BPM Logo'
 heroHeight: 50
