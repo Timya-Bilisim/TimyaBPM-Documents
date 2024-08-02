@@ -6,12 +6,11 @@ export default defineUserConfig({
   lang: 'en-US',
   title: '',
   description: 'TimyaBPM',
-  
-  base: '/TimyaBPM-Documents/', // base ayarını buraya ekleyin
-
+  base: '/TimyaBPM-Documents/',
   theme: defaultTheme({
-    logo: '/TimyaBPM-Documents/bpm_logo.png', // logo yolunu güncelleyin
-    logoDark: '/TimyaBPM-Documents/bpm_logo-docs.png',
+    logo: '/bpm_logo.png',
+    logoDark: '/bpm_logo-docs.png',
+
     locales: {
       '/': {
         selectLanguageName: 'Türkçe',
@@ -63,7 +62,7 @@ export default defineUserConfig({
   }),
 
   head: [
-    ['link', { rel: 'icon', href: '/TimyaBPM-Documents/favicon.ico' }] // favicon yolunu güncelleyin
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
 
   bundler: webpackBundler(),
