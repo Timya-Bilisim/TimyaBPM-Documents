@@ -6,9 +6,10 @@ export default defineUserConfig({
   lang: 'en-US',
   title: '',
   description: 'TimyaBPM',
-  base: '/TimyaBPM-Documents/',
+  base: '/TimyaBPM-Documents/', 
+
   theme: defaultTheme({
-    logo: '/bpm_logo.png',
+    logo: '/bpm_logo.png', 
     logoDark: '/bpm_logo-docs.png',
 
     locales: {
