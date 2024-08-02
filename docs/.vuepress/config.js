@@ -11,7 +11,8 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: '/bpm_logo.png', 
     logoDark: '/bpm_logo-docs.png',
-
+    heroImage: 'timya_bpm1.png',
+    heroImageDark: 'timya_bpm-dark.png',
     locales: {
       '/': {
         selectLanguageName: 'Türkçe',
