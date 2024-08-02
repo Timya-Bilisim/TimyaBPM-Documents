@@ -17,7 +17,7 @@ Başlattığınız ve tamamlamadığınız işler ya da size yapmanız için ile
 ## 3. Takip Edilen İşler
 Takip etmeniz için görüntüleyebileceğiniz işler bu ekranda listelenir.  Burada görüntülenen işlerin neler olacağı süreçlerin tasarımı aşamasında belirlenir.
 
-![alt text](/images/image-3.png)
+![alt text](/TimyaBPM-Documents/images/image-3.png)
 
 ## 4. Raporlar
 Devam eden ya da tamamlanmış olan işlerin önceden belirlenmiş formatlara göre raporlanabileceği ekrandır.

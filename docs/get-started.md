@@ -11,7 +11,7 @@ Windows Server 2019 ve yukarısı işletim sistemlerinde IIS aşağıdaki özell
 
 ### 2.1. IIS Kurulumu
 
-![alt text](/images/iss.png)
+![alt text](/TimyaBPM-Documents//images/iss.png)
  
 
 ### 2.2. (.NET 7.0 Kurulumları)
@@ -19,7 +19,7 @@ Windows Server 2019 ve yukarısı işletim sistemlerinde IIS aşağıdaki özell
 
  Kurulumların indirileceği yerler:
 
-![alt text](/images/NET7.png)
+![alt text](/TimyaBPM-Documents//images/NET7.png)
 
 Yükle diyerek kurulumlar yapılır.
 
@@ -29,7 +29,7 @@ Yükle diyerek kurulumlar yapılır.
 
 `TimyaBPMWeb.zip` dosyası, IIS varsayılan kök dizinine (varsayılan olarak `c:\inetpup\wwwroot`) ya da kurulumu yapılacak başka bir yere çıkarılmalıdır. Dizinde bulunan `appsettings.json` dosyası bir metin editörü ile açılarak konfigurasyon ayarları yapılır ve kaydedilir.
 
-![IIS Kurulumu](/images/web.png)
+![IIS Kurulumu](/TimyaBPM-Documents/images/web.png)
 
 Aşağıdaki bağlantı metnindeki ** görülen yerlere veritabanı sunucusu erişim bilgileri yazılmalıdır (yalnızca SQL Server ile çalışır).
 
@@ -47,7 +47,7 @@ Aşağıdaki bağlantı metnindeki ** görülen yerlere veritabanı sunucusu eri
 Windows kimlik doğrulaması etkin olmalıdır. Web uygulamasının kurulacağı web site sağ tıklanır ve "Uygulama Ekle"ye tıklanır. Açılan ekranda "Diğer ad" kısmına uygulamanın çalışacağı adresdeki dizin adı (`base href` veya `base path`) yazılır (`http://www.timyabilisim.com/BPM`). Uygulamanın kurulduğu dizin fiziksel yol olarak gösterilir. Varsayılan olarak "BPM" kullanılır. BPM kullanılmayacaksa 3.3. e bakınız. IIS ekranından "Gözat" ile çalıştırılır. Farklı türde kurulumlar IIS'de uzmanlık gerektirir.
 
 
-![IIS Kurulumu](/images/ISSayarları.png)
+![IIS Kurulumu](/TimyaBPM-Documents/images/ISSayarları.png)
 
 ### 3.2. Yeni Database Kurulumu
 
@@ -70,7 +70,7 @@ Veritabanına tam erişim izni verilmiş bir kullanıcı için `appsettings.json
 
 `TimyaBPM.setup.exe` veya `TimyaBPM.Setup.msi`, Windows üzerinde yetkili olan bir kullanıcı ile çalıştırılır. (Admin yetkisi ile kurulması tavsiye edilir.)
 
-![Timya BPM Engine Kurulumu](/images/enginekurulum.png)
+![Timya BPM Engine Kurulumu](/TimyaBPM-Documents/images/enginekurulum.png)
 
 Kurulum tamamlandıktan sonra `services.msc` komutu ile açılan Windows Services'de Timya BPM Engine listelenmiş olmalıdır.
 

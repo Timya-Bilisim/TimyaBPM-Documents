@@ -11,7 +11,7 @@ Tasks that you have started and not completed, or tasks assigned to you to compl
 ## 3. Followed Tasks
 Tasks that you are following and can view are listed on this screen. The specifics of these tasks are determined during the process design phase.
 
-![alt text](/image-3.png)
+![alt text](/TimyaBPM-Documents/images/image-3.png)
 
 ## 4. Reports
 This screen allows you to generate reports for ongoing or completed tasks in predefined formats.

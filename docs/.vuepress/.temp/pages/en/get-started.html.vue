@@ -4,15 +4,15 @@
 <h2 id="_2-timya-bpm-web-installation" tabindex="-1"><a class="header-anchor" href="#_2-timya-bpm-web-installation"><span>2. Timya/BPM Web Installation</span></a></h2>
 <p>On Windows Server 2019 and above operating systems, IIS should be installed with the following features.</p>
 <h3 id="_2-1-iis-installation" tabindex="-1"><a class="header-anchor" href="#_2-1-iis-installation"><span>2.1. IIS Installation</span></a></h3>
-<p><img src="/iss.png" alt="alt text"></p>
+<p><img src="/TimyaBPM-Documents//images/iss.png" alt="alt text"></p>
 <h3 id="_2-2-net-7-0-installations" tabindex="-1"><a class="header-anchor" href="#_2-2-net-7-0-installations"><span>2.2. (.NET 7.0 Installations)</span></a></h3>
 <p>NET 7.0 Runtime (v7.0.10) - Windows x64&quot; and &quot;ASP.NET Core 7.0 Runtime (v7.0.10) - Windows Hosting Bundle&quot; should be installed. (download address: <a href="https://dotnet.microsoft.com/en-us/download/dotnet/7.0" target="_blank" rel="noopener noreferrer">https://dotnet.microsoft.com/en-us/download/dotnet/7.0</a>)</p>
 <p>Where to download the installations:</p>
-<p><img src="/NET7.png" alt="alt text"></p>
+<p><img src="/TimyaBPM-Documents//images/NET7.png" alt="alt text"></p>
 <p>Installations are made by saying install.</p>
 <h2 id="_3-timya-bpm-web-configuration" tabindex="-1"><a class="header-anchor" href="#_3-timya-bpm-web-configuration"><span>3. Timya/BPM Web Configuration</span></a></h2>
 <p>The <code v-pre>TimyaBPMWeb.zip</code> file should be extracted to the IIS default root directory (by default <code v-pre>c:\inetpup\wwwroot</code>) or to another location to be installed. The <code v-pre>appsettings.json</code> file in the directory is opened with a text editor, configuration settings are made and saved.</p>
-<p><img src="/web.png" alt="IIS Kurulumu"></p>
+<p><img src="/TimyaBPM-Documents/images/web.png" alt="IIS Kurulumu"></p>
 <p>In the following link text, the database server access information must be written where ** appears (only works with SQL Server).</p>
 <div class="language-json line-numbers-mode" data-highlighter="prismjs" data-ext="json" data-title="json"><pre v-pre class="language-json"><code><span class="line"></span>
 <span class="line"><span class="token property">"ConnectionStrings"</span><span class="token operator">:</span> <span class="token punctuation">{</span></span>
@@ -22,7 +22,7 @@
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-1-iis-settings" tabindex="-1"><a class="header-anchor" href="#_3-1-iis-settings"><span>3.1. IIS Settings</span></a></h3>
 <p>Windows authentication must be enabled. Right click on the website where the web application will be installed and click on &quot;Add Application&quot;. In the &quot;Alias&quot; section, type the directory name (<code v-pre>base href</code> or <code v-pre>base path</code>) in the address where the application will run (<code v-pre>http://www.timyabilisim.com/BPM</code>). The directory where the application is installed is shown as a physical path. By default &quot;BPM&quot; is used. If BPM is not used, see 3.3. It is run with &quot;Browse&quot; from the IIS screen. Different types of installations require expertise in IIS.</p>
-<p><img src="/ISSayarları.png" alt="IIS Kurulumu"></p>
+<p><img src="/TimyaBPM-Documents/images/ISSayarları.png" alt="IIS Kurulumu"></p>
 <h3 id="_3-2-new-database-installation" tabindex="-1"><a class="header-anchor" href="#_3-2-new-database-installation"><span>3.2. New Database Installation</span></a></h3>
 <p>For a user who is granted full access to the database, the following settings must be made in the <code v-pre>appsettings.json</code> file:</p>
 <p>For a user who has been granted full access to the database, the following settings must be made in the <code v-pre>appsettings.json</code> file:</p>
@@ -36,8 +36,8 @@
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_4-timya-bpm-engine-setup" tabindex="-1"><a class="header-anchor" href="#_4-timya-bpm-engine-setup"><span>4. Timya BPM Engine Setup</span></a></h2>
 <p><code v-pre>TimyaBPM.setup.exe</code> or <code v-pre>TimyaBPM.setup.msi</code> is run with an authorized user on Windows. (It is recommended to install with Admin privilege.)</p>
-<p><img src="/enginekurulum.png" alt="Timya BPM Engine Installation"></p>
-<p>After the installation is complete, Timya BPM Engine should be listed in Windows Services opened with <code v-pre>services.msc</code> command.</p>
+<p><img src="/TimyaBPM-Documents/images/enginekurulum.png" alt="Timya BPM Engine Installation">
+After the installation is complete, Timya BPM Engine should be listed in Windows Services opened with <code v-pre>services.msc</code> command.</p>
 <h2 id="_5-timya-bpm-engine-configuration" tabindex="-1"><a class="header-anchor" href="#_5-timya-bpm-engine-configuration"><span>5. Timya BPM Engine Configuration</span></a></h2>
 <p>The appsettings.json file in the directory where TimyaBPMEngine is installed is opened with a text editor and saved with configuration settings. Then the service is started and put into use.</p>
 <h3 id="_5-1-database-connection-text" tabindex="-1"><a class="header-anchor" href="#_5-1-database-connection-text"><span>5.1. Database Connection Text</span></a></h3>

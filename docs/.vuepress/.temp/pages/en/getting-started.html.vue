@@ -5,7 +5,7 @@
 <p>Tasks that you have started and not completed, or tasks assigned to you to complete, are listed on this screen. Click on the rows of listed tasks to open and view the details of the task.</p>
 <h2 id="_3-followed-tasks" tabindex="-1"><a class="header-anchor" href="#_3-followed-tasks"><span>3. Followed Tasks</span></a></h2>
 <p>Tasks that you are following and can view are listed on this screen. The specifics of these tasks are determined during the process design phase.</p>
-<p><img src="/image-3.png" alt="alt text"></p>
+<p><img src="/TimyaBPM-Documents/images/image-3.png" alt="alt text"></p>
 <h2 id="_4-reports" tabindex="-1"><a class="header-anchor" href="#_4-reports"><span>4. Reports</span></a></h2>
 <p>This screen allows you to generate reports for ongoing or completed tasks in predefined formats.</p>
 <h2 id="_5-forms" tabindex="-1"><a class="header-anchor" href="#_5-forms"><span>5. Forms</span></a></h2>

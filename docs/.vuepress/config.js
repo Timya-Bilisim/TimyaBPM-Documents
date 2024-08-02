@@ -9,10 +9,10 @@ export default defineUserConfig({
   base: '/TimyaBPM-Documents/', 
 
   theme: defaultTheme({
-    logo: '/bpm_logo.png', 
-    logoDark: '/bpm_logo-docs.png',
-    heroImage: 'timya_bpm1.png',
-    heroImageDark: 'timya_bpm-dark.png',
+    logo: '/TimyaBPM-Documents/bpm_logo.png',
+    logoDark: '/TimyaBPM-Documents/bpm_logo-docs.png',
+    heroImage: '/TimyaBPM-Documents/timya_bpm1.png',
+    heroImageDark: '/TimyaBPM-Documents/timya_bpm-dark.png',
     locales: {
       '/': {
         selectLanguageName: 'Türkçe',
@@ -64,7 +64,7 @@ export default defineUserConfig({
   }),
 
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/TimyaBPM-Documents/favicon.ico' }]
   ],
 
   bundler: webpackBundler(),
