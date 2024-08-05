@@ -9,10 +9,9 @@ export default defineUserConfig({
   base: '/TimyaBPM-Documents/', 
 
   theme: defaultTheme({
-    logo: '/TimyaBPM-Documents/bpm_logo.png',
-    logoDark: '/TimyaBPM-Documents/bpm_logo-docs.png',
-    heroImage: '/TimyaBPM-Documents/timya_bpm1.png',
-    heroImageDark: '/TimyaBPM-Documents/timya_bpm-dark.png',
+    logo: '/bpm_logo.png',
+    logoDark: '/bpm_logo-docs.png',
+ 
     locales: {
       '/': {
         selectLanguageName: 'Türkçe',
