@@ -34,6 +34,14 @@ export default defineUserConfig({
               '/getting-started.md',
             ],
           },
+          {
+            text: 'Yeni Proje Oluşturma',
+            collapsible: true,
+            children: [
+              '/yeniproje.md',               
+              
+            ],
+          },
         ],
       },
       '/en/': {
@@ -55,6 +63,13 @@ export default defineUserConfig({
             collapsible: true,
             children: [
               '/en/getting-started.md',
+            ],
+          },
+          {
+            text: 'Creating   Project ',
+            collapsible: true,
+            children: [
+              '/en/yeniproje.md',               
             ],
           },
         ],

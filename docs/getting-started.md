@@ -5,8 +5,8 @@
 Kullanıcı adı , şifre ve giriş tipi seçilerek  sisteme giriş yapılır. Giriş tipleri ikiye ayrılır: Basit ve Active Directory. Admin kullanıcı adıyla giriş yapılacaksa, giriş tipi basit olarak seçilmelidir. Şirket tarafından belirlenen özel kullanıcı adı ve şifre ile giriş yapılacaksa, Active Directory seçilmelidir.
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="/TimyaBPM-Documents/adminn.png" alt="Admin 1" style="width: 48%;">
-    <img src="/TimyaBPM-Documents/admin2.png" alt="Admin 2" style="width: 48%;">
+    <img src="/TimyaBPM-Documents/adminn.png" alt="Admin 1" style="width: 38%;">
+    <img src="/TimyaBPM-Documents/admin2.png" alt="Admin 2" style="width: 38%;">
 </div>
 
 ## 2. İş Başlat
