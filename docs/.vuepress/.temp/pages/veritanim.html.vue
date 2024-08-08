@@ -1,9 +1,9 @@
 <template><div><h1 id="veri-tanım" tabindex="-1"><a class="header-anchor" href="#veri-tanım"><span>Veri Tanım</span></a></h1>
 <h2 id="_1-veri-tanımları" tabindex="-1"><a class="header-anchor" href="#_1-veri-tanımları"><span>1. Veri Tanımları</span></a></h2>
-<p>Girilecek veriler tablo şeklinde birden fazla oluşan veriler değilse, veri tanımlarında saklanır. Veriler &quot;Ekle&quot; diyerek yazılır. Enter tuşuna basarak veriler girilir. Tüm veriler girildikten sonra kaydet butonuna tıklanır.</p>
+<p>Girilecek veriler tablo şeklinde birden fazla oluşan veriler değilse, veri tanımlarında saklanır. Veriler &quot;Ekle&quot; butonuna tıklanarak yazılır. Enter tuşuna basarak veriler girilir. Tüm veriler girildikten sonra kaydet butonuna tıklanır.</p>
 <img src="/TimyaBPM-Documents/vt1.png" alt="alt text" width="800"/>
 <h3 id="_1-1-key" tabindex="-1"><a class="header-anchor" href="#_1-1-key"><span>1.1. Key</span></a></h3>
-<p>İlk olarak girilecek veri yazılır. Örneğin formda Başlık Konu adında bir kısım için resimdeki isimlendirme yapılabilir:</p>
+<p>İlk olarak girilecek veri yazılır. Örneğin formda bulunan  Başlık Konu adında bir bölüm için resimdeki isimlendirme yapılabilir:</p>
 <img src="/TimyaBPM-Documents/vt2.png" alt="alt text" width="400"/>
 <h3 id="_1-2-tablename" tabindex="-1"><a class="header-anchor" href="#_1-2-tablename"><span>1.2. Tablename</span></a></h3>
 <p>Veri tabanında saklanan tablo adı girilir.</p>
@@ -15,7 +15,7 @@
 <p>Açıklama eklenir fakat zorunlu değildir, sadece oluşturan kişi görebilir.</p>
 <img src="/TimyaBPM-Documents/vt5.png" alt="alt text" width="400"/>
 <h3 id="_1-5-datavaluetype" tabindex="-1"><a class="header-anchor" href="#_1-5-datavaluetype"><span>1.5. DataValueType</span></a></h3>
-<p>Veri tipi seçilir. Aşağıdaki seçeneklerden biri olabilir:</p>
+<p>Veri tipi seçilir. Aşağıdaki seçeneklerden biri kaydedilen veriye göre seçilir:</p>
 <ul>
 <li><strong>STRING:</strong> Metin veya karakter dizisi verileri için kullanılır.</li>
 <li><strong>INTEGER:</strong> Tam sayı verileri için kullanılır.</li>

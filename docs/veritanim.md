@@ -5,13 +5,13 @@
 ## 1. Veri Tanımları
 
 
-Girilecek veriler tablo şeklinde birden fazla oluşan veriler değilse, veri tanımlarında saklanır. Veriler "Ekle" diyerek yazılır. Enter tuşuna basarak veriler girilir. Tüm veriler girildikten sonra kaydet butonuna tıklanır.
+Girilecek veriler tablo şeklinde birden fazla oluşan veriler değilse, veri tanımlarında saklanır. Veriler "Ekle" butonuna tıklanarak yazılır. Enter tuşuna basarak veriler girilir. Tüm veriler girildikten sonra kaydet butonuna tıklanır.
 
 <img src="/TimyaBPM-Documents/vt1.png" alt="alt text" width="800"/>
 
 ### 1.1. Key
 
- İlk olarak girilecek veri yazılır. Örneğin formda Başlık Konu adında bir kısım için resimdeki isimlendirme yapılabilir:
+ İlk olarak girilecek veri yazılır. Örneğin formda bulunan  Başlık Konu adında bir bölüm için resimdeki isimlendirme yapılabilir:
 
 <img src="/TimyaBPM-Documents/vt2.png" alt="alt text" width="400"/>
 
@@ -32,7 +32,7 @@ Key kısmı ile aynı olmak zorundadır.
 
 ### 1.5. DataValueType
 
-Veri tipi seçilir. Aşağıdaki seçeneklerden biri olabilir:
+Veri tipi seçilir. Aşağıdaki seçeneklerden biri kaydedilen veriye göre seçilir:
 
 - **STRING:** Metin veya karakter dizisi verileri için kullanılır. 
 - **INTEGER:** Tam sayı verileri için kullanılır. 
