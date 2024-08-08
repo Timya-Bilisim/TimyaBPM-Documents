@@ -41,6 +41,16 @@ export default defineUserConfig({
               '/yeniproje.md',               
               
             ],
+            
+          },
+          {
+            text: 'Veri Tanımları',
+            collapsible: true,
+            children: [
+              '/veritanim.md',               
+              
+            ],
+            
           },
         ],
       },
@@ -70,6 +80,13 @@ export default defineUserConfig({
             collapsible: true,
             children: [
               '/en/yeniproje.md',               
+            ],
+          },
+          {
+            text: 'Data Definition ',
+            collapsible: true,
+            children: [
+              '/en/veritanim.md',               
             ],
           },
         ],
