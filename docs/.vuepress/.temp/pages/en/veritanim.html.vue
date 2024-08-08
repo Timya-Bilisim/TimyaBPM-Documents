@@ -3,7 +3,7 @@
 <p>Data that is not in a table format and does not consist of multiple entries is stored in data definitions. Data is entered by clicking &quot;Add&quot;. Press Enter to input the data. After all data has been entered, click the save button.</p>
 <p>![Data Definition Screenshot 1]( /TimyaBPM-Documents/vt1.png &quot;alt text&quot; width=&quot;800&quot;/)</p>
 <h3 id="_1-1-key" tabindex="-1"><a class="header-anchor" href="#_1-1-key"><span>1.1. Key</span></a></h3>
-<p>First, the data to be entered is written. For example, for a section titled &quot;Topic&quot; in the form, naming similar to the one in the image can be used:</p>
+<p>Users whose data will be stored, that is, data rows, are created. For example, in the form, a section for Title Subject can be named as shown in the picture:</p>
 <p>![Data Definition Screenshot 2]( /TimyaBPM-Documents/vt2.png &quot;alt text&quot; width=&quot;400&quot;/)</p>
 <h3 id="_1-2-tablename" tabindex="-1"><a class="header-anchor" href="#_1-2-tablename"><span>1.2. Tablename</span></a></h3>
 <p>The name of the table where data is stored in the database is entered.</p>

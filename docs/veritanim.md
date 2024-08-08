@@ -11,12 +11,12 @@ Girilecek veriler tablo şeklinde birden fazla oluşan veriler değilse, veri ta
 
 ### 1.1. Key
 
- İlk olarak girilecek veri yazılır. Örneğin formda bulunan  Başlık Konu adında bir bölüm için resimdeki isimlendirme yapılabilir:
+Veri tabanında saklanıcak alanlar yazılır yani veritabanında sütunlar oluşturulur.Örneğin formda bulunan Başlık Konu adında bir bölüm için resimdeki isimlendirme yapılabilir:
 
 <img src="/TimyaBPM-Documents/vt2.png" alt="alt text" width="400"/>
 
 ### 1.2. Tablename 
- Veri tabanında saklanan tablo adı girilir.
+ Veri tabanında saklanılacak tablo adı girilir.
 
 <img src="/TimyaBPM-Documents/vt3.png" alt="alt text" width="400"/>
 

@@ -3,10 +3,10 @@
 <p>Girilecek veriler tablo şeklinde birden fazla oluşan veriler değilse, veri tanımlarında saklanır. Veriler &quot;Ekle&quot; butonuna tıklanarak yazılır. Enter tuşuna basarak veriler girilir. Tüm veriler girildikten sonra kaydet butonuna tıklanır.</p>
 <img src="/TimyaBPM-Documents/vt1.png" alt="alt text" width="800"/>
 <h3 id="_1-1-key" tabindex="-1"><a class="header-anchor" href="#_1-1-key"><span>1.1. Key</span></a></h3>
-<p>İlk olarak girilecek veri yazılır. Örneğin formda bulunan  Başlık Konu adında bir bölüm için resimdeki isimlendirme yapılabilir:</p>
+<p>Veri tabanında saklanıcak alanlar yazılır yani veritabanında sütunlar oluşturulur.Örneğin formda bulunan Başlık Konu adında bir bölüm için resimdeki isimlendirme yapılabilir:</p>
 <img src="/TimyaBPM-Documents/vt2.png" alt="alt text" width="400"/>
 <h3 id="_1-2-tablename" tabindex="-1"><a class="header-anchor" href="#_1-2-tablename"><span>1.2. Tablename</span></a></h3>
-<p>Veri tabanında saklanan tablo adı girilir.</p>
+<p>Veri tabanında saklanılacak tablo adı girilir.</p>
 <img src="/TimyaBPM-Documents/vt3.png" alt="alt text" width="400"/>
 <h3 id="_1-3-name" tabindex="-1"><a class="header-anchor" href="#_1-3-name"><span>1.3. Name</span></a></h3>
 <p>Key kısmı ile aynı olmak zorundadır.</p>

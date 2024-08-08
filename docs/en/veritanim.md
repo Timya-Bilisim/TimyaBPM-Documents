@@ -8,7 +8,7 @@ Data that is not in a table format and does not consist of multiple entries is s
 
 ### 1.1. Key
 
-First, the data to be entered is written. For example, for a section titled "Topic" in the form, naming similar to the one in the image can be used:
+Users whose data will be stored, that is, data rows, are created. For example, in the form, a section for Title Subject can be named as shown in the picture:
 
 ![Data Definition Screenshot 2]( /TimyaBPM-Documents/vt2.png "alt text" width="400"/)
 
