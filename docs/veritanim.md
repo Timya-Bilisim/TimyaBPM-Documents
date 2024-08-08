@@ -11,7 +11,7 @@ Girilecek veriler tablo şeklinde birden fazla oluşan veriler değilse, veri ta
 
 ### 1.1. Key
 
-Veritabanında saklanacak alanlar yazılır; yani, veritabanında sütunlar oluşturulur. Örneğin, formda bulunan ‘Başlık’ ve ‘Konu’ adındaki bir bölüm için resimdeki isimlendirme yapılabilir:
+Veritabanında saklanacak alanlar yazılır; yani, veritabanında sütunlar oluşturulur. Örneğin, formda bulunan "Başlık Konu" adındaki bir bölüm için resimdeki isimlendirme yapılabilir:
 
 <img src="/TimyaBPM-Documents/vt2.png" alt="alt text" width="400"/>
 

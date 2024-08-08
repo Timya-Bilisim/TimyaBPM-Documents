@@ -3,7 +3,7 @@
 <p>Girilecek veriler tablo şeklinde birden fazla oluşan veriler değilse, veri tanımlarında saklanır. Veriler &quot;Ekle&quot; butonuna tıklanarak yazılır. Enter tuşuna basarak veriler girilir. Tüm veriler girildikten sonra kaydet butonuna tıklanır.</p>
 <img src="/TimyaBPM-Documents/vt1.png" alt="alt text" width="800"/>
 <h3 id="_1-1-key" tabindex="-1"><a class="header-anchor" href="#_1-1-key"><span>1.1. Key</span></a></h3>
-<p>Veritabanında saklanacak alanlar yazılır; yani, veritabanında sütunlar oluşturulur. Örneğin, formda bulunan ‘Başlık’ ve ‘Konu’ adındaki bir bölüm için resimdeki isimlendirme yapılabilir:</p>
+<p>Veritabanında saklanacak alanlar yazılır; yani, veritabanında sütunlar oluşturulur. Örneğin, formda bulunan &quot;Başlık Konu&quot; adındaki bir bölüm için resimdeki isimlendirme yapılabilir:</p>
 <img src="/TimyaBPM-Documents/vt2.png" alt="alt text" width="400"/>
 <h3 id="_1-2-tablename" tabindex="-1"><a class="header-anchor" href="#_1-2-tablename"><span>1.2. Tablename</span></a></h3>
 <p>Veri tabanında saklanacak tablo adı girilir.</p>
