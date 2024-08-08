@@ -17,11 +17,11 @@
 <h3 id="_1-5-datavaluetype" tabindex="-1"><a class="header-anchor" href="#_1-5-datavaluetype"><span>1.5. DataValueType</span></a></h3>
 <p>Select the data type. It can be one of the following options:</p>
 <ul>
-<li><strong>STRING:</strong> Used for text or character string data. For example, names or descriptions.</li>
-<li><strong>INTEGER:</strong> Used for integer data. For example, age or numerical IDs.</li>
-<li><strong>DATETIME:</strong> Used to store both date and time information together. For example, the date and time an event occurs.</li>
-<li><strong>TIME:</strong> Used to store only time information. For example, the start time of an event.</li>
-<li><strong>MONEY:</strong> Used for currency data. For example, product prices or budgets.</li>
+<li><strong>STRING:</strong> Used for text or character string data.</li>
+<li><strong>INTEGER:</strong> Used for integer data.</li>
+<li><strong>DATETIME:</strong> Used to store both date and time information together.</li>
+<li><strong>TIME:</strong> Used to store only time information.</li>
+<li><strong>MONEY:</strong> Used for currency data.</li>
 </ul>
 <p>![Data Definition Screenshot 6]( /TimyaBPM-Documents/vt6.png &quot;alt text&quot; width=&quot;500&quot;/)</p>
 <h3 id="_1-6-length" tabindex="-1"><a class="header-anchor" href="#_1-6-length"><span>1.6. Length</span></a></h3>

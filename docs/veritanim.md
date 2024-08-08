@@ -26,7 +26,7 @@ Key kısmı ile aynı olmak zorundadır.
 <img src="/TimyaBPM-Documents/vt4.png" alt="alt text" width="400"/>
 
 ### 1.4. Description 
- Zorunlu değildir, sadece oluşturan kişi görebilir.
+ Açıklama eklenir fakat zorunlu değildir, sadece oluşturan kişi görebilir.
 
 <img src="/TimyaBPM-Documents/vt5.png" alt="alt text" width="400"/>
 
@@ -34,11 +34,11 @@ Key kısmı ile aynı olmak zorundadır.
 
 Veri tipi seçilir. Aşağıdaki seçeneklerden biri olabilir:
 
-- **STRING:** Metin veya karakter dizisi verileri için kullanılır. Örneğin, isimler veya açıklamalar gibi.
-- **INTEGER:** Tam sayı verileri için kullanılır. Örneğin, yaş veya sayısal ID'ler gibi.
-- **DATETIME:** Tarih ve saat bilgilerini birlikte tutmak için kullanılır. Örneğin, bir olayın gerçekleşme tarihi ve saati.
-- **TIME:** Sadece saat bilgisini tutmak için kullanılır. Örneğin, bir etkinliğin başlama saati.
-- **MONEY:** Para birimi verileri için kullanılır. Örneğin, ürün fiyatları veya bütçeler gibi.
+- **STRING:** Metin veya karakter dizisi verileri için kullanılır. 
+- **INTEGER:** Tam sayı verileri için kullanılır. 
+- **DATETIME:** Tarih ve saat bilgilerini birlikte tutmak için kullanılır. 
+- **TIME:** Sadece saat bilgisini tutmak için kullanılır. 
+- **MONEY:** Para birimi verileri için kullanılır. 
 
 <img src="/TimyaBPM-Documents/vt6.png" alt="alt text" width="500"/>
 

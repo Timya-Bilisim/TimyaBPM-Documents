@@ -34,11 +34,11 @@ Not mandatory, can only be seen by the creator.
 
 Select the data type. It can be one of the following options:
 
-- **STRING:** Used for text or character string data. For example, names or descriptions.
-- **INTEGER:** Used for integer data. For example, age or numerical IDs.
-- **DATETIME:** Used to store both date and time information together. For example, the date and time an event occurs.
-- **TIME:** Used to store only time information. For example, the start time of an event.
-- **MONEY:** Used for currency data. For example, product prices or budgets.
+- **STRING:** Used for text or character string data. 
+- **INTEGER:** Used for integer data.
+- **DATETIME:** Used to store both date and time information together. 
+- **TIME:** Used to store only time information.
+- **MONEY:** Used for currency data. 
 
 ![Data Definition Screenshot 6]( /TimyaBPM-Documents/vt6.png "alt text" width="500"/)
 

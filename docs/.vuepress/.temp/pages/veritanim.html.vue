@@ -12,16 +12,16 @@
 <p>Key kısmı ile aynı olmak zorundadır.</p>
 <img src="/TimyaBPM-Documents/vt4.png" alt="alt text" width="400"/>
 <h3 id="_1-4-description" tabindex="-1"><a class="header-anchor" href="#_1-4-description"><span>1.4. Description</span></a></h3>
-<p>Zorunlu değildir, sadece oluşturan kişi görebilir.</p>
+<p>Açıklama eklenir fakat zorunlu değildir, sadece oluşturan kişi görebilir.</p>
 <img src="/TimyaBPM-Documents/vt5.png" alt="alt text" width="400"/>
 <h3 id="_1-5-datavaluetype" tabindex="-1"><a class="header-anchor" href="#_1-5-datavaluetype"><span>1.5. DataValueType</span></a></h3>
 <p>Veri tipi seçilir. Aşağıdaki seçeneklerden biri olabilir:</p>
 <ul>
-<li><strong>STRING:</strong> Metin veya karakter dizisi verileri için kullanılır. Örneğin, isimler veya açıklamalar gibi.</li>
-<li><strong>INTEGER:</strong> Tam sayı verileri için kullanılır. Örneğin, yaş veya sayısal ID'ler gibi.</li>
-<li><strong>DATETIME:</strong> Tarih ve saat bilgilerini birlikte tutmak için kullanılır. Örneğin, bir olayın gerçekleşme tarihi ve saati.</li>
-<li><strong>TIME:</strong> Sadece saat bilgisini tutmak için kullanılır. Örneğin, bir etkinliğin başlama saati.</li>
-<li><strong>MONEY:</strong> Para birimi verileri için kullanılır. Örneğin, ürün fiyatları veya bütçeler gibi.</li>
+<li><strong>STRING:</strong> Metin veya karakter dizisi verileri için kullanılır.</li>
+<li><strong>INTEGER:</strong> Tam sayı verileri için kullanılır.</li>
+<li><strong>DATETIME:</strong> Tarih ve saat bilgilerini birlikte tutmak için kullanılır.</li>
+<li><strong>TIME:</strong> Sadece saat bilgisini tutmak için kullanılır.</li>
+<li><strong>MONEY:</strong> Para birimi verileri için kullanılır.</li>
 </ul>
 <img src="/TimyaBPM-Documents/vt6.png" alt="alt text" width="500"/>
 <h3 id="_1-6-uzunluk" tabindex="-1"><a class="header-anchor" href="#_1-6-uzunluk"><span>1.6. Uzunluk</span></a></h3>
