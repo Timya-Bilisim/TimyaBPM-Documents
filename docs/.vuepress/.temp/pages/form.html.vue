@@ -28,7 +28,7 @@
 <li>Formda seçenekler girmek için kullanılır. Seçenekler, form bileşenlerini tanımlama kısmındaki &quot;Seçenekler&quot; bölümüne alt alta yazılır ve Enter tuşuna basılarak kaydedilir.
 <img src="/TimyaBPM-Documents/frm4.png" alt="alt text"></li>
 </ul>
-<h3 id="datep-picker" tabindex="-1"><a class="header-anchor" href="#datep-picker"><span>Datep Picker</span></a></h3>
+<h3 id="date-picker" tabindex="-1"><a class="header-anchor" href="#date-picker"><span>Date Picker</span></a></h3>
 <ul>
 <li>Formda tarih girilmesi gereken veriler için kullanılır.</li>
 </ul>

@@ -28,7 +28,7 @@
 - Formda seçenekler girmek için kullanılır. Seçenekler, form bileşenlerini tanımlama kısmındaki "Seçenekler" bölümüne alt alta yazılır ve Enter tuşuna basılarak kaydedilir.
  ![alt text](/TimyaBPM-Documents/frm4.png)
 
-### Datep Picker
+### Date Picker
 
 - Formda tarih girilmesi gereken veriler için kullanılır.
 
