@@ -16,12 +16,12 @@
 
    ![alt text](/TimyaBPM-Documents/frm1.png)
 ## 1.2.  Form Bileşenleri
- ![alt text](/TimyaBPM-Documents/frm5.png)
+ ![alt text](/TimyaBPM-Documents/frm3.png)
 ### Textbox 
 
 - Metinsel veriler için kullanılır. Örneğin, Gelen Evrak Numarası ve Başlık Konusu gibi bilgiler için textbox kullanılır.
 
-![alt text](/TimyaBPM-Documents/frm3.png)
+![alt text](/TimyaBPM-Documents/frm5.png)
 
 ### Select
 

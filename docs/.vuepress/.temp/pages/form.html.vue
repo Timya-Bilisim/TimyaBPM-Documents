@@ -17,12 +17,12 @@
 </li>
 </ul>
 <h2 id="_1-2-form-bilesenleri" tabindex="-1"><a class="header-anchor" href="#_1-2-form-bilesenleri"><span>1.2.  Form Bileşenleri</span></a></h2>
-<p><img src="/TimyaBPM-Documents/frm5.png" alt="alt text"></p>
+<p><img src="/TimyaBPM-Documents/frm3.png" alt="alt text"></p>
 <h3 id="textbox" tabindex="-1"><a class="header-anchor" href="#textbox"><span>Textbox</span></a></h3>
 <ul>
 <li>Metinsel veriler için kullanılır. Örneğin, Gelen Evrak Numarası ve Başlık Konusu gibi bilgiler için textbox kullanılır.</li>
 </ul>
-<p><img src="/TimyaBPM-Documents/frm3.png" alt="alt text"></p>
+<p><img src="/TimyaBPM-Documents/frm5.png" alt="alt text"></p>
 <h3 id="select" tabindex="-1"><a class="header-anchor" href="#select"><span>Select</span></a></h3>
 <ul>
 <li>Formda seçenekler girmek için kullanılır. Seçenekler, form bileşenlerini tanımlama kısmındaki &quot;Seçenekler&quot; bölümüne alt alta yazılır ve Enter tuşuna basılarak kaydedilir.
