@@ -1,4 +1,27 @@
-<template><div><h1 id="surec" tabindex="-1"><a class="header-anchor" href="#surec"><span>Süreç</span></a></h1>
+<template><div><h1 id="surec-olusturma-adımları" tabindex="-1"><a class="header-anchor" href="#surec-olusturma-adımları"><span>Süreç Oluşturma Adımları</span></a></h1>
+<h2 id="_1-1-surec-olusturma" tabindex="-1"><a class="header-anchor" href="#_1-1-surec-olusturma"><span>1.1. Süreç Oluşturma</span></a></h2>
+<p>Yeni bir süreç oluşturmak için, süreç bölümünde artı işaretine tıklanır ve &quot;New Map&quot; seçeneği ile yeni bir süreç başlatılır. İlk olarak, &quot;Process General&quot; kısmında <strong>Name</strong> alanına sürece bir isim verilir. <strong>ID</strong> kısmı ise sistemde saklanacak olan isimdir.
+<img src="/TimyaBPM-Documents/surecc1.png" alt="alt text"></p>
+<p>Süreç numaralandırması yapmak için <strong>Properties</strong> bölümüne gidilir ve <strong>Number Prefix</strong> kısmına aşağıdaki kodu yazılır:</p>
+<p><code v-pre>GLN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}</code></p>
+<p><strong>Properties</strong> kısmında <strong>Accessing Roles</strong> seçimini yaparak sürece kimlerin erişebileceği belirlenir.</p>
+<p><img src="/TimyaBPM-Documents/surecc2.png" alt="alt text"></p>
+<h2 id="_1-2-sureci-baslatma" tabindex="-1"><a class="header-anchor" href="#_1-2-sureci-baslatma"><span>1.2. Süreci Başlatma</span></a></h2>
+<p>Süreci başlatmak için sistemdeki yuvarlak (süreci başlatma ) işaretine tıklanır. <strong>Name</strong> ve <strong>ID</strong> alanlarına süreç için uygun isimleri girilir. Daha sonra <strong>Properties</strong> kısmını aşağıdaki gibi doldurulur:</p>
+<p><img src="/TimyaBPM-Documents/surecc3.png" alt="alt text"></p>
+<ul>
+<li><strong>Available to Roles:</strong> Sürece erişebilecek rolleri seçilir.</li>
+<li><strong>To Do List:</strong> Süreci başlatacak ve yönetecek kişiyi seçilir.</li>
+<li><strong>Form List:</strong> Süreç başlatıldığında kullanılacak formu seçilir.</li>
+</ul>
+<p><img src="/TimyaBPM-Documents/surecc4.png" alt="alt text"></p>
+<h2 id="_1-3-sureci-yayınlama" tabindex="-1"><a class="header-anchor" href="#_1-3-sureci-yayınlama"><span>1.3. Süreci Yayınlama</span></a></h2>
+<p>Süreci kullanıma almak için önce sureç yayınlanmalıdır. Bunun için &quot;Admin Menü &quot; <strong>Projeler</strong> seçeneğini tıklanır ve ilgili proje üzerinde <strong>Yayınla</strong> butonuna basılır. (Resim1)</p>
+<p>Ardından &quot;İş Başlatma&quot; kısmına tıklanır ve <strong>Başlat</strong> seçeneğini kullanarak süreç başlatılır.(Resim2)</p>
+<p><em>Resim 1: Süreç Yayınlama</em>
+<img src="/TimyaBPM-Documents/surecc5.png" alt="Şekil 1"></p>
+<p><em>Resim 2: Süreç Başlatma</em>
+<img src="/TimyaBPM-Documents/surecc6.png" alt="Şekil 2"></p>
 </div></template>
 
 

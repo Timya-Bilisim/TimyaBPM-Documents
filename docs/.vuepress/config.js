@@ -52,6 +52,24 @@ export default defineUserConfig({
             ],
             
           },
+          {
+            text: 'Form Oluşturma',
+            collapsible: true,
+            children: [
+              '/form.md',               
+              
+            ],
+            
+          },
+          {
+            text: 'Süreç Oluşturma',
+            collapsible: true,
+            children: [
+              '/surec.md',               
+              
+            ],
+            
+          },
         ],
       },
       '/en/': {
@@ -87,6 +105,20 @@ export default defineUserConfig({
             collapsible: true,
             children: [
               '/en/veritanim.md',               
+            ],
+          },
+          {
+            text: 'Form Creation Processes  ',
+            collapsible: true,
+            children: [
+              '/en/form.md',               
+            ],
+          },
+          {
+            text: ' Creating  Process ',
+            collapsible: true,
+            children: [
+              '/en/surec.md',               
             ],
           },
         ],

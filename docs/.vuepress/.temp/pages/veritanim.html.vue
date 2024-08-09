@@ -1,4 +1,4 @@
-<template><div><h1 id="veri-tanım" tabindex="-1"><a class="header-anchor" href="#veri-tanım"><span>Veri Tanım</span></a></h1>
+<template><div><h1 id="veri-tanımlama-adımları" tabindex="-1"><a class="header-anchor" href="#veri-tanımlama-adımları"><span>Veri Tanımlama Adımları</span></a></h1>
 <h2 id="_1-veri-tanımları" tabindex="-1"><a class="header-anchor" href="#_1-veri-tanımları"><span>1. Veri Tanımları</span></a></h2>
 <p>Girilecek veriler tablo şeklinde birden fazla oluşan veriler değilse, veri tanımlarında saklanır. Veriler &quot;Ekle&quot; butonuna tıklanarak yazılır. Enter tuşuna basarak veriler girilir. Tüm veriler girildikten sonra kaydet butonuna tıklanır.</p>
 <img src="/TimyaBPM-Documents/vt1.png" alt="alt text" width="800"/>

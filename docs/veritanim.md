@@ -1,6 +1,6 @@
 
 
-# Veri Tanım
+# Veri Tanımlama Adımları
 
 ## 1. Veri Tanımları
 
