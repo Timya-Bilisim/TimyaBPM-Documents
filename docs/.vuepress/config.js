@@ -70,6 +70,15 @@ export default defineUserConfig({
             ],
             
           },
+          {
+            text: 'İş Nesneleri',
+            collapsible: true,
+            children: [
+              '/nesne.md',               
+              
+            ],
+            
+          },
         ],
       },
       '/en/': {
@@ -121,6 +130,14 @@ export default defineUserConfig({
               '/en/surec.md',               
             ],
           },
+          {
+            text: '   Business Objects ',
+            collapsible: true,
+            children: [
+              '/en/nesne.md',               
+            ],
+          },
+        
         ],
       },
     },
