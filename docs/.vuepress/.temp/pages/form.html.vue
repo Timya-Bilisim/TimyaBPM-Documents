@@ -19,43 +19,49 @@
 <h2 id="_1-2-form-bilesenleri" tabindex="-1"><a class="header-anchor" href="#_1-2-form-bilesenleri"><span>1.2.  Form Bileşenleri</span></a></h2>
 <p><img src="/TimyaBPM-Documents/frm3.png" alt="alt text"></p>
 <h3 id="textbox" tabindex="-1"><a class="header-anchor" href="#textbox"><span>Textbox</span></a></h3>
-<p>-<strong>Kullanım Alanı:</strong> Metinsel veriler için kullanılır. Örneğin, Gelen Evrak Numarası ve Başlık Konusu gibi bilgiler için textbox kullanılır.</p>
+<ul>
+<li><strong>Kullanım Alanı:</strong> Metinsel veriler için kullanılır. Örneğin, Gelen Evrak Numarası ve Başlık Konusu gibi bilgiler için textbox kullanılır.</li>
+</ul>
 <p><img src="/TimyaBPM-Documents/frm5.png" alt="alt text"></p>
 <h3 id="select" tabindex="-1"><a class="header-anchor" href="#select"><span>Select</span></a></h3>
 <ul>
-<li>**Kullanım Alanı:**Formda seçenekler girmek için kullanılır. Seçenekler, form bileşenlerini tanımlama kısmındaki &quot;Seçenekler&quot; bölümüne alt alta yazılır ve Enter tuşuna basılarak kaydedilir.
-<img src="/TimyaBPM-Documents/frm4.png" alt="alt text"></li>
+<li><strong>Kullanım Alanı:</strong> Formda seçenekler girmek için kullanılır. Seçenekler, form bileşenlerini tanımlama kısmındaki &quot;Seçenekler&quot; bölümüne alt alta yazılır ve Enter tuşuna basılarak kaydedilir.</li>
 </ul>
+<p><img src="/TimyaBPM-Documents/frm4.png" alt="alt text"></p>
 <h3 id="text" tabindex="-1"><a class="header-anchor" href="#text"><span>Text</span></a></h3>
 <ul>
-<li><strong>Kullanım Alanı:</strong> Formda sadece ekrana yazı eklemek için kullanılır. Bu alanda herhangi bir veri girişi yapılmaz; amaç, metinsel bilgi sağlamaktır.
-<img src="/TimyaBPM-Documents/text1.png" alt="alt text"></li>
+<li><strong>Kullanım Alanı:</strong> Formda sadece ekrana yazı eklemek için kullanılır. Bu alanda herhangi bir veri girişi yapılmaz; amaç, metinsel bilgi sağlamaktır.</li>
 </ul>
+<p><img src="/TimyaBPM-Documents/text1.png" alt="alt text"></p>
 <h3 id="htmlviewer" tabindex="-1"><a class="header-anchor" href="#htmlviewer"><span>HtmlViewer</span></a></h3>
 <ul>
 <li><strong>Kullanım Alanı:</strong> HTML olan verileri HTML formatında göstermek için kullanılır.</li>
-<li><strong>Nasıl Kullanılır:</strong> Veritabanında ilgili tablo seçilir ve HTML kodları ile gerekli biçimlendirmeler yapılır.
-<img src="/TimyaBPM-Documents/html1.png" alt="alt text">
-<img src="/TimyaBPM-Documents/html2.png" alt="alt text">
-<img src="/TimyaBPM-Documents/html3.png" alt="alt text"></li>
+<li>Veritabanında ilgili tablo seçilir ve HTML kodları ile gerekli biçimlendirmeler yapılır.</li>
+<li>Örnekte kullanılan HTML kodu :</li>
 </ul>
+<div class="language-json line-numbers-mode" data-highlighter="prismjs" data-ext="json" data-title="json"><pre v-pre class="language-json"><code><span class="line">&lt;h1 style=<span class="token string">"color:red"</span>>My First Heading&lt;/h1></span>
+<span class="line">&lt;p style=<span class="token string">"font-weight:bold"</span>>My first paragraph.&lt;/p></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="/TimyaBPM-Documents/html1.png" alt="alt text">
+<img src="/TimyaBPM-Documents/html2.png" alt="alt text">
+<img src="/TimyaBPM-Documents/html3.png" alt="alt text"></p>
 <h3 id="user-select" tabindex="-1"><a class="header-anchor" href="#user-select"><span>User Select</span></a></h3>
 <ul>
 <li><strong>Kullanım Alanı:</strong> Kullanıcıları seçmek ve sürece dahil etmek için kullanılır.</li>
-<li><strong>Nasıl Kullanılır:</strong> Formda &quot;User Select&quot; bileşeni seçilir ve forma eklenir. İş başlat kısmında artı işaretine basılarak eklenmesi istenilen kullanıcılar eklenir.</li>
+<li>Formda &quot;User Select&quot; bileşeni seçilir ve forma eklenir. İş başlat kısmında artı işaretine basılarak eklenmesi istenilen kullanıcılar eklenir.</li>
 </ul>
 <p><img src="/TimyaBPM-Documents/userselect1.png" alt="alt text">
 <img src="/TimyaBPM-Documents/userselect2.png" alt="alt text">
 <img src="/TimyaBPM-Documents/userselect3.png" alt="alt text"></p>
 <h3 id="date-picker" tabindex="-1"><a class="header-anchor" href="#date-picker"><span>Date Picker</span></a></h3>
 <ul>
-<li>**Kullanım Alanı:**Formda tarih girilmesi gereken veriler için kullanılır.</li>
+<li><strong>Kullanım Alanı:</strong> Formda tarih girilmesi gereken veriler için kullanılır.</li>
 </ul>
 <p><img src="/TimyaBPM-Documents/datapicker.png" alt="alt text"></p>
 <h3 id="timepicker" tabindex="-1"><a class="header-anchor" href="#timepicker"><span>Timepicker</span></a></h3>
 <ul>
 <li><strong>Kullanım Alanı:</strong> Saat seçimi için kullanılır.</li>
-<li><strong>Not:</strong> Veri tanımlarından veritabanına saat eklenmesi doğru şekilde yapılmalıdır.(RESİM1)</li>
+<li>Veri tanımlarından  saat için <strong>DataValueType</strong> eklenmesi doğru şekilde yapılmalıdır.</li>
 </ul>
 <p><img src="/TimyaBPM-Documents/saat1.png" alt="Şekil 1"></p>
 <p><img src="/TimyaBPM-Documents/saat2.png" alt="Şekil 2"></p>
