@@ -1,6 +1,6 @@
 # İş Nesnesi Ekleme
 
-İş nesneleri, veritabanı bağlantılarını sağlar. Örneğin, form kısmına departman eklemek için aşağıdaki adımları izlenir:
+İş nesneleri, veritabanı bağlantılarını yönetir ve bu bağlantıları kullanarak veritabanı ile etkileşim sağlar. Örneğin, bir formun departman bilgilerini eklemek için iş nesnelerinin kullanımı şu şekilde gerçekleşir: 
 
 - Bağlantılar  kısmında **DefaultDatabase** oluşturulmuştur.
 
