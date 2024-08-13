@@ -19,8 +19,8 @@
 
 
 2. **Kullanıcılar:**
-   - Kullanıcılar kısmından forma eklenen kısımlar ve eklenen seçenekler görüntülenir.
-   - Atanılması istenilen kullanıcı seçilir.
+   
+   - Atanılması istenilen kullanıcı bilgileri seçilir.
 
 ![Şekil 2](/TimyaBPM-Documents/iş8.png)
 
@@ -28,13 +28,13 @@
    - Form kısmına departman eklemek için veritabanında **Departman** tablosuna gidilir.
    - Aşağıdaki kodlar, database bağlantısını eklemek için iş nesnelerinde sorgu metni kısmına  eklenir:
      ```sql
-     SELECT TOP (1000) [DepartmentId], [DepartmentName]
+     SELECT TOP (1000) [DepartmentId],[DepartmentName]
      FROM [Departments]
      ```
 
- ![Şekil 2](/TimyaBPM-Documents/iş2.png)
+![Şekil 2](/TimyaBPM-Documents/iş2.png)
 4. **Form Kısmına Ekleme:**
-   - Form kısmına gelerek **Departman** kısmı eklenir.
+   - Form kısmın da **Departman** kısmı eklenir.
    - Seçenekler kısmı manuel değil, **Data Source** tıklanarak bilgiler veritabanından alınır.
   
  ![Şekil 2](/TimyaBPM-Documents/iş3.png)
