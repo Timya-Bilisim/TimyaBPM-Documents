@@ -71,6 +71,16 @@ export default defineUserConfig({
             ],
             
           },
+
+          {
+            text: 'İş Nesneleri',
+            collapsible: true,
+            children: [
+              '/nesne.md',               
+              
+            ],
+            
+          },
           {
             text: 'Roller',
             collapsible: true,
@@ -90,15 +100,7 @@ export default defineUserConfig({
             ],
             
           },
-          {
-            text: 'İş Nesneleri',
-            collapsible: true,
-            children: [
-              '/nesne.md',               
-              
-            ],
-            
-          },
+         
           {
             text: 'Listeler',
             collapsible: true,

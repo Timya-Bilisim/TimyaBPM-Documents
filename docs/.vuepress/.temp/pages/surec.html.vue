@@ -1,36 +1,39 @@
 <template><div><h1 id="surec-olusturma-adımları" tabindex="-1"><a class="header-anchor" href="#surec-olusturma-adımları"><span>Süreç Oluşturma Adımları</span></a></h1>
-<h2 id="_1-1-surec-olusturma" tabindex="-1"><a class="header-anchor" href="#_1-1-surec-olusturma"><span>1.1. Süreç Oluşturma</span></a></h2>
-<p>Yeni bir süreç oluşturmak için, süreç bölümünde artı işaretine tıklanır ve &quot;New Map&quot; seçeneği ile yeni bir süreç başlatılır. İlk olarak, &quot;Process General&quot; kısmında <strong>Name</strong> alanına sürece bir isim verilir. <strong>ID</strong> kısmı ise sistemde saklanacak olan isimdir.
-<img src="/TimyaBPM-Documents/surecc1.png" alt="alt text"></p>
-<p>Süreç numaralandırması yapmak için <strong>Properties</strong> bölümüne gidilir ve <strong>Number Prefix</strong> kısmına aşağıdaki kodu yazılır:</p>
+<h2 id="_1-1-surec-gelistirme" tabindex="-1"><a class="header-anchor" href="#_1-1-surec-gelistirme"><span>1.1. Süreç Geliştirme</span></a></h2>
+<p>Yeni bir süreç geliştirmek için, süreç bölümünde artı işaretine tıklanır ve <strong>&quot;New Map&quot;</strong> seçeneği ile yeni bir süreç haritası oluşturulur. Süreç haritası üzerinde boş bir alana tıklandığında, süreç özelliklerinin değiştirileceği kısım sağ tarafta görünür.</p>
+<p>İlk olarak, <strong>&quot;Process General&quot;</strong> kısmında <strong>Name</strong> alanına sürecin kullanıcılara gözükecek isim verilir. <strong>ID</strong> kısmı ise sistemde saklanacak olan isimdir. Bu alanda boşluk ve Türkçe karakterler kullanılmaz.</p>
+<p><img src="/TimyaBPM-Documents/surecc1.png" alt="alt text"></p>
+<p>Süreç numaralandırması yapmak için <strong>Properties</strong> bölümüne gidilir ve <strong>Number Prefix</strong> kısmına aşağıdaki kod yazılır:</p>
 <p><code v-pre>GLN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}</code></p>
-<p><strong>Properties</strong> kısmında <strong>Accessing Roles</strong> seçimini yaparak sürece kimlerin erişebileceği belirlenir.</p>
+<p><strong>Properties</strong> kısmında, <strong>Accessing Roles</strong> bölümünde, sürece erişebilecek roller seçilir (roller ayrıca açıklanacaktır).</p>
 <p><img src="/TimyaBPM-Documents/surecc2.png" alt="alt text"></p>
-<h2 id="_1-2-sureci-baslatma" tabindex="-1"><a class="header-anchor" href="#_1-2-sureci-baslatma"><span>1.2. Süreci Başlatma</span></a></h2>
-<p>Süreci başlatmak için sistemdeki yuvarlak (süreci başlatma ) işaretine tıklanır. <strong>Name</strong> ve <strong>ID</strong> alanlarına süreç için uygun isimleri girilir. Daha sonra <strong>Properties</strong> kısmını aşağıdaki gibi doldurulur:</p>
-<p><img src="/TimyaBPM-Documents/surecc3.png" alt="alt text"></p>
+<p>Süreç haritasındaki   yuvarlak şekiller süreç başlatma aksiyonlarını ifade eder işaretine tıklanır. <strong>Name</strong> kısmı kullanıcının süreci başlatmak için tıklayacağı butonun ismidir . <strong>ID</strong> kısmı ise sistemde saklanacak olan isimdir.<br>
+<img src="/TimyaBPM-Documents/surecc3.png" alt="alt text"></p>
+<p><strong>Properties</strong> kısmını aşağıdaki gibi doldurulur:</p>
 <ul>
-<li><strong>Available to Roles:</strong> Sürece erişebilecek rolleri seçilir.</li>
-<li><strong>To Do List:</strong> Süreci başlatacak ve yönetecek kişiyi seçilir.</li>
+<li><strong>Available to Roles:</strong> Sürece başlatabilecek rolleri seçilir.</li>
+<li><strong>To Do List:</strong> Süreç başladıktan iş atamasının ilk atanacağı rolü belirtir.Mouse ile <strong>Roller</strong> kısmından çekilip <strong>Seçilen Roller</strong> kısmına bıraklır.</li>
+</ul>
+<p><img src="/TimyaBPM-Documents/roller8.png" alt="alt text"></p>
+<ul>
 <li><strong>Form List:</strong> Süreç başlatıldığında kullanılacak formu seçilir.</li>
 </ul>
 <p><img src="/TimyaBPM-Documents/surecc4.png" alt="alt text"></p>
-<h2 id="_1-3-sureci-yayınlama" tabindex="-1"><a class="header-anchor" href="#_1-3-sureci-yayınlama"><span>1.3. Süreci Yayınlama</span></a></h2>
+<p><strong>Başlat</strong> butonunun yanında çıkan kare işaretine tıklanır. <strong>Flow</strong> ve <strong>Aksiyon</strong> kısımları aşağıdaki gibi oluştulur.</p>
+<p><img src="/TimyaBPM-Documents/surecg1.png" alt="Şekil 2"></p>
+<p>Aksiyon event için <strong>Change Element</strong> seçilir.
+<img src="/TimyaBPM-Documents/anahtar.png" alt="Şekil 2"></p>
+<p><strong>Süreci Sonlandırma</strong>
+için tekrar işaret üzerine tıklanır ve resimde gösterilen süreç sonlandrıma event'i  seçilir.</p>
+<p><img src="/TimyaBPM-Documents/son1.png" alt="Şekil 2">
+<img src="/TimyaBPM-Documents/son2.png" alt="Şekil 2"></p>
+<h2 id="_1-2-sureci-yayınlama" tabindex="-1"><a class="header-anchor" href="#_1-2-sureci-yayınlama"><span>1.2. Süreci Yayınlama</span></a></h2>
 <p>Süreci kullanıma almak için önce sureç yayınlanmalıdır. Bunun için &quot;Admin Menü &quot; <strong>Projeler</strong> seçeneğini tıklanır ve ilgili proje üzerinde <strong>Yayınla</strong> butonuna basılır. (Resim1)</p>
 <p>Ardından <strong>İş Başlatma</strong> kısmına tıklanır ve <strong>Başlat</strong> seçeneğini kullanarak süreç başlatılır.(Resim2)</p>
 <p><em>Resim 1: Süreç Yayınlama</em>
 <img src="/TimyaBPM-Documents/surecc5.png" alt="Şekil 1"></p>
 <p><em>Resim 2: Süreç Başlatma</em>
 <img src="/TimyaBPM-Documents/surecc6.png" alt="Şekil 2"></p>
-<h2 id="_1-4-sureci-gelistirme" tabindex="-1"><a class="header-anchor" href="#_1-4-sureci-gelistirme"><span>1.4. Süreci Geliştirme</span></a></h2>
-<p>Süreç kısmında,  <strong>Başlat</strong> butonunun yanında çıkan kare işaretine tıklanır. Gelen ekranda çıkan her şekle tıklanarak gerekli isimler girilir.</p>
-<p><img src="/TimyaBPM-Documents/surecg1.png" alt="Şekil 2"></p>
-<p>Daha sonra eklenen kısmı sisteme eklenir. Bunun için  <strong>Anahtar</strong> seçilerek kullanıcı tanımlanır.
-<img src="/TimyaBPM-Documents/surec2.png" alt="Şekil 2"></p>
-<p><strong>Süreci Sonlandırma</strong>
-için tekrar işaret üzerine tıklanır ve resimde gösterilen imge seçilerek isimler girilir, gerekli alanlar doldurulur.</p>
-<p><img src="/TimyaBPM-Documents/son1.png" alt="Şekil 2">
-<img src="/TimyaBPM-Documents/son2.png" alt="Şekil 2"></p>
 </div></template>
 
 
