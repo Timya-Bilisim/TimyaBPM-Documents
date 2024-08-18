@@ -52,6 +52,7 @@ export default defineUserConfig({
             ],
             
           },
+          
           {
             text: 'Form Oluşturma',
             collapsible: true,
@@ -71,10 +72,38 @@ export default defineUserConfig({
             
           },
           {
+            text: 'Roller',
+            collapsible: true,
+            children: [
+              '/roller.md',               
+              
+            ],
+            
+          },
+
+          {
+            text: 'Bağlantılar',
+            collapsible: true,
+            children: [
+              '/baglanti.md',               
+              
+            ],
+            
+          },
+          {
             text: 'İş Nesneleri',
             collapsible: true,
             children: [
               '/nesne.md',               
+              
+            ],
+            
+          },
+          {
+            text: 'Listeler',
+            collapsible: true,
+            children: [
+              '/listeler.md',               
               
             ],
             

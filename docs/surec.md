@@ -54,58 +54,12 @@ Süreç kısmında,  **Başlat** butonunun yanında çıkan kare işaretine tık
 Daha sonra eklenen kısmı sisteme eklenir. Bunun için  **Anahtar** seçilerek kullanıcı tanımlanır.
 ![Şekil 2](/TimyaBPM-Documents/surec2.png) 
 
-### Roller
-
-1- "To-Do List" kısmında roller eklenmelidir . Bunun için ilk adım **Veri Tanımlarında** gerekli bilgiler kaydedilmelidir.
-
-![Şekil 2](/TimyaBPM-Documents/roller8.png)
-
-![Şekil 2](/TimyaBPM-Documents/roller2.png)
-
-2- İkinci adım ise,**Roller** kısmından yeni dinamik roller eklenir.  ID, alan ve harita kısmı doldurulur. Harita kısmında, veri tanımlarında kaydedilen bilgilere göre aşağıdaki gibi yazılır.
-
-![Şekil 2](/TimyaBPM-Documents/roller1.png) 
-
-```json
-object ilgiliKisi = getVal("GelenEvrak", "IlgiliKisi");
-if (ilgiliKisi == null)
-    return System.Convert.ToInt32(ilgiliKisi);
-else
-    return 1;
-```
-
- 
-
-Daha sonra süreç kısmındaki "To-Do List" bölümünde, roller kısmında tanımlanan kısım seçilir ve "Form List" kısmından oluşturulan form seçilir.
 
 
-![Şekil 2](/TimyaBPM-Documents/roller3.png) 
-
-### Süreci Sonlandırma
-Süreç işlemini sonlandırmak için tekrar işaret üzerine tıklanır ve resimde gösterilen imge seçilerek isimler girilir, gerekli alanlar doldurulur.
+   **Süreci Sonlandırma**
+ için tekrar işaret üzerine tıklanır ve resimde gösterilen imge seçilerek isimler girilir, gerekli alanlar doldurulur.
 
 ![Şekil 2](/TimyaBPM-Documents/son1.png) 
 ![Şekil 2](/TimyaBPM-Documents/son2.png) 
 
 
-### Raporlar ve Listeler
-
-İş başlat kısmında "Sonlandır" butonu çıkar. İşi sonlandırdığımızda rapor etmemiz gerekir. Bunun için iş nesnelerinde "Biten İşler" adında bir nesne açılır.
-
-![Şekil 2](/TimyaBPM-Documents/son3.png) 
-![Şekil 2](/TimyaBPM-Documents/rapor.png) 
-
-```json
-select ProcessId, m.Title MapName, ProcessName, p.Title, StageCaption, CreatedTime, UpdatedTime, DoubleField1, StringField1, StringField2 
-from Processes p 
-inner join Maps m on m.Name = p.MapName 
-where p.Deleted <> 1 and p.Archived = 1
-```
-
-Daha sonra **Listeler** kısmından rapor oluşturulur. Bilgiler aşağıdaki resimde gösterildiği gibi girilmelidir.
-
-![Şekil 2](/TimyaBPM-Documents/rapor2.png) 
-
-Rapor kısmında gözükmesi gereken bilgiler aşağıdaki gibidir.
-
-![Şekil 2](/TimyaBPM-Documents/rapor3.png) 

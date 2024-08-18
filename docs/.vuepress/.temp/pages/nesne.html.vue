@@ -4,7 +4,6 @@
 <li>Bağlantılar  kısmında <strong>DefaultDatabase</strong> oluşturulmuştur.</li>
 </ul>
 <p><img src="/TimyaBPM-Documents/bağlantıı1.png" alt="Şekil 2"></p>
-<h2 id="departman-ekleme" tabindex="-1"><a class="header-anchor" href="#departman-ekleme"><span>Departman Ekleme</span></a></h2>
 <ol>
 <li><strong>Admin Menü Kısmı:</strong>
 <ul>

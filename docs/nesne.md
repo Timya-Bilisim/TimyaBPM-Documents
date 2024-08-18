@@ -7,7 +7,7 @@
  ![Şekil 2](/TimyaBPM-Documents/bağlantıı1.png)
 
    
-##  Departman Ekleme
+
 
 1. **Admin Menü Kısmı:**
    - Admin menü kısmından **Ayarlar** bölümüne gidilir.

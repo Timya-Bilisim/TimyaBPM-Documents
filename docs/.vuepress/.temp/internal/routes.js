@@ -1,12 +1,15 @@
 export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
+  ["/baglanti.html", { loader: () => import(/* webpackChunkName: "baglanti.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/baglanti.html.js"), meta: {"title":"Bağlantılar"} }],
   ["/form.html", { loader: () => import(/* webpackChunkName: "form.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/form.html.js"), meta: {"title":"Form Oluşturma Adımları"} }],
   ["/get-started.html", { loader: () => import(/* webpackChunkName: "get-started.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/get-started.html.js"), meta: {"title":"Kurulum"} }],
   ["/getting-started.html", { loader: () => import(/* webpackChunkName: "getting-started.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/getting-started.html.js"), meta: {"title":"Başlangıç"} }],
+  ["/listeler.html", { loader: () => import(/* webpackChunkName: "listeler.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/listeler.html.js"), meta: {"title":"Listeler"} }],
   ["/markdown-cheat-sheet.html", { loader: () => import(/* webpackChunkName: "markdown-cheat-sheet.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/markdown-cheat-sheet.html.js"), meta: {"title":"Markdown Cheat Sheet"} }],
   ["/nesne.html", { loader: () => import(/* webpackChunkName: "nesne.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/nesne.html.js"), meta: {"title":"İş Nesnesi Ekleme"} }],
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Anasayfa - Timya/BPM"} }],
+  ["/roller.html", { loader: () => import(/* webpackChunkName: "roller.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/roller.html.js"), meta: {"title":"Roller"} }],
   ["/surec.html", { loader: () => import(/* webpackChunkName: "surec.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/surec.html.js"), meta: {"title":"Süreç Oluşturma Adımları"} }],
   ["/veritanim.html", { loader: () => import(/* webpackChunkName: "veritanim.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/veritanim.html.js"), meta: {"title":"Veri Tanımlama Adımları"} }],
   ["/yeniproje.html", { loader: () => import(/* webpackChunkName: "yeniproje.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/yeniproje.html.js"), meta: {"title":"Proje Oluşturma"} }],
