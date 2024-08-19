@@ -1,47 +1,47 @@
 <template><div><h1 id="is-nesnesi-ekleme" tabindex="-1"><a class="header-anchor" href="#is-nesnesi-ekleme"><span>İş Nesnesi Ekleme</span></a></h1>
-<p>İş nesneleri, veritabanı bağlantılarını yönetir ve bu bağlantıları kullanarak veritabanı ile etkileşim sağlar. Örneğin, bir formun departman bilgilerini eklemek için iş nesnelerinin kullanımı şu şekilde gerçekleşir:</p>
+<h3 id="is-nesnesi-ozellikleri" tabindex="-1"><a class="header-anchor" href="#is-nesnesi-ozellikleri"><span>İş Nesnesi Özellikleri</span></a></h3>
+<p>İş nesnelerinde bağlantı bilgileri saklanır.</p>
+<p><img src="/TimyaBPM-Documents/nesne43.png" alt="IIS Kurulumu"></p>
 <ul>
-<li>Bağlantılar  kısmında <strong>DefaultDatabase</strong> oluşturulmuştur.</li>
+<li><strong>ID</strong>: Bu alan, iş nesnesinin benzersiz kimlik numarasını gösterir. Sistemde iş nesnesini tanımlamak için kullanılır.</li>
+<li><strong>Adı</strong>: İş nesnesinin adını belirtir.</li>
+<li><strong>Tipi</strong>: İş nesnesinin türünü belirler. İş nesneleri üç türden biri olabilir:
+<ul>
+<li><strong>Query</strong></li>
+<li><strong>Table</strong></li>
+<li><strong>Scripted</strong></li>
 </ul>
-<p><img src="/TimyaBPM-Documents/bağlantıı1.png" alt="Şekil 2"></p>
+</li>
+<li><strong>Bağlantılar</strong>: Bağlantılarda tanımlanan verileri gösterir.</li>
+</ul>
+<h3 id="parametreler" tabindex="-1"><a class="header-anchor" href="#parametreler"><span>Parametreler</span></a></h3>
+<p>SQL sorgusu parametrik olarak çalışacaksa, <code v-pre>@</code> işareti ile parametreler eklenir. Daha sonra, parametreler bölümünde bu parametreler tanımlanır.Bu işlem,  ekleme ve çıkarma işlemleriyle gerçekleştirilir.</p>
+<ul>
+<li><strong>Key:</strong> Sorgu metninde kullanılan parametrenin adı ile aynı olmalıdır.</li>
+<li><strong>Type:</strong> Parametrenin veri tipi belirlenir.</li>
+</ul>
+<p><img src="/TimyaBPM-Documents/nesne42.png" alt="IIS Kurulumu"></p>
+<h3 id="columns" tabindex="-1"><a class="header-anchor" href="#columns"><span>Columns</span></a></h3>
+<p>Sorgunun hangi sütunları seçeceğini ve nasıl görüntüleneceğini belirler.Bu işlem,  ekleme ve çıkarma işlemleriyle gerçekleştirilir.</p>
+<ul>
+<li><strong>Key:</strong> Veritabanındaki sütun adı.</li>
+<li><strong>Type:</strong> Sütunun veri tipini belirtir .</li>
+<li><strong>Title:</strong> Kullanıcıya görünen sütun başlığı.</li>
+<li><strong>Values:</strong> Sütunların işlevselliğini  ve kullanım durumlarını tanımlar.</li>
+</ul>
+<p><strong>Values</strong> seçenekleri:</p>
 <ol>
-<li><strong>Admin Menü Kısmı:</strong>
-<ul>
-<li>Admin menü kısmından <strong>Ayarlar</strong> bölümüne gidilir.</li>
-<li>Ardından, <strong>Departman</strong> kısmına gidilir.</li>
-<li><strong>Yeni</strong> butonuna basarak girilmesi gereken departmanlar eklenir.</li>
-</ul>
-</li>
-</ol>
-<p><img src="/TimyaBPM-Documents/iş1.png" alt="Şekil 2"></p>
-<ol start="2">
 <li>
-<p><strong>Kullanıcılar:</strong></p>
-<ul>
-<li>Atanılması istenilen kullanıcı bilgileri seçilir.</li>
-</ul>
+<p><strong>null:</strong> Sütunun boş (null) değer almasını ifade eder.</p>
+</li>
+<li>
+<p><strong>IsValue:</strong> Sütunun veritabanına yazılacak değerini belirtir.</p>
+</li>
+<li>
+<p><strong>IsName:</strong> Sütunun <strong>başlık</strong> olarak görünmesini sağlar.</p>
 </li>
 </ol>
-<p><img src="/TimyaBPM-Documents/iş8.png" alt="Şekil 2"></p>
-<ol start="3">
-<li><strong>Database Bağlantısı:</strong>
-<ul>
-<li>Form kısmına departman eklemek için veritabanında <strong>Departman</strong> tablosuna gidilir.</li>
-<li>Aşağıdaki kodlar, database bağlantısını eklemek için iş nesnelerinde sorgu metni kısmına  eklenir:<div class="language-sql line-numbers-mode" data-highlighter="prismjs" data-ext="sql" data-title="sql"><pre v-pre class="language-sql"><code><span class="line"><span class="token keyword">SELECT</span> <span class="token keyword">TOP</span> <span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span> <span class="token punctuation">[</span>DepartmentId<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span>DepartmentName<span class="token punctuation">]</span></span>
-<span class="line"><span class="token keyword">FROM</span> <span class="token punctuation">[</span>Departments<span class="token punctuation">]</span></span>
-<span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div></li>
-</ul>
-</li>
-</ol>
-<p><img src="/TimyaBPM-Documents/iş2.png" alt="Şekil 2">
-4. <strong>Form Kısmına Ekleme:</strong></p>
-<ul>
-<li>Form kısmın da <strong>Departman</strong> kısmı eklenir.</li>
-<li>Seçenekler kısmı manuel değil, <strong>Data Source</strong> tıklanarak bilgiler veritabanından alınır.</li>
-</ul>
-<p><img src="/TimyaBPM-Documents/iş3.png" alt="Şekil 2">
-<img src="/TimyaBPM-Documents/iş4.png" alt="Şekil 2"></p>
+<p><img src="/TimyaBPM-Documents/nesne41.png" alt="IIS Kurulumu"></p>
 </div></template>
 
 

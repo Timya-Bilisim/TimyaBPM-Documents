@@ -6,7 +6,7 @@ Yeni bir süreç geliştirmek için, süreç bölümünde artı işaretine tıkl
 
 
 
- **"Process General"** kısmında **Name** alanına sürecin kullanıcılara gözükecek isim verilir. **ID** kısmı ise sistemde saklanacak olan isimdir. Bu alanda boşluk ve Türkçe karakterler kullanılmaz.
+ **"Process General"** kısmında **Name** alanına sürecin kullanıcılara gözükecek isim girilir. **ID** kısmı sistemde saklanacak olan isimdir. Bu alanda boşluk ve Türkçe karakterler kullanılmaz.
 
 
 ![alt text](/TimyaBPM-Documents/surecc1.png) 
@@ -16,9 +16,7 @@ Yeni bir süreç geliştirmek için, süreç bölümünde artı işaretine tıkl
 ![alt text](/TimyaBPM-Documents/surecc2.png) 
 
 
-Süreç numaralandırması yapmak için **Properties** bölümün **Number Prefix** kısmına aşağıdaki kod yazılır:
-
-
+**Properties** kısmında, **Number Prefix** bölümünde,  süreç numaralandırmasının aşağıdaki yönergelere göre yapılandırılması gerekmektedir:
 
 `GLN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}`
 
@@ -29,7 +27,7 @@ Süreç numaralandırması yapmak için **Properties** bölümün **Number Prefi
    - Belgeye verilen sıra numarasını belirtir.
    
 3. **Tablo Numarası:** `{IDTABLE:GLOBALID}`
-   - Numaralandırmanın yapılacağı tabloyu gösterir. `GLOBALID` ifadesinin önüne tablo adı eklenir.  Aynı ve farklı tablolara göre numaralandırma farklı olacaktır: 
+   - Numaralandırmanın yapılacağı tabloyu gösterir. `GLOBALID` ifadesinin önüne tablo adı eklenir. Aynı tablolarda ve farklı tablolarda numaralandırma sistemleri aşağıdaki gibi farklılık gösterir:
 
 #### Farklı Tablolara Göre Numaralandırma
 
@@ -65,29 +63,43 @@ Süreç numaralandırması yapmak için **Properties** bölümün **Number Prefi
 
 
 #### Başlat
-Süreç haritasındaki   yuvarlak şekiller süreç başlatma aksiyonlarını ifade eder işaretine tıklanır. **Name** kısmı kullanıcının süreci başlatmak için tıklayacağı butonun ismidir . **ID** kısmı ise sistemde saklanacak olan isimdir.  
+Süreç haritasındaki yuvarlak şekiller, süreç başlatma aksiyonlarını ifade eder. Bu aksiyona tıklanarak sağ tarafta görüntülenecek alanlar aşağıda belirtildiği şekilde tanımlanmalıdır.
+
+- **Name:** Kullanıcının süreci başlatmak için tıklayacağı butonun ismidir.
+- **ID:** Sistemde saklanacak olan isimdir.Bu alanda boşluk ve Türkçe karakterler kullanılmaz.
+
 ![alt text](/TimyaBPM-Documents/surecc3.png) 
 
 
-**Properties** kısmı aşağıdaki gibi doldurulur:
+**Properties** bölümü aşağıdaki şekilde tanımlanır:
 
-- **Available to Roles:** Sürece başlatabilecek rolleri seçilir.
-- **To Do List:** Süreç başladıktan iş atamasının ilk atanacağı rolü belirtir.Mouse ile **Roller** kısmından çekilip **Seçilen Roller** kısmına bıraklır.
+
+- **Available to Roles:** Süreci başlatabilecek roller seçilir.
+- **To Do List:** Süreç başladıktan sonra iş atamasının ilk yapılacağı rolü belirtir.Mouse ile **Roller** kısmından sürüklenip **Seçilen Roller** kısmına bırakılarak atanır.
 
  ![alt text](/TimyaBPM-Documents/roller8.png) 
 
-- **Form List:** Süreç başlatıldığında kullanılacak formu seçilir.
+- **Form List:** Süreç başlatıldığında kullanılacak form seçilir.
 
 
 ![alt text](/TimyaBPM-Documents/surecc4.png) 
 
 
 #### Flow ve Aksiyon
- **Başlat** butonunun yanında çıkan kare işaretine tıklanır. **Flow** ve **Aksiyon** kısımları aşağıdaki gibi oluştulur.
+**Başlat** butonunun yanındaki kare işaretine tıklanır. **Flow** ve **Aksiyon** kısımları aşağıdaki gibi oluşturulur.
+
+- **Flow:** Süreç adımları arasındaki akışı ve bağlantıları tanımlar.
+- **Aksiyon:** Belirli bir adımda gerçekleştirilecek işlemleri veya görevleri tanımlar.
 
 ![Şekil 2](/TimyaBPM-Documents/surecg1.png) 
 
- Aksiyon event için **Change Element** seçilir.
+Aksiyon eventi için **Change Element** seçilir. Bu seçenek, sürecin ihtiyaçlarına uygun görevlerin (task) belirlenmesini sağlar ve sürecin gereksinimlerine göre yapılandırılır. Örneğin:
+
+- **User Task:** Kullanıcının manuel olarak tamamlaması gereken görevleri ifade eder.
+- **Send Task:** Mesaj veya e-posta  gönderen görevleri ifade eder.
+
+
+
 ![Şekil 2](/TimyaBPM-Documents/anahtar.png) 
 
 

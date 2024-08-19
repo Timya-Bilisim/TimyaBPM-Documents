@@ -1,11 +1,11 @@
 <template><div><h1 id="surec-olusturma-adımları" tabindex="-1"><a class="header-anchor" href="#surec-olusturma-adımları"><span>Süreç Oluşturma Adımları</span></a></h1>
 <h2 id="_1-1-surec-gelistirme" tabindex="-1"><a class="header-anchor" href="#_1-1-surec-gelistirme"><span>1.1. Süreç Geliştirme</span></a></h2>
 <p>Yeni bir süreç geliştirmek için, süreç bölümünde artı işaretine tıklanır ve <strong>&quot;New Map&quot;</strong> seçeneği ile yeni bir süreç haritası oluşturulur. Süreç haritası üzerinde boş bir alana tıklandığında, süreç özelliklerinin değiştirileceği kısım sağ tarafta görünür.</p>
-<p><strong>&quot;Process General&quot;</strong> kısmında <strong>Name</strong> alanına sürecin kullanıcılara gözükecek isim verilir. <strong>ID</strong> kısmı ise sistemde saklanacak olan isimdir. Bu alanda boşluk ve Türkçe karakterler kullanılmaz.</p>
+<p><strong>&quot;Process General&quot;</strong> kısmında <strong>Name</strong> alanına sürecin kullanıcılara gözükecek isim girilir. <strong>ID</strong> kısmı sistemde saklanacak olan isimdir. Bu alanda boşluk ve Türkçe karakterler kullanılmaz.</p>
 <p><img src="/TimyaBPM-Documents/surecc1.png" alt="alt text"></p>
 <p><strong>Properties</strong> kısmında, <strong>Accessing Roles</strong> bölümünde, sürece erişebilecek roller seçilir (roller ayrıca açıklanacaktır).</p>
 <p><img src="/TimyaBPM-Documents/surecc2.png" alt="alt text"></p>
-<p>Süreç numaralandırması yapmak için <strong>Properties</strong> bölümün <strong>Number Prefix</strong> kısmına aşağıdaki kod yazılır:</p>
+<p><strong>Properties</strong> kısmında, <strong>Number Prefix</strong> bölümünde,  süreç numaralandırmasının aşağıdaki yönergelere göre yapılandırılması gerekmektedir:</p>
 <p><code v-pre>GLN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}</code></p>
 <ol>
 <li>
@@ -20,7 +20,7 @@
 <li>
 <p><strong>Tablo Numarası:</strong> <code v-pre>{IDTABLE:GLOBALID}</code></p>
 <ul>
-<li>Numaralandırmanın yapılacağı tabloyu gösterir. <code v-pre>GLOBALID</code> ifadesinin önüne tablo adı eklenir.  Aynı ve farklı tablolara göre numaralandırma farklı olacaktır:</li>
+<li>Numaralandırmanın yapılacağı tabloyu gösterir. <code v-pre>GLOBALID</code> ifadesinin önüne tablo adı eklenir. Aynı tablolarda ve farklı tablolarda numaralandırma sistemleri aşağıdaki gibi farklılık gösterir:</li>
 </ul>
 </li>
 </ol>
@@ -63,23 +63,35 @@
 <p><img src="/TimyaBPM-Documents/sıralama.png" alt="alt text"></p>
 <h3 id="surec-aksiyonları" tabindex="-1"><a class="header-anchor" href="#surec-aksiyonları"><span>Süreç Aksiyonları</span></a></h3>
 <h4 id="baslat" tabindex="-1"><a class="header-anchor" href="#baslat"><span>Başlat</span></a></h4>
-<p>Süreç haritasındaki   yuvarlak şekiller süreç başlatma aksiyonlarını ifade eder işaretine tıklanır. <strong>Name</strong> kısmı kullanıcının süreci başlatmak için tıklayacağı butonun ismidir . <strong>ID</strong> kısmı ise sistemde saklanacak olan isimdir.<br>
-<img src="/TimyaBPM-Documents/surecc3.png" alt="alt text"></p>
-<p><strong>Properties</strong> kısmı aşağıdaki gibi doldurulur:</p>
+<p>Süreç haritasındaki yuvarlak şekiller, süreç başlatma aksiyonlarını ifade eder. Bu aksiyona tıklanarak sağ tarafta görüntülenecek alanlar aşağıda belirtildiği şekilde tanımlanmalıdır.</p>
 <ul>
-<li><strong>Available to Roles:</strong> Sürece başlatabilecek rolleri seçilir.</li>
-<li><strong>To Do List:</strong> Süreç başladıktan iş atamasının ilk atanacağı rolü belirtir.Mouse ile <strong>Roller</strong> kısmından çekilip <strong>Seçilen Roller</strong> kısmına bıraklır.</li>
+<li><strong>Name:</strong> Kullanıcının süreci başlatmak için tıklayacağı butonun ismidir.</li>
+<li><strong>ID:</strong> Sistemde saklanacak olan isimdir.Bu alanda boşluk ve Türkçe karakterler kullanılmaz.</li>
+</ul>
+<p><img src="/TimyaBPM-Documents/surecc3.png" alt="alt text"></p>
+<p><strong>Properties</strong> bölümü aşağıdaki şekilde tanımlanır:</p>
+<ul>
+<li><strong>Available to Roles:</strong> Süreci başlatabilecek roller seçilir.</li>
+<li><strong>To Do List:</strong> Süreç başladıktan sonra iş atamasının ilk yapılacağı rolü belirtir.Mouse ile <strong>Roller</strong> kısmından sürüklenip <strong>Seçilen Roller</strong> kısmına bırakılarak atanır.</li>
 </ul>
 <p><img src="/TimyaBPM-Documents/roller8.png" alt="alt text"></p>
 <ul>
-<li><strong>Form List:</strong> Süreç başlatıldığında kullanılacak formu seçilir.</li>
+<li><strong>Form List:</strong> Süreç başlatıldığında kullanılacak form seçilir.</li>
 </ul>
 <p><img src="/TimyaBPM-Documents/surecc4.png" alt="alt text"></p>
 <h4 id="flow-ve-aksiyon" tabindex="-1"><a class="header-anchor" href="#flow-ve-aksiyon"><span>Flow ve Aksiyon</span></a></h4>
-<p><strong>Başlat</strong> butonunun yanında çıkan kare işaretine tıklanır. <strong>Flow</strong> ve <strong>Aksiyon</strong> kısımları aşağıdaki gibi oluştulur.</p>
+<p><strong>Başlat</strong> butonunun yanındaki kare işaretine tıklanır. <strong>Flow</strong> ve <strong>Aksiyon</strong> kısımları aşağıdaki gibi oluşturulur.</p>
+<ul>
+<li><strong>Flow:</strong> Süreç adımları arasındaki akışı ve bağlantıları tanımlar.</li>
+<li><strong>Aksiyon:</strong> Belirli bir adımda gerçekleştirilecek işlemleri veya görevleri tanımlar.</li>
+</ul>
 <p><img src="/TimyaBPM-Documents/surecg1.png" alt="Şekil 2"></p>
-<p>Aksiyon event için <strong>Change Element</strong> seçilir.
-<img src="/TimyaBPM-Documents/anahtar.png" alt="Şekil 2"></p>
+<p>Aksiyon eventi için <strong>Change Element</strong> seçilir. Bu seçenek, sürecin ihtiyaçlarına uygun görevlerin (task) belirlenmesini sağlar ve sürecin gereksinimlerine göre yapılandırılır. Örneğin:</p>
+<ul>
+<li><strong>User Task:</strong> Kullanıcının manuel olarak tamamlaması gereken görevleri ifade eder.</li>
+<li><strong>Send Task:</strong> Mesaj veya e-posta  gönderen görevleri ifade eder.</li>
+</ul>
+<p><img src="/TimyaBPM-Documents/anahtar.png" alt="Şekil 2"></p>
 <h4 id="sureci-sonlandırma" tabindex="-1"><a class="header-anchor" href="#sureci-sonlandırma"><span>Süreci Sonlandırma</span></a></h4>
 <p>Süreci sonlandırmak için resimde gösterilen süreç sonlandrıma event'i  seçilir.</p>
 <p><img src="/TimyaBPM-Documents/son1.png" alt="Şekil 2">
