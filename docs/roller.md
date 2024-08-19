@@ -1,8 +1,6 @@
 # Roller
 
-
-
- **Roller** kısmından yeni dinamik roller eklemektir. Bu aşamada, **ID**, **alan** ve **harita** kısımları doldurulur. Harita kısmında, veri tanımlarında kaydedilen bilgilere göre aşağıdaki gibi bir kod yazılır:
+**Roller** kısmından yeni dinamik roller eklemektir. Bu aşamada, **ID**, **alan** ve **harita** kısımları doldurulur. Harita kısmında, veri tanımlarında kaydedilen bilgilere göre aşağıdaki gibi bir kod yazılır:
 
 ![alt text](/TimyaBPM-Documents/roller1.png) 
    ```csharp

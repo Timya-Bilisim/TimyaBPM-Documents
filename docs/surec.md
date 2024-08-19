@@ -6,26 +6,70 @@ Yeni bir süreç geliştirmek için, süreç bölümünde artı işaretine tıkl
 
 
 
-İlk olarak, **"Process General"** kısmında **Name** alanına sürecin kullanıcılara gözükecek isim verilir. **ID** kısmı ise sistemde saklanacak olan isimdir. Bu alanda boşluk ve Türkçe karakterler kullanılmaz.
+ **"Process General"** kısmında **Name** alanına sürecin kullanıcılara gözükecek isim verilir. **ID** kısmı ise sistemde saklanacak olan isimdir. Bu alanda boşluk ve Türkçe karakterler kullanılmaz.
 
 
 ![alt text](/TimyaBPM-Documents/surecc1.png) 
 
-Süreç numaralandırması yapmak için **Properties** bölümüne gidilir ve **Number Prefix** kısmına aşağıdaki kod yazılır:
-
-`GLN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}`
-
 **Properties** kısmında, **Accessing Roles** bölümünde, sürece erişebilecek roller seçilir (roller ayrıca açıklanacaktır).
-
 
 ![alt text](/TimyaBPM-Documents/surecc2.png) 
 
 
+Süreç numaralandırması yapmak için **Properties** bölümün **Number Prefix** kısmına aşağıdaki kod yazılır:
+
+
+
+`GLN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}`
+
+1. **Yıl Bilgisi:** `GLN-{yyyy}`
+
+   
+2. **Sıra Numarası:** `{ID:000}`
+   - Belgeye verilen sıra numarasını belirtir.
+   
+3. **Tablo Numarası:** `{IDTABLE:GLOBALID}`
+   - Numaralandırmanın yapılacağı tabloyu gösterir. `GLOBALID` ifadesinin önüne tablo adı eklenir.  Aynı ve farklı tablolara göre numaralandırma farklı olacaktır: 
+
+#### Farklı Tablolara Göre Numaralandırma
+
+- **Format:** `GLN-{yyyy} - {ID:000} {IDTABLE:GELENGLOBALID}`
+
+  - GLN-2024-001
+  - GLN-2024-002
+  - GLN-2024-003
+
+- **Format:** `GDN-{yyyy} - {ID:000} {IDTABLE:GIDENGLOBALID}`
+
+  - GDN-2024-001
+  - GDN-2024-002
+
+#### Aynı Tablolara Göre Numaralandırma
+
+- **Format:** `GLN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}`
+
+  - GLN-2024-001
+  - GLN-2024-003
+  - GLN-2024-004
+
+- **Format:** `GDN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}`
+
+  - GDN-2024-002
+  - GDN-2024-005
+
+![alt text](/TimyaBPM-Documents/sıralama.png) 
+
+
+
+### Süreç Aksiyonları
+
+
+#### Başlat
 Süreç haritasındaki   yuvarlak şekiller süreç başlatma aksiyonlarını ifade eder işaretine tıklanır. **Name** kısmı kullanıcının süreci başlatmak için tıklayacağı butonun ismidir . **ID** kısmı ise sistemde saklanacak olan isimdir.  
 ![alt text](/TimyaBPM-Documents/surecc3.png) 
 
 
-**Properties** kısmını aşağıdaki gibi doldurulur:
+**Properties** kısmı aşağıdaki gibi doldurulur:
 
 - **Available to Roles:** Sürece başlatabilecek rolleri seçilir.
 - **To Do List:** Süreç başladıktan iş atamasının ilk atanacağı rolü belirtir.Mouse ile **Roller** kısmından çekilip **Seçilen Roller** kısmına bıraklır.
@@ -38,7 +82,7 @@ Süreç haritasındaki   yuvarlak şekiller süreç başlatma aksiyonlarını if
 ![alt text](/TimyaBPM-Documents/surecc4.png) 
 
 
-
+#### Flow ve Aksiyon
  **Başlat** butonunun yanında çıkan kare işaretine tıklanır. **Flow** ve **Aksiyon** kısımları aşağıdaki gibi oluştulur.
 
 ![Şekil 2](/TimyaBPM-Documents/surecg1.png) 
@@ -48,8 +92,8 @@ Süreç haritasındaki   yuvarlak şekiller süreç başlatma aksiyonlarını if
 
 
 
-   **Süreci Sonlandırma**
- için tekrar işaret üzerine tıklanır ve resimde gösterilen süreç sonlandrıma event'i  seçilir.
+ #### Süreci Sonlandırma
+Süreci sonlandırmak için resimde gösterilen süreç sonlandrıma event'i  seçilir.
 
 ![Şekil 2](/TimyaBPM-Documents/son1.png) 
 ![Şekil 2](/TimyaBPM-Documents/son2.png) 

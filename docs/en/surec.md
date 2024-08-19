@@ -1,80 +1,110 @@
 # Process Creation Steps
 
-## 1.1. Creating a Process
+## 1.1. Process Development
 
-To create a new process, click on the plus sign in the process section and start a new process with the "New Map" option. First, in the "Process General" section, give the process a name in the **Name** field. The **ID** field is the name that will be stored in the system.
+To develop a new process, click on the plus sign in the process section and create a new process map with the **"New Map ”** option. When you click on an empty area on the process map, the section where the process properties will be changed appears on the right side.
+
+
+
+ In the **"Process General ”** section, the name of the process that will be visible to the users is given in the **Name** field. **ID** is the name that will be stored in the system. Spaces and Turkish characters are not used in this field.
+
+
 ![alt text](/TimyaBPM-Documents/surecc1.png) 
 
-To number the process, go to the **Properties** section and enter the following code in the **Number Prefix** field:
-
-`GLN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}`
-
-In the **Properties** section, select **Accessing Roles** to determine who can access the process.
+In **Properties**, in **Accessing Roles**, select the roles that can access the process (roles will be explained separately).
 
 ![alt text](/TimyaBPM-Documents/surecc2.png) 
 
-## 1.2. Starting the Process
 
-To start the process, click on the round (start process) icon in the system. Enter appropriate names for the process in the **Name** and **ID** fields. Then fill out the **Properties** section as shown below:
+To make process numbering, type the following code in the **Number Prefix** section of **Properties**:
 
-![alt text](/TimyaBPM-Documents/surecc3.png) 
 
-- **Available to Roles:** Select the roles that can access the process.
-- **To Do List:** Select the person who will start and manage the process.
-- **Form List:** Select the form that will be used when the process starts.
 
-![alt text](/TimyaBPM-Documents/surecc4.png) 
+`GLN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}`
 
-## 1.3. Publishing the Process
+1. **Year Information:** `GLN-{yyyy}`
 
-Before the process can be used, it must be published. To do this, click on "Admin Menu" and select **Projects**, then click the **Publish** button on the relevant project. (Image 1)
+   
+2. **Sequence Number:** `{ID:000}`
+   - Specifies the sequence number given to the document.
+   
+3. **Table Number:** `{{IDTABLE:GLOBALID}`
+   - Indicates the table to be numbered. The table name is prepended to `GLOBALID`.  Numbering will be different for same and different tables: 
 
-Then, click on the "Start Process" section and start the process using the **Start** option. (Image 2)
+#### Numbering by Different Tables
 
-*Image 1: Publishing the Process*
-![Figure 1](/TimyaBPM-Documents/surecc5.png)  
+- **Format:** `GLN-{yyyy} - {ID:000} {IDTABLE:GELENGLOBALID}`
 
-*Image 2: Starting the Process*
-![Figure 2](/TimyaBPM-Documents/surecc6.png) 
+  - GLN-2024-001
+  - GLN-2024-002
+  - GLN-2024-003
 
-## 1.4. Developing the Process
+- **Format:** `GDN-{yyyy} - {ID:000} {IDTABLE:GIDENGLOBALID}`
 
-In the process section, after clicking the "Send" button, click on the square icon next to the "Start" button to move to the next section. In the screen that appears, click on each shape and enter names.
+  - GDN-2024-001
+  - GDN-2024-002
 
-![Figure 2](/TimyaBPM-Documents/surecg1.png) 
+#### Numbering According to the Same Tables
 
-Then, it is necessary to add the newly added part to the system. To do this, click on the icon again, select the "Key" section, and define the user.
-![Şekil 2](/TimyaBPM-Documents/surec2.png) 
+- **Format:** `GLN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}`
 
-### Roles
+  - GLN-2024-001
+  - GLN-2024-003
+  - GLN-2024-004
 
-In the "To-Do List" section, roles are added. New dynamic roles are added from the "Roles" section. The ID, field, and map sections are filled in. In the map section, the information is written as shown below, according to the data saved in the definitions.
+- **Format:** `GDN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}`
 
-![Figure 2](/TimyaBPM-Documents/roller1.png) 
-![Figure 2](/TimyaBPM-Documents/roller2.png) 
+  - GDN-2024-002
+  - GDN-2024-005
 
-Then, in the "To-Do List" section of the process, select the role defined in the roles section, and choose the form created from the "Form List" section.
 
-![Figure 2](/TimyaBPM-Documents/roller3.png) 
 
-### Ending the Process
 
-To end the process, click on the icon again, select the image shown in the picture, enter the names, and fill in the necessary fields.
 
-![Figure 2](/TimyaBPM-Documents/son1.png) 
-![Figure 2](/TimyaBPM-Documents/son2.png) 
+![Numbering](/TimyaBPM-Documents/sıralama.png)
 
-### Reports and Lists
+### Process Actions
 
-In the start process section, the "End" button appears. When we end the process, we need to report it. To do this, create an object called "Completed Tasks" in the job objects.
+#### Start
 
-![Figure 2](/TimyaBPM-Documents/son3.png) 
-![Figure 2](/TimyaBPM-Documents/rapor.png) 
+The circular shapes on the process map represent process start actions. Click the icon to define these actions. The **Name** section is where you enter the button name that users will click to start the process. The **ID** section is the name used by the system.
 
-Then, create a report from the "Lists" section. The information should be entered as shown in the image below.
+![Start](/TimyaBPM-Documents/surecc3.png)
 
-![Figure 2](/TimyaBPM-Documents/rapor2.png) 
+**Properties** should be filled out as follows:
 
-The information that should be visible in the report section is as follows.
+- **Available to Roles:** Select the roles that can start the process.
+- **To Do List:** Specify the role to which the first task will be assigned after the process starts. Drag from **Roles** to **Selected Roles**.
 
-![Figure 2](/TimyaBPM-Documents/rapor3.png) 
+![Roles](/TimyaBPM-Documents/roller8.png)
+
+- **Form List:** Select the form to be used when the process is started.
+
+![Form List](/TimyaBPM-Documents/surecc4.png)
+
+#### Flow and Action
+
+Click the square icon next to the **Start** button. Define **Flow** and **Action** sections as shown below.
+
+![Flow and Action](/TimyaBPM-Documents/surecg1.png)
+
+For the action event, select **Change Element**.
+
+![Action Event](/TimyaBPM-Documents/anahtar.png)
+
+#### End Process
+
+To end the process, select the process end event as shown in the image.
+
+![End Process 1](/TimyaBPM-Documents/son1.png)
+![End Process 2](/TimyaBPM-Documents/son2.png)
+
+## 1.2. Publishing the Process
+
+To put the process into use, it must first be published. For this, click **Projects** under the "Admin Menu" and press the **Publish** button on the relevant project.
+
+![Publish Process](/TimyaBPM-Documents/surecc5.png)
+
+Then click **Start Process** and use the **Start** option to initiate the process.
+
+![Start Process](/TimyaBPM-Documents/surecc6.png)
