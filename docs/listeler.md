@@ -1,16 +1,16 @@
 # Listeler
 
-> -_Tanımlanan iş nesnelerinin raporda görünmesini sağlamak için listeler oluşturulmalıdır._
+> - _Tanımlanan iş nesnelerinin raporda görünmesini sağlamak için listeler oluşturulmalıdır._
 
-> -_Listelerin nasıl oluşturulduğu, örnek bir iş nesnesi üzerinden detaylıca açıklanmış ve aralarındaki bağlantılar gösterilmiştir._
+> - _Listelerin nasıl oluşturulduğu, örnek bir iş nesnesi üzerinden detaylıca açıklanmış ve aralarındaki bağlantılar gösterilmiştir._
 
 
----
+
 ### Örnek İş Nesnesi
 
 
 ![Şekil 2](/TimyaBPM-Documents/rapor.png) 
----
+
 
 İş nesnesinin verilerini listelemek için kullanılan SQL sorgusu örneği: 
 ```json
@@ -21,9 +21,9 @@ where p.Deleted <> 1 and p.Archived = 1
 ```
 ### Listenin Tanımlanması
 
-> -Listeler, sol kısımda yer alan **Listeler** bölümünden artı işaretine tıklanarak oluşturulur.
+> - Listeler, sol kısımda yer alan **Listeler** bölümünden artı işaretine tıklanarak oluşturulur.
 
-> -**CustomList** kısmında aşağıdaki alanlar doldurulur:
+> - **CustomList** kısmında aşağıdaki alanlar doldurulur:
 
 - **Adı:** Listenin sistemde görünen ismidir.
 - **İş Nesnesi:** Sistemde daha önce oluşturulmuş bir iş nesnesi seçilir.
@@ -31,13 +31,13 @@ where p.Deleted <> 1 and p.Archived = 1
 - **Kaydet:** Tüm alanlar doldurulduktan sonra Kaydet butonuna basılır.
 
 ![Şekil 2](/TimyaBPM-Documents/liste65.png) 
-----
+
 ### Kolonlar
 
-Kaydetme işlemi sonrası, raporda gösterilecek sütunlar aşağıda listelenir. Bu sütunlar, iş nesnesinden alınan verilere dayalı olarak yapılandırılır. Sütunların eklenmesi veya çıkarılması için **Ekle** ve **Çıkar** butonları kullanılır.
+> - Kaydetme işlemi sonrası, raporda gösterilecek sütunlar aşağıda listelenir. Bu sütunlar, iş nesnesinden alınan verilere dayalı olarak yapılandırılır. Sütunların eklenmesi veya çıkarılması için **Ekle** ve **Çıkar** butonları kullanılır.
 
 ![Şekil 2](/TimyaBPM-Documents/liste100.png) 
-----
+
 Doldurlması gereken alanlar.
 - **ID:** Her sütun için benzersiz bir kimlik numarası.
 - **Kolon Adı (Source Column Name):** Verinin alındığı kaynağın kolon adını ifade eder.
@@ -48,13 +48,12 @@ Doldurlması gereken alanlar.
 
 Yukarıda tanımlanan iş nesnesine göre oluşturulan **Liste**. (Bkz.Liste Örnek)
 
----
+
 **Liste Örnek**
 ![Şekil 2](/TimyaBPM-Documents/rapor2.png) 
----
 
----
+
+
 Rapor kısmında gözükmesi gereken bilgiler aşağıdaki gibidir.
 
 ![Şekil 2](/TimyaBPM-Documents/rapor3.png) 
----

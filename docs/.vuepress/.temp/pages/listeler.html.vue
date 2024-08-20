@@ -1,13 +1,16 @@
 <template><div><h1 id="listeler" tabindex="-1"><a class="header-anchor" href="#listeler"><span>Listeler</span></a></h1>
 <blockquote>
-<p>-<em>Tanımlanan iş nesnelerinin raporda görünmesini sağlamak için listeler oluşturulmalıdır.</em></p>
+<ul>
+<li><em>Tanımlanan iş nesnelerinin raporda görünmesini sağlamak için listeler oluşturulmalıdır.</em></li>
+</ul>
 </blockquote>
 <blockquote>
-<p>-<em>Listelerin nasıl oluşturulduğu, örnek bir iş nesnesi üzerinden detaylıca açıklanmış ve aralarındaki bağlantılar gösterilmiştir.</em></p>
+<ul>
+<li><em>Listelerin nasıl oluşturulduğu, örnek bir iş nesnesi üzerinden detaylıca açıklanmış ve aralarındaki bağlantılar gösterilmiştir.</em></li>
+</ul>
 </blockquote>
-<hr>
 <h3 id="ornek-is-nesnesi" tabindex="-1"><a class="header-anchor" href="#ornek-is-nesnesi"><span>Örnek İş Nesnesi</span></a></h3>
-<h2 id="" tabindex="-1"><a class="header-anchor" href="#"><span><img src="/TimyaBPM-Documents/rapor.png" alt="Şekil 2"></span></a></h2>
+<p><img src="/TimyaBPM-Documents/rapor.png" alt="Şekil 2"></p>
 <p>İş nesnesinin verilerini listelemek için kullanılan SQL sorgusu örneği:</p>
 <div class="language-json line-numbers-mode" data-highlighter="prismjs" data-ext="json" data-title="json"><pre v-pre class="language-json"><code><span class="line">select ProcessId<span class="token punctuation">,</span> m.Title MapName<span class="token punctuation">,</span> ProcessName<span class="token punctuation">,</span> p.Title<span class="token punctuation">,</span> StageCaption<span class="token punctuation">,</span> CreatedTime<span class="token punctuation">,</span> UpdatedTime<span class="token punctuation">,</span> DoubleField1<span class="token punctuation">,</span> StringField1<span class="token punctuation">,</span> StringField2 </span>
 <span class="line">from Processes p </span>
@@ -16,10 +19,14 @@
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="listenin-tanımlanması" tabindex="-1"><a class="header-anchor" href="#listenin-tanımlanması"><span>Listenin Tanımlanması</span></a></h3>
 <blockquote>
-<p>-Listeler, sol kısımda yer alan <strong>Listeler</strong> bölümünden artı işaretine tıklanarak oluşturulur.</p>
+<ul>
+<li>Listeler, sol kısımda yer alan <strong>Listeler</strong> bölümünden artı işaretine tıklanarak oluşturulur.</li>
+</ul>
 </blockquote>
 <blockquote>
-<p>-<strong>CustomList</strong> kısmında aşağıdaki alanlar doldurulur:</p>
+<ul>
+<li><strong>CustomList</strong> kısmında aşağıdaki alanlar doldurulur:</li>
+</ul>
 </blockquote>
 <ul>
 <li><strong>Adı:</strong> Listenin sistemde görünen ismidir.</li>
@@ -27,10 +34,14 @@
 <li><strong>Rol:</strong> Bu alanda, raporu kimlerin görebileceği seçilir.</li>
 <li><strong>Kaydet:</strong> Tüm alanlar doldurulduktan sonra Kaydet butonuna basılır.</li>
 </ul>
-<h2 id="-1" tabindex="-1"><a class="header-anchor" href="#-1"><span><img src="/TimyaBPM-Documents/liste65.png" alt="Şekil 2"></span></a></h2>
+<p><img src="/TimyaBPM-Documents/liste65.png" alt="Şekil 2"></p>
 <h3 id="kolonlar" tabindex="-1"><a class="header-anchor" href="#kolonlar"><span>Kolonlar</span></a></h3>
-<p>Kaydetme işlemi sonrası, raporda gösterilecek sütunlar aşağıda listelenir. Bu sütunlar, iş nesnesinden alınan verilere dayalı olarak yapılandırılır. Sütunların eklenmesi veya çıkarılması için <strong>Ekle</strong> ve <strong>Çıkar</strong> butonları kullanılır.</p>
-<h2 id="-2" tabindex="-1"><a class="header-anchor" href="#-2"><span><img src="/TimyaBPM-Documents/liste100.png" alt="Şekil 2"></span></a></h2>
+<blockquote>
+<ul>
+<li>Kaydetme işlemi sonrası, raporda gösterilecek sütunlar aşağıda listelenir. Bu sütunlar, iş nesnesinden alınan verilere dayalı olarak yapılandırılır. Sütunların eklenmesi veya çıkarılması için <strong>Ekle</strong> ve <strong>Çıkar</strong> butonları kullanılır.</li>
+</ul>
+</blockquote>
+<p><img src="/TimyaBPM-Documents/liste100.png" alt="Şekil 2"></p>
 <p>Doldurlması gereken alanlar.</p>
 <ul>
 <li><strong>ID:</strong> Her sütun için benzersiz bir kimlik numarası.</li>
@@ -41,12 +52,10 @@
 <li><strong>Tip (Type):</strong> Verinin tipini belirler.</li>
 </ul>
 <p>Yukarıda tanımlanan iş nesnesine göre oluşturulan <strong>Liste</strong>. (Bkz.Liste Örnek)</p>
-<hr>
-<h2 id="liste-ornek" tabindex="-1"><a class="header-anchor" href="#liste-ornek"><span><strong>Liste Örnek</strong>
-<img src="/TimyaBPM-Documents/rapor2.png" alt="Şekil 2"></span></a></h2>
-<hr>
+<p><strong>Liste Örnek</strong>
+<img src="/TimyaBPM-Documents/rapor2.png" alt="Şekil 2"></p>
 <p>Rapor kısmında gözükmesi gereken bilgiler aşağıdaki gibidir.</p>
-<h2 id="-3" tabindex="-1"><a class="header-anchor" href="#-3"><span><img src="/TimyaBPM-Documents/rapor3.png" alt="Şekil 2"></span></a></h2>
+<p><img src="/TimyaBPM-Documents/rapor3.png" alt="Şekil 2"></p>
 </div></template>
 
 

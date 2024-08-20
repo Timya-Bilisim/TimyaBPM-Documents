@@ -104,8 +104,9 @@
 <li>Süreci sonlandırmak için resimde gösterilen süreç sonlandrıma event'i  seçilir.</li>
 </ul>
 </blockquote>
-<h2 id="-1" tabindex="-1"><a class="header-anchor" href="#-1"><span><img src="/TimyaBPM-Documents/son1.png" alt="alt text">
-<img src="/TimyaBPM-Documents/son2.png" alt="alt text"></span></a></h2>
+<p><img src="/TimyaBPM-Documents/son1.png" alt="alt text">
+<img src="/TimyaBPM-Documents/son2.png" alt="alt text"></p>
+<hr>
 <h2 id="_1-2-sureci-yayınlama" tabindex="-1"><a class="header-anchor" href="#_1-2-sureci-yayınlama"><span>1.2. Süreci Yayınlama</span></a></h2>
 <blockquote>
 <ul>

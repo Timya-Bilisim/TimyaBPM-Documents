@@ -3,12 +3,7 @@
  Roller, iki ana kategoriye ayrılır: **Dinamik** ve **Statik**. Her iki kategori için rollerin nasıl ekleneceği ve tanımlanacağı detaylı olarak açıklanmıştır:
 
 
-
-
-
 ## Dinamik Roller
-
-
 
 
 > - Dinamik roller, süreçlere  bağlı olarak atanır ve bu nedenle esneklik sağlar. Bu atama, süreç içindeki  koşullara bağlı olarak değişir.

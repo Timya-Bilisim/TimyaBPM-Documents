@@ -111,6 +111,7 @@ Aksiyon eventi için **Change Element** seçilir. Bu seçenek, sürecin ihtiyaç
 
 ![alt text](/TimyaBPM-Documents/son1.png) 
 ![alt text](/TimyaBPM-Documents/son2.png) 
+
 ---
 
 ## 1.2. Süreci Yayınlama
