@@ -20,21 +20,21 @@
 
 ### 1.3. Proje Düzenleme
 
-- Oluşturulan proje, admin menüde **"Projeler"** altında görünür.(Resim1)
+- Oluşturulan proje, admin menüde **"Projeler"** altında görünür.( Bkz.Görsel 1)
 - Her projenin yanında **"Düzenle"**, **"Sil"** ve **"Yayınla"** butonları bulunur. Proje içeriğini düzenlemek ve gerekli bilgileri eklemek için **"Düzenle"** butonuna tıklayın.
-(Resim2)
+( Bkz.Görsel 2)
 
-- Proje içeriğini düzenleyebilir ve gerekli bilgileri ekleyebilirsiniz. (Resim3)
+- Proje içeriğini düzenleyebilir ve gerekli bilgileri ekleyebilirsiniz. ( Bkz.Görsel 3)
 
-*Resim 1
+*Görsel 1
 ![Şekil 1](/TimyaBPM-Documents/proje.png)  
 
 
-*Resim 2
+*Görsel 2
 ![Şekil 2](/TimyaBPM-Documents/proje4.png)  
 
 
-*Resim 3
+*Görsel 3
 ![Şekil 3](/TimyaBPM-Documents/proje5.png)  
 
 

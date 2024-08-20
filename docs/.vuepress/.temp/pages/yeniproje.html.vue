@@ -17,21 +17,21 @@
 <h3 id="_1-3-proje-duzenleme" tabindex="-1"><a class="header-anchor" href="#_1-3-proje-duzenleme"><span>1.3. Proje Düzenleme</span></a></h3>
 <ul>
 <li>
-<p>Oluşturulan proje, admin menüde <strong>&quot;Projeler&quot;</strong> altında görünür.(Resim1)</p>
+<p>Oluşturulan proje, admin menüde <strong>&quot;Projeler&quot;</strong> altında görünür.( Bkz.Görsel 1)</p>
 </li>
 <li>
 <p>Her projenin yanında <strong>&quot;Düzenle&quot;</strong>, <strong>&quot;Sil&quot;</strong> ve <strong>&quot;Yayınla&quot;</strong> butonları bulunur. Proje içeriğini düzenlemek ve gerekli bilgileri eklemek için <strong>&quot;Düzenle&quot;</strong> butonuna tıklayın.
-(Resim2)</p>
+( Bkz.Görsel 2)</p>
 </li>
 <li>
-<p>Proje içeriğini düzenleyebilir ve gerekli bilgileri ekleyebilirsiniz. (Resim3)</p>
+<p>Proje içeriğini düzenleyebilir ve gerekli bilgileri ekleyebilirsiniz. ( Bkz.Görsel 3)</p>
 </li>
 </ul>
-<p>*Resim 1
+<p>*Görsel 1
 <img src="/TimyaBPM-Documents/proje.png" alt="Şekil 1"></p>
-<p>*Resim 2
+<p>*Görsel 2
 <img src="/TimyaBPM-Documents/proje4.png" alt="Şekil 2"></p>
-<p>*Resim 3
+<p>*Görsel 3
 <img src="/TimyaBPM-Documents/proje5.png" alt="Şekil 3"></p>
 </div></template>
 
