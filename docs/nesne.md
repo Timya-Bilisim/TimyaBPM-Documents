@@ -1,18 +1,28 @@
 # İş Nesnesi Ekleme
 
+> - İş nesnelerinde bağlantı bilgileri saklanır. Bu bağlantıların nasıl tanımlanacağı ve iş nesnelerinin özellikleri, aşağıda belirtilen ilgili bölümlerde açıklanmıştır. Yeni bir iş nesnesi oluşturmak için, iş nesnesi bölümünden artı işaretine tıklanır.
+
+
 ### İş Nesnesi Özellikleri
 
- İş nesnelerinde bağlantı bilgileri saklanır.
 
-![IIS Kurulumu](/TimyaBPM-Documents/nesne43.png)
+
 
 - **ID**: Bu alan, iş nesnesinin benzersiz kimlik numarasını gösterir. Sistemde iş nesnesini tanımlamak için kullanılır.
-- **Adı**: İş nesnesinin adını belirtir.
+- **Adı**: İş nesnesinin adını belirtir.Türkçe karakterler kullanılmaz.
 - **Tipi**: İş nesnesinin türünü belirler. İş nesneleri üç türden biri olabilir:
   - **Query**
   - **Table**
   - **Scripted**
-- **Bağlantılar**: Bağlantılarda tanımlanan verileri gösterir.
+- **Bağlantılar**: Bağlantılarda tanımlanan alanları gösterir.
+- **Sorgu Metni**:Bu alan, ilgili iş nesnesinin veritabanından veri çekecek sorgusunu içerir.  SQL sorgusu: (Bkz. Görsel 1)
+```json
+select userId, FullName from Users where DepartmentId=@pDepartmentId
+```
+■ Bu sorgu, Users tablosundan belirtilen DepartmentId'ye sahip kullanıcıların userId ve FullName bilgilerini getirecek.
+
+**Görsel 1**
+![IIS Kurulumu](/TimyaBPM-Documents/nesne43.png)
 
 
 ### Parametreler

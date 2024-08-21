@@ -1,5 +1,9 @@
 <template><div><h1 id="baglantı-kurma-adımları" tabindex="-1"><a class="header-anchor" href="#baglantı-kurma-adımları"><span>Bağlantı Kurma Adımları</span></a></h1>
-<p>Bağlantılar,   veri alışverişi  sağlamak için kullanılır.</p>
+<blockquote>
+<ul>
+<li><em>Bağlantılar,   veri alışverişi  sağlamak için kullanılır.</em></li>
+</ul>
+</blockquote>
 <p><img src="/TimyaBPM-Documents/baglantii1.png" alt="Şekil 2"></p>
 <h2 id="baglantı-ozellikleri" tabindex="-1"><a class="header-anchor" href="#baglantı-ozellikleri"><span>Bağlantı Özellikleri</span></a></h2>
 <ul>

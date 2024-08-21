@@ -6,15 +6,14 @@
    - Form kısmında bulunan artı işaretine tıklayarak yeni bir form oluşturulur.
 
  **Form İsmini Belirleme:**
-   - Form için bir isim girin (örneğin: `frmGelenEvrak`). Bu isim, sistemde görünecek olan isimdir.
+   - Form için bir isim girilir (örneğin: `frmGelenEvrak`). Bu isim, sistemde görünecek olan isimdir.
    - Kullanıcıların göreceği isim, "Form Görünen Adı" bölümünde belirtilir.
 
  **Form Bileşenleri ve Tanımlama Alanları:**
 
- - Form bileşenlerini ekleyip tanımlayabileceğiniz alanlar, formun içeriğini ve bileşenlerini yapılandırmanızı sağlar. Gerekli bileşen seçildikten sonra, sürükleyip bırak yöntemiyle form üzerine yerleştirilir. Daha sonra, bileşene tıklayarak içeriği doldurabilirsiniz.
+- Gerekli form bileşenlerini seçip sürükle-bırak yöntemiyle form üzerine tanımlanır. Ardından, seçilen bileşene tıklayarak form içeriğini sağ bölümdeki alanlara doldurulur. Bu kısım, "Form Bileşenleri Tanımlama" başlığı altında detaylı olarak anlatılmıştır. (Bkz. 1.3. Form Bileşenlerini Tanımlama)
 
-
-   ![alt text](/TimyaBPM-Documents/frm1.png)
+![alt text](/TimyaBPM-Documents/frm1.png)
 
 ## 1.2.  Form Bileşenleri
 
@@ -33,13 +32,13 @@
 
 ### Text
 
-- **Kullanım Alanı:** Formda sadece ekrana yazı eklemek için kullanılır. Bu alanda herhangi bir veri girişi yapılmaz; amaç, metinsel bilgi sağlamaktır.
+- **Kullanım Alanı:** Formda  ekrana yazı eklemek için kullanılır. Bu alanda herhangi bir veri girişi yapılmaz; amaç, sadece metinsel bilgi sağlamaktır.
 
  ![alt text](/TimyaBPM-Documents/text1.png)
 
  ### HtmlViewer
 
-- **Kullanım Alanı:** HTML olan verileri HTML formatında göstermek için kullanılır.
+- **Kullanım Alanı:** Verileri HTML formatında göstermek için kullanılır.
 -  Veritabanında ilgili tablo seçilir ve HTML kodları ile gerekli biçimlendirmeler yapılır.
 - Örnekte kullanılan HTML kodu :
 
@@ -54,8 +53,8 @@
 
 ### User Select
 
-- **Kullanım Alanı:** Kullanıcıları seçmek ve sürece dahil etmek için kullanılır.
--  Formda "User Select" bileşeni seçilir ve forma eklenir. İş başlat kısmında artı işaretine basılarak eklenmesi istenilen kullanıcılar eklenir.
+- **Kullanım Alanı:** Rolleri seçmek ve sürece dahil etmek için kullanılır.
+-  Formda "User Select" bileşeni seçilir ve forma eklenir. İş başlat kısmında artı işaretine basılarak eklenmesi istenilen roller eklenir.
 
  ![alt text](/TimyaBPM-Documents/userselect1.png)
 ![alt text](/TimyaBPM-Documents/userselect2.png)

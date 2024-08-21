@@ -6,7 +6,7 @@
 ## Dinamik Roller
 
 
-> - Dinamik roller, süreçlere  bağlı olarak atanır ve bu nedenle esneklik sağlar. Bu atama, süreç içindeki  koşullara bağlı olarak değişir.
+> - Dinamik roller, süreçlere  bağlı olarak atanır. Bu atama, süreç içindeki  koşullara bağlı olarak değişir.
 
 ➜ _Veri tanımlarında dinamik olarak atanacak rol için gerekli olan bilginin nerede tutulacağını belirlenmesi gerekmektedir.Bu,rolün dinamik olarak atanmasını sağlar.Örneğin, Görsel 1'de "ilgiliKisi" adlı veri tanımı gösterilmiştir._
 

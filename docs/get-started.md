@@ -27,7 +27,7 @@ Yükle diyerek kurulumlar yapılır.
 
 
 
-`TimyaBPMWeb.zip` dosyası, IIS varsayılan kök dizinine (varsayılan olarak `c:\inetpup\wwwroot`) ya da kurulumu yapılacak başka bir yere çıkarılmalıdır. Dizinde bulunan `appsettings.json` dosyası bir metin editörü ile açılarak konfigurasyon ayarları yapılır ve kaydedilir.
+`TimyaBPMWeb.zip` dosyası,  IIS'in varsayılan kök dizinine (varsayılan olarak `c:\inetpup\wwwroot`) ya da kurulumu yapılacak başka bir yere çıkarılmalıdır. Dizinde bulunan `appsettings.json` dosyası bir metin editörü ile açılarak konfigurasyon ayarları yapılır ve kaydedilir.
 
 ![IIS Kurulumu](/TimyaBPM-Documents/images/web.png)
 
@@ -44,14 +44,12 @@ Aşağıdaki bağlantı metnindeki ** görülen yerlere veritabanı sunucusu eri
 
 ### 3.1. IIS Ayarları
 
-Windows kimlik doğrulaması etkin olmalıdır. Web uygulamasının kurulacağı web site sağ tıklanır ve "Uygulama Ekle"ye tıklanır. Açılan ekranda "Diğer ad" kısmına uygulamanın çalışacağı adresdeki dizin adı (`base href` veya `base path`) yazılır (`http://www.timyabilisim.com/BPM`). Uygulamanın kurulduğu dizin fiziksel yol olarak gösterilir. Varsayılan olarak "BPM" kullanılır. BPM kullanılmayacaksa 3.3. e bakınız. IIS ekranından "Gözat" ile çalıştırılır. Farklı türde kurulumlar IIS'de uzmanlık gerektirir.
+Windows kimlik doğrulaması etkin olmalıdır. Web uygulamasının kurulacağı web sitesine sağ tıklanır ve "Uygulama Ekle" seçeneğine tıklanır. Açılan ekranda "Diğer ad" kısmına, uygulamanın çalışacağı adresteki dizin adı (`base href` veya `base path`) yazılır (`http://www.timyabilisim.com/BPM`). Uygulamanın kurulduğu dizin, fiziksel yol olarak gösterilir. Varsayılan olarak "BPM" kullanılır. BPM kullanılmayacaksa 3.3'e bakınız. IIS ekranından "Gözat" ile çalıştırılır. Farklı türde kurulumlar IIS'de uzmanlık gerektirir.
 
 
 ![IIS Kurulumu](/TimyaBPM-Documents/images/ISSayarları.png)
 
 ### 3.2. Yeni Database Kurulumu
-
-Veritabanına tam erişim izni verilmiş bir kullanıcı için `appsettings.json` dosyasında aşağıdaki ayarlar yapılmalıdır:
 
 Veritabanına tam erişim izni verilmiş bir kullanıcı için `appsettings.json` dosyasında aşağıdaki ayarlar yapılmalıdır:
 
@@ -78,7 +76,8 @@ Kurulum tamamlandıktan sonra `services.msc` komutu ile açılan Windows Service
 
 ## 5. Timya BPM Engine Konfigurasyon	
 
-TimyaBPMEngine in Kurulu olduğu dizinde bulunan appsettings.json dosyası bir metin editörü ile açılır ve konfigurasyon ayarları yapılarak kaydedilir. Sonrasında servis start edilerek kullanıma alınır.
+TimyaBPMEngine'in kurulu olduğu dizinde bulunan `appsettings.json` dosyası bir metin editörü ile açılır ve konfigürasyon ayarları yapılarak kaydedilir. Sonrasında servis başlatılarak kullanıma alınır.
+
 
 ### 5.1. Database Bağlantı Metni
 

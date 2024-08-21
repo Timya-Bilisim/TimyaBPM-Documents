@@ -4,11 +4,11 @@
 
 ## 1.1. Süreç Geliştirme
 
-> - Yeni bir süreç geliştirmek için, süreç bölümünde artı işaretine tıklanır ve **"New Map"** seçeneği ile yeni bir süreç haritası oluşturulur. Süreç haritası üzerinde boş bir alana tıklandığında, süreç özelliklerinin değiştirileceği kısım sağ tarafta görünür.
+> - Yeni bir süreç geliştirmek için, süreç bölümünde artı işaretine tıklanır ve **"New Map"** seçeneği ile yeni bir süreç haritası oluşturulur. Süreç haritası üzerinde boş bir alana tıklandığında, süreç için eklenmesi gereken alanlar sağ tarafta görüntülenir.
 
 
 
-➜ **"Process General"** kısmında **Name** alanına sürecin kullanıcılara gözükecek isim girilir. **ID** kısmı sistemde saklanacak olan isimdir. Boşluk ve Türkçe karakterler kullanılmaz.
+➜ **"Process General"** kısmında **Name** alanına sürecin kullanıcılara gözükecek ismi girilir. **ID** kısmı sistemde saklanacak olan isimdir. Boşluk ve Türkçe karakterler kullanılmaz.
 
 
 ![alt text](/TimyaBPM-Documents/surecc1.png) 
@@ -62,12 +62,14 @@
 
 ---
 ### Süreç Aksiyonları
+_Süreç aksiyonları, iş süreçlerinin adımlarını ve bu adımlar arasındaki ilişkileri görselleştiren temel bileşenlerdir. Bu adımları temsil etmek için çeşitli semboller kullanılır. Her sembol, iş sürecinin belirli bir aşamasını  ifade eder. Bu sembollerin kapsamlı açıklamaları ve kullanımları, aşağıdaki bölümlerde detaylı olarak ele alınmıştır._
 
+#### Başlat Aksiyonu
 
-#### Başlat
-> - Süreç haritasındaki yuvarlak şekiller, süreç başlatma aksiyonlarını ifade eder. Bu aksiyona tıklanarak sağ tarafta görüntülenecek alanlar aşağıda belirtildiği şekilde tanımlanmalıdır.
+> - Yuvarlak (çember) sembollerle gösterilir.Süreç haritasındaki yuvarlak şekiller, süreç başlatma aksiyonlarını ifade eder. Bu aksiyona tıklanarak sağ tarafta görüntülenecek alanlar aşağıda belirtildiği şekilde tanımlanmalıdır.
 
-- **Name:** Kullanıcının süreci başlatmak için tıklayacağı butonun ismidir.
+- **Name:** Kullanıcının süreci başlatmak için tıklaması gereken butonun adıdır.
+.
 - **ID:** Sistemde saklanacak olan isimdir.Boşluk ve Türkçe karakterler kullanılmaz.
 
 ![alt text](/TimyaBPM-Documents/surecc3.png) 
@@ -87,17 +89,21 @@
 ![alt text](/TimyaBPM-Documents/surecc4.png) 
 
 
-#### Flow ve Aksiyon
-> - **Başlat** butonunun yanındaki kare işaretine tıklanır. **Flow** ve **Aksiyon** kısımları aşağıdaki gibi oluşturulur.
+#### Flow ve Task Aksiyonu 
 
-- **Flow:** Süreç adımları arasındaki akışı ve bağlantıları tanımlar.
-- **Aksiyon:** Belirli bir adımda gerçekleştirilecek işlemleri veya görevleri tanımlar.
+- **Flow:** Süreç adımları arasındaki akışı ve bağlantıları tanımlar. Ok sembolü ile temsil edilir.
+- **Task:** Belirli bir adımda gerçekleştirilecek işlemleri veya görevleri tanımlar.Kare
+sembolü ile temsil edilir.
+
+> - **Başlat** butonunun yanındaki kare işaretine tıklanır. **Flow** ve **Task** kısımları aşağıdaki gibi oluşturulur.
+
+
 
 ![alt text](/TimyaBPM-Documents/surecg1.png) 
 
-Aksiyon eventi için **Change Element** seçilir. Bu seçenek, sürecin ihtiyaçlarına uygun görevlerin (task) belirlenmesini sağlar ve sürecin gereksinimlerine göre yapılandırılır. Örneğin:
+Task aksiyonu için anahtar işaretine tıklanarak **Change Element** seçilir. Bu seçenek, sürecin ihtiyaçlarına uygun görevlerin  belirlenmesini sağlar ve sürecin gereksinimlerine göre yapılandırılır. Örneğin:
 
-- **User Task:** Kullanıcının manuel olarak tamamlaması gereken görevleri ifade eder.
+- **User Task:** Kullanıcının   tamamlaması gereken görevleri ifade eder.
 - **Send Task:** Mesaj veya e-posta  gönderen görevleri ifade eder.
 
 
@@ -106,8 +112,8 @@ Aksiyon eventi için **Change Element** seçilir. Bu seçenek, sürecin ihtiyaç
 
 
 
- #### Süreci Sonlandırma
-> - Süreci sonlandırmak için resimde gösterilen süreç sonlandrıma event'i  seçilir.
+ #### Süreci Sonlandırma Aksiyonu 
+> - Süreci sonlandırmak için  görselde gösterilen "Süreç Sonlandırma" aksiyonu  seçilir.
 
 ![alt text](/TimyaBPM-Documents/son1.png) 
 ![alt text](/TimyaBPM-Documents/son2.png) 
@@ -117,7 +123,7 @@ Aksiyon eventi için **Change Element** seçilir. Bu seçenek, sürecin ihtiyaç
 ## 1.2. Süreci Yayınlama
 
 
-> - Süreci kullanıma almak için önce sureç yayınlanmalıdır. Bunun için "Admin Menü " **Projeler** seçeneğini tıklanır ve ilgili proje üzerinde **Yayınla** butonuna basılır. (Bkz. Görsel 1)
+> - Süreci kullanıma almak için ilk olarak süreç yayınlanmalıdır. Bunun için "Admin Menü " **Projeler** seçeneğini tıklanır ve ilgili proje üzerinde **Yayınla** butonuna basılır. (Bkz. Görsel 1)
 
 Ardından **İş Başlatma** kısmına tıklanır ve **Başlat** seçeneğini kullanarak süreç başlatılır.(Bkz. Görsel 2)
 

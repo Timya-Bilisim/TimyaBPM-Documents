@@ -2,10 +2,10 @@
 <h2 id="_1-1-surec-gelistirme" tabindex="-1"><a class="header-anchor" href="#_1-1-surec-gelistirme"><span>1.1. Süreç Geliştirme</span></a></h2>
 <blockquote>
 <ul>
-<li>Yeni bir süreç geliştirmek için, süreç bölümünde artı işaretine tıklanır ve <strong>&quot;New Map&quot;</strong> seçeneği ile yeni bir süreç haritası oluşturulur. Süreç haritası üzerinde boş bir alana tıklandığında, süreç özelliklerinin değiştirileceği kısım sağ tarafta görünür.</li>
+<li>Yeni bir süreç geliştirmek için, süreç bölümünde artı işaretine tıklanır ve <strong>&quot;New Map&quot;</strong> seçeneği ile yeni bir süreç haritası oluşturulur. Süreç haritası üzerinde boş bir alana tıklandığında, süreç için eklenmesi gereken alanlar sağ tarafta görüntülenir.</li>
 </ul>
 </blockquote>
-<p>➜ <strong>&quot;Process General&quot;</strong> kısmında <strong>Name</strong> alanına sürecin kullanıcılara gözükecek isim girilir. <strong>ID</strong> kısmı sistemde saklanacak olan isimdir. Boşluk ve Türkçe karakterler kullanılmaz.</p>
+<p>➜ <strong>&quot;Process General&quot;</strong> kısmında <strong>Name</strong> alanına sürecin kullanıcılara gözükecek ismi girilir. <strong>ID</strong> kısmı sistemde saklanacak olan isimdir. Boşluk ve Türkçe karakterler kullanılmaz.</p>
 <p><img src="/TimyaBPM-Documents/surecc1.png" alt="alt text"></p>
 <p>➜ <strong>Properties</strong> kısmında, <strong>Accessing Roles</strong> bölümünde, sürece erişebilecek roller seçilir (roller ayrıca açıklanacaktır).</p>
 <p><img src="/TimyaBPM-Documents/surecc2.png" alt="alt text"></p>
@@ -60,14 +60,16 @@
 <h2 id="" tabindex="-1"><a class="header-anchor" href="#"><span><img src="/TimyaBPM-Documents/sıralama.png" alt="alt text"></span></a></h2>
 <hr>
 <h3 id="surec-aksiyonları" tabindex="-1"><a class="header-anchor" href="#surec-aksiyonları"><span>Süreç Aksiyonları</span></a></h3>
-<h4 id="baslat" tabindex="-1"><a class="header-anchor" href="#baslat"><span>Başlat</span></a></h4>
+<p><em>Süreç aksiyonları, iş süreçlerinin adımlarını ve bu adımlar arasındaki ilişkileri görselleştiren temel bileşenlerdir. Bu adımları temsil etmek için çeşitli semboller kullanılır. Her sembol, iş sürecinin belirli bir aşamasını  ifade eder. Bu sembollerin kapsamlı açıklamaları ve kullanımları, aşağıdaki bölümlerde detaylı olarak ele alınmıştır.</em></p>
+<h4 id="baslat-aksiyonu" tabindex="-1"><a class="header-anchor" href="#baslat-aksiyonu"><span>Başlat Aksiyonu</span></a></h4>
 <blockquote>
 <ul>
-<li>Süreç haritasındaki yuvarlak şekiller, süreç başlatma aksiyonlarını ifade eder. Bu aksiyona tıklanarak sağ tarafta görüntülenecek alanlar aşağıda belirtildiği şekilde tanımlanmalıdır.</li>
+<li>Yuvarlak (çember) sembollerle gösterilir.Süreç haritasındaki yuvarlak şekiller, süreç başlatma aksiyonlarını ifade eder. Bu aksiyona tıklanarak sağ tarafta görüntülenecek alanlar aşağıda belirtildiği şekilde tanımlanmalıdır.</li>
 </ul>
 </blockquote>
 <ul>
-<li><strong>Name:</strong> Kullanıcının süreci başlatmak için tıklayacağı butonun ismidir.</li>
+<li><strong>Name:</strong> Kullanıcının süreci başlatmak için tıklaması gereken butonun adıdır.
+.</li>
 <li><strong>ID:</strong> Sistemde saklanacak olan isimdir.Boşluk ve Türkçe karakterler kullanılmaz.</li>
 </ul>
 <p><img src="/TimyaBPM-Documents/surecc3.png" alt="alt text"></p>
@@ -81,27 +83,28 @@
 <li><strong>Form List:</strong> Süreç başlatıldığında kullanılacak form seçilir.</li>
 </ul>
 <p><img src="/TimyaBPM-Documents/surecc4.png" alt="alt text"></p>
-<h4 id="flow-ve-aksiyon" tabindex="-1"><a class="header-anchor" href="#flow-ve-aksiyon"><span>Flow ve Aksiyon</span></a></h4>
+<h4 id="flow-ve-task-aksiyonu" tabindex="-1"><a class="header-anchor" href="#flow-ve-task-aksiyonu"><span>Flow ve Task Aksiyonu</span></a></h4>
+<ul>
+<li><strong>Flow:</strong> Süreç adımları arasındaki akışı ve bağlantıları tanımlar. Ok sembolü ile temsil edilir.</li>
+<li><strong>Task:</strong> Belirli bir adımda gerçekleştirilecek işlemleri veya görevleri tanımlar.Kare
+sembolü ile temsil edilir.</li>
+</ul>
 <blockquote>
 <ul>
-<li><strong>Başlat</strong> butonunun yanındaki kare işaretine tıklanır. <strong>Flow</strong> ve <strong>Aksiyon</strong> kısımları aşağıdaki gibi oluşturulur.</li>
+<li><strong>Başlat</strong> butonunun yanındaki kare işaretine tıklanır. <strong>Flow</strong> ve <strong>Task</strong> kısımları aşağıdaki gibi oluşturulur.</li>
 </ul>
 </blockquote>
-<ul>
-<li><strong>Flow:</strong> Süreç adımları arasındaki akışı ve bağlantıları tanımlar.</li>
-<li><strong>Aksiyon:</strong> Belirli bir adımda gerçekleştirilecek işlemleri veya görevleri tanımlar.</li>
-</ul>
 <p><img src="/TimyaBPM-Documents/surecg1.png" alt="alt text"></p>
-<p>Aksiyon eventi için <strong>Change Element</strong> seçilir. Bu seçenek, sürecin ihtiyaçlarına uygun görevlerin (task) belirlenmesini sağlar ve sürecin gereksinimlerine göre yapılandırılır. Örneğin:</p>
+<p>Task aksiyonu için anahtar işaretine tıklanarak <strong>Change Element</strong> seçilir. Bu seçenek, sürecin ihtiyaçlarına uygun görevlerin  belirlenmesini sağlar ve sürecin gereksinimlerine göre yapılandırılır. Örneğin:</p>
 <ul>
-<li><strong>User Task:</strong> Kullanıcının manuel olarak tamamlaması gereken görevleri ifade eder.</li>
+<li><strong>User Task:</strong> Kullanıcının   tamamlaması gereken görevleri ifade eder.</li>
 <li><strong>Send Task:</strong> Mesaj veya e-posta  gönderen görevleri ifade eder.</li>
 </ul>
 <p><img src="/TimyaBPM-Documents/anahtar.png" alt="alt text"></p>
-<h4 id="sureci-sonlandırma" tabindex="-1"><a class="header-anchor" href="#sureci-sonlandırma"><span>Süreci Sonlandırma</span></a></h4>
+<h4 id="sureci-sonlandırma-aksiyonu" tabindex="-1"><a class="header-anchor" href="#sureci-sonlandırma-aksiyonu"><span>Süreci Sonlandırma Aksiyonu</span></a></h4>
 <blockquote>
 <ul>
-<li>Süreci sonlandırmak için resimde gösterilen süreç sonlandrıma event'i  seçilir.</li>
+<li>Süreci sonlandırmak için  görselde gösterilen &quot;Süreç Sonlandırma&quot; aksiyonu  seçilir.</li>
 </ul>
 </blockquote>
 <p><img src="/TimyaBPM-Documents/son1.png" alt="alt text">
@@ -110,7 +113,7 @@
 <h2 id="_1-2-sureci-yayınlama" tabindex="-1"><a class="header-anchor" href="#_1-2-sureci-yayınlama"><span>1.2. Süreci Yayınlama</span></a></h2>
 <blockquote>
 <ul>
-<li>Süreci kullanıma almak için önce sureç yayınlanmalıdır. Bunun için &quot;Admin Menü &quot; <strong>Projeler</strong> seçeneğini tıklanır ve ilgili proje üzerinde <strong>Yayınla</strong> butonuna basılır. (Bkz. Görsel 1)</li>
+<li>Süreci kullanıma almak için ilk olarak süreç yayınlanmalıdır. Bunun için &quot;Admin Menü &quot; <strong>Projeler</strong> seçeneğini tıklanır ve ilgili proje üzerinde <strong>Yayınla</strong> butonuna basılır. (Bkz. Görsel 1)</li>
 </ul>
 </blockquote>
 <p>Ardından <strong>İş Başlatma</strong> kısmına tıklanır ve <strong>Başlat</strong> seçeneğini kullanarak süreç başlatılır.(Bkz. Görsel 2)</p>

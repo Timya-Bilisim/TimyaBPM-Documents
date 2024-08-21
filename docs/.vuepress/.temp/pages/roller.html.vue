@@ -3,7 +3,7 @@
 <h2 id="dinamik-roller" tabindex="-1"><a class="header-anchor" href="#dinamik-roller"><span>Dinamik Roller</span></a></h2>
 <blockquote>
 <ul>
-<li>Dinamik roller, süreçlere  bağlı olarak atanır ve bu nedenle esneklik sağlar. Bu atama, süreç içindeki  koşullara bağlı olarak değişir.</li>
+<li>Dinamik roller, süreçlere  bağlı olarak atanır. Bu atama, süreç içindeki  koşullara bağlı olarak değişir.</li>
 </ul>
 </blockquote>
 <p>➜ <em>Veri tanımlarında dinamik olarak atanacak rol için gerekli olan bilginin nerede tutulacağını belirlenmesi gerekmektedir.Bu,rolün dinamik olarak atanmasını sağlar.Örneğin, Görsel 1'de &quot;ilgiliKisi&quot; adlı veri tanımı gösterilmiştir.</em></p>

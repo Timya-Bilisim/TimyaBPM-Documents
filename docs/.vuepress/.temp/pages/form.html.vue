@@ -6,16 +6,14 @@
 </ul>
 <p><strong>Form İsmini Belirleme:</strong></p>
 <ul>
-<li>Form için bir isim girin (örneğin: <code v-pre>frmGelenEvrak</code>). Bu isim, sistemde görünecek olan isimdir.</li>
+<li>Form için bir isim girilir (örneğin: <code v-pre>frmGelenEvrak</code>). Bu isim, sistemde görünecek olan isimdir.</li>
 <li>Kullanıcıların göreceği isim, &quot;Form Görünen Adı&quot; bölümünde belirtilir.</li>
 </ul>
 <p><strong>Form Bileşenleri ve Tanımlama Alanları:</strong></p>
 <ul>
-<li>
-<p>Form bileşenlerini ekleyip tanımlayabileceğiniz alanlar, formun içeriğini ve bileşenlerini yapılandırmanızı sağlar. Gerekli bileşen seçildikten sonra, sürükleyip bırak yöntemiyle form üzerine yerleştirilir. Daha sonra, bileşene tıklayarak içeriği doldurabilirsiniz.</p>
-<p><img src="/TimyaBPM-Documents/frm1.png" alt="alt text"></p>
-</li>
+<li>Gerekli form bileşenlerini seçip sürükle-bırak yöntemiyle form üzerine tanımlanır. Ardından, seçilen bileşene tıklayarak form içeriğini sağ bölümdeki alanlara doldurulur. Bu kısım, &quot;Form Bileşenleri Tanımlama&quot; başlığı altında detaylı olarak anlatılmıştır. (Bkz. 1.3. Form Bileşenlerini Tanımlama)</li>
 </ul>
+<p><img src="/TimyaBPM-Documents/frm1.png" alt="alt text"></p>
 <h2 id="_1-2-form-bilesenleri" tabindex="-1"><a class="header-anchor" href="#_1-2-form-bilesenleri"><span>1.2.  Form Bileşenleri</span></a></h2>
 <p><img src="/TimyaBPM-Documents/frm3.png" alt="alt text"></p>
 <h3 id="textbox" tabindex="-1"><a class="header-anchor" href="#textbox"><span>Textbox</span></a></h3>
@@ -30,12 +28,12 @@
 <p><img src="/TimyaBPM-Documents/frm4.png" alt="alt text"></p>
 <h3 id="text" tabindex="-1"><a class="header-anchor" href="#text"><span>Text</span></a></h3>
 <ul>
-<li><strong>Kullanım Alanı:</strong> Formda sadece ekrana yazı eklemek için kullanılır. Bu alanda herhangi bir veri girişi yapılmaz; amaç, metinsel bilgi sağlamaktır.</li>
+<li><strong>Kullanım Alanı:</strong> Formda  ekrana yazı eklemek için kullanılır. Bu alanda herhangi bir veri girişi yapılmaz; amaç, sadece metinsel bilgi sağlamaktır.</li>
 </ul>
 <p><img src="/TimyaBPM-Documents/text1.png" alt="alt text"></p>
 <h3 id="htmlviewer" tabindex="-1"><a class="header-anchor" href="#htmlviewer"><span>HtmlViewer</span></a></h3>
 <ul>
-<li><strong>Kullanım Alanı:</strong> HTML olan verileri HTML formatında göstermek için kullanılır.</li>
+<li><strong>Kullanım Alanı:</strong> Verileri HTML formatında göstermek için kullanılır.</li>
 <li>Veritabanında ilgili tablo seçilir ve HTML kodları ile gerekli biçimlendirmeler yapılır.</li>
 <li>Örnekte kullanılan HTML kodu :</li>
 </ul>
@@ -47,8 +45,8 @@
 <img src="/TimyaBPM-Documents/html3.png" alt="alt text"></p>
 <h3 id="user-select" tabindex="-1"><a class="header-anchor" href="#user-select"><span>User Select</span></a></h3>
 <ul>
-<li><strong>Kullanım Alanı:</strong> Kullanıcıları seçmek ve sürece dahil etmek için kullanılır.</li>
-<li>Formda &quot;User Select&quot; bileşeni seçilir ve forma eklenir. İş başlat kısmında artı işaretine basılarak eklenmesi istenilen kullanıcılar eklenir.</li>
+<li><strong>Kullanım Alanı:</strong> Rolleri seçmek ve sürece dahil etmek için kullanılır.</li>
+<li>Formda &quot;User Select&quot; bileşeni seçilir ve forma eklenir. İş başlat kısmında artı işaretine basılarak eklenmesi istenilen roller eklenir.</li>
 </ul>
 <p><img src="/TimyaBPM-Documents/userselect1.png" alt="alt text">
 <img src="/TimyaBPM-Documents/userselect2.png" alt="alt text">

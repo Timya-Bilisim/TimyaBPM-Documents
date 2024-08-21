@@ -2,7 +2,7 @@
 
 ## 1. Timya/BPM Sisteme Giriş Yapma
 
-Kullanıcı adı , şifre ve giriş tipi seçilerek  sisteme giriş yapılır. Giriş tipleri ikiye ayrılır: Basit ve Active Directory. Admin kullanıcı adıyla giriş yapılacaksa, giriş tipi basit olarak seçilmelidir. Şirket tarafından belirlenen özel kullanıcı adı ve şifre ile giriş yapılacaksa, Active Directory seçilmelidir.
+Kullanıcı adı, şifre ve giriş tipi seçilerek sisteme giriş yapılır. Giriş tipleri ikiye ayrılır: Basit ve Active Directory. Admin kullanıcı adıyla giriş yapılacaksa, giriş tipi "Basit" olarak seçilmelidir. Şirket tarafından belirlenen özel kullanıcı adı ve şifre ile giriş yapılacaksa, "Active Directory" seçilmelidir.
 
 <div style="display: flex; justify-content: space-between;">
     <img src="/TimyaBPM-Documents/adminn.png" alt="Admin 1" style="width: 38%;">
@@ -10,19 +10,19 @@ Kullanıcı adı , şifre ve giriş tipi seçilerek  sisteme giriş yapılır. G
 </div>
 
 ## 2. İş Başlat
-Kullanıma açılmış olan süreçlerin hangi aksiyon ile başlatılabileceğini görebilirseniz. Bir aksiyonu temsil eden butona tıklayarak süreci başlatabilirsiniz. Süreçler genel olarak bir form ile başlar. Form açıldıktan sonra bir sonraki aşamaya iletilmeyen işler yapılacak işler sekmesinde kalmaya devam eder.
-
-
-
+Kullanıma açılmış olan süreçlerin hangi aksiyon ile başlatılabileceği görünür. Bir aksiyonu temsil eden butona tıklayarak süreç başlatılır. Süreçler genellikle bir form ile başlar. Form açıldıktan sonra, bir sonraki aşamaya iletilmeyen işler "Yapılacak İşler" sekmesinde kalmaya devam eder.
 
 
 ## 3. Yapılacak İşler
-Başlattığınız ve tamamlamadığınız işler ya da size yapmanız için iletilmiş olan işler bu ekranda listelenir. Listelenmiş işlere satırlara tıklayarak açabilir ve işin içeriğini görüntüleyebilirsiniz.
+Başlatılan, tamamlanan veya yapılmak üzere iletilen işler bu ekranda listelenir. Listelenen işlerin satırlarına tıklayarak, işin içeriği görüntülenir.
+
 
 
 
 ## 4. Takip Edilen İşler
-Takip etmeniz için görüntüleyebileceğiniz işler bu ekranda listelenir.  Burada görüntülenen işlerin neler olacağı süreçlerin tasarımı aşamasında belirlenir.
+
+Takip edilmesi gereken işler bu ekranda listelenir. Bu ekranda hangi işlerin görüneceği, süreçlerin tasarım aşamasında belirlenir.
+
 
 ![alt text](/TimyaBPM-Documents/images/image-3.png)
 

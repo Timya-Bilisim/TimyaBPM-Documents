@@ -1,6 +1,6 @@
 # Bağlantı Kurma Adımları
 
-Bağlantılar,   veri alışverişi  sağlamak için kullanılır.  
+> - _Bağlantılar,   veri alışverişi  sağlamak için kullanılır._ 
 
 
 ![Şekil 2](/TimyaBPM-Documents/baglantii1.png) 
