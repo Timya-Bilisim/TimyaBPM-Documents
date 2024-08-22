@@ -38,7 +38,7 @@ where p.Deleted <> 1 and p.Archived = 1
 
 ![Şekil 2](/TimyaBPM-Documents/liste100.png) 
 
-Doldurlması gereken alanlar:
+Doldurulması gereken alanlar:
 
 - **ID :** Her sütun için benzersiz bir kimlik numarası.
 - **Squence :** Belirtilen kolonun raporda hangi sırada gözükeceğini belirtir.

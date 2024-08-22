@@ -42,7 +42,7 @@
 <li><em>Kaydetme işlemi sonrası, raporda gösterilecek sütunlar aşağıda listelenir. Bu sütunlar, iş nesnesinden alınan verilere dayalı olarak yapılandırılır. Sütunların eklenmesi veya çıkarılması için <strong>Ekle</strong> ve <strong>Çıkar</strong> butonları kullanılır.</em></li>
 </ul>
 <p><img src="/TimyaBPM-Documents/liste100.png" alt="Şekil 2"></p>
-<p>Doldurlması gereken alanlar:</p>
+<p>Doldurulması gereken alanlar:</p>
 <ul>
 <li><strong>ID :</strong> Her sütun için benzersiz bir kimlik numarası.</li>
 <li><strong>Squence :</strong> Belirtilen kolonun raporda hangi sırada gözükeceğini belirtir.</li>
