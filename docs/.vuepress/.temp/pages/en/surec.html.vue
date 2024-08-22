@@ -1,94 +1,93 @@
 <template><div><h1 id="process-creation-steps" tabindex="-1"><a class="header-anchor" href="#process-creation-steps"><span>Process Creation Steps</span></a></h1>
 <h2 id="_1-1-process-development" tabindex="-1"><a class="header-anchor" href="#_1-1-process-development"><span>1.1. Process Development</span></a></h2>
-<p>To develop a new process, click on the plus sign in the process section and create a new process map with the <strong>&quot;New Map ”</strong> option. When you click on an empty area on the process map, the section where the process properties will be changed appears on the right side.</p>
-<p>In the <strong>&quot;Process General ”</strong> section, the name of the process that will be visible to the users is given in the <strong>Name</strong> field. <strong>ID</strong> is the name that will be stored in the system. Spaces and Turkish characters are not used in this field.</p>
+<ul>
+<li><em>To create a new process, click the plus sign in the process section and select <strong>&quot;New Map&quot;</strong> to create a new process map. When you click on an empty area on the process map, the fields that need to be added to the process are displayed on the right side.</em></li>
+</ul>
+<p>➜ In the <strong>&quot;Process General&quot;</strong> section, enter the name that will be visible to users in the <strong>Name</strong> field. The <strong>ID</strong> field is the name that will be stored in the system. Spaces and Turkish characters should not be used.</p>
 <p><img src="/TimyaBPM-Documents/surecc1.png" alt="alt text"></p>
-<p>In <strong>Properties</strong>, in <strong>Accessing Roles</strong>, select the roles that can access the process (roles will be explained separately).</p>
+<p>➜ In the <strong>Properties</strong> section, select the roles that will have access to the process in the <strong>Accessing Roles</strong> field (roles will be explained separately).</p>
 <p><img src="/TimyaBPM-Documents/surecc2.png" alt="alt text"></p>
-<p>To make process numbering, type the following code in the <strong>Number Prefix</strong> section of <strong>Properties</strong>:</p>
-<p><code v-pre>GLN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}</code></p>
-<ol>
-<li>
-<p><strong>Year Information:</strong> <code v-pre>GLN-{yyyy}</code></p>
-</li>
-<li>
-<p><strong>Sequence Number:</strong> <code v-pre>{ID:000}</code></p>
+<hr>
+<p>➜ In the <strong>Properties</strong> section, document numbering is done in the <strong>Number Prefix</strong> field. Example document number formats can be as follows:</p>
+<p><code v-pre>GLN-{yyyy}-{ID:000}{IDTABLE:GLOBALID}</code></p>
+<p><strong>GLN:</strong></p>
 <ul>
-<li>Specifies the sequence number given to the document.</li>
+<li>The name of the incoming document.</li>
 </ul>
-</li>
-<li>
-<p><strong>Table Number:</strong> <code v-pre>{{IDTABLE:GLOBALID}</code></p>
+<p><strong>{yyyy}:</strong></p>
 <ul>
-<li>Indicates the table to be numbered. The table name is prepended to <code v-pre>GLOBALID</code>.  Numbering will be different for same and different tables:</li>
+<li>Indicates the year of the document.</li>
 </ul>
-</li>
-</ol>
-<h4 id="numbering-by-different-tables" tabindex="-1"><a class="header-anchor" href="#numbering-by-different-tables"><span>Numbering by Different Tables</span></a></h4>
+<p><strong>{ID:000}:</strong></p>
 <ul>
-<li>
-<p><strong>Format:</strong> <code v-pre>GLN-{yyyy} - {ID:000} {IDTABLE:GELENGLOBALID}</code></p>
+<li>Indicates the sequence number assigned to the document. Zeros are added based on the number of digits.</li>
+</ul>
+<p><strong>{IDTABLE:GLOBALID}:</strong></p>
 <ul>
-<li>GLN-2024-001</li>
-<li>GLN-2024-002</li>
-<li>GLN-2024-003</li>
+<li>Indicates the database table that will assign sequential numbers.</li>
 </ul>
-</li>
-<li>
-<p><strong>Format:</strong> <code v-pre>GDN-{yyyy} - {ID:000} {IDTABLE:GIDENGLOBALID}</code></p>
-<ul>
-<li>GDN-2024-001</li>
-<li>GDN-2024-002</li>
-</ul>
-</li>
-</ul>
-<h4 id="numbering-according-to-the-same-tables" tabindex="-1"><a class="header-anchor" href="#numbering-according-to-the-same-tables"><span>Numbering According to the Same Tables</span></a></h4>
-<ul>
-<li>
-<p><strong>Format:</strong> <code v-pre>GLN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}</code></p>
-<ul>
-<li>GLN-2024-001</li>
-<li>GLN-2024-003</li>
-<li>GLN-2024-004</li>
-</ul>
-</li>
-<li>
-<p><strong>Format:</strong> <code v-pre>GDN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}</code></p>
-<ul>
-<li>GDN-2024-002</li>
-<li>GDN-2024-005</li>
-</ul>
-</li>
-</ul>
-<p><img src="/TimyaBPM-Documents/sıralama.png" alt="Numbering"></p>
+<p><img src="/TimyaBPM-Documents/sıralama.png" alt="alt text"></p>
+<hr>
 <h3 id="process-actions" tabindex="-1"><a class="header-anchor" href="#process-actions"><span>Process Actions</span></a></h3>
-<h4 id="start" tabindex="-1"><a class="header-anchor" href="#start"><span>Start</span></a></h4>
-<p>The circular shapes on the process map represent process start actions. Click the icon to define these actions. The <strong>Name</strong> section is where you enter the button name that users will click to start the process. The <strong>ID</strong> section is the name used by the system.</p>
-<p><img src="/TimyaBPM-Documents/surecc3.png" alt="Start"></p>
-<p><strong>Properties</strong> should be filled out as follows:</p>
+<p><em>Process actions are the core components that visualize the steps of business processes and the relationships between these steps. Various symbols are used to represent these steps, with each symbol denoting a specific phase of the business process. Detailed explanations and usage of these symbols are covered in the following sections.</em></p>
+<h4 id="start-action" tabindex="-1"><a class="header-anchor" href="#start-action"><span>Start Action</span></a></h4>
+<ul>
+<li>
+<p>Represented by circular (round) symbols. Circles in the process map indicate the actions that initiate the process. The fields displayed on the right side when clicking on this action should be defined as described below.</p>
+</li>
+<li>
+<p><strong>Name:</strong> The name of the button that the user must click to start the process.</p>
+</li>
+<li>
+<p><strong>ID:</strong> The name that will be stored in the system. Spaces and Turkish characters should not be used.</p>
+</li>
+</ul>
+<p><img src="/TimyaBPM-Documents/surecc3.png" alt="alt text"></p>
+<p>➜ The <strong>Properties</strong> section is defined as follows:</p>
 <ul>
 <li><strong>Available to Roles:</strong> Select the roles that can start the process.</li>
-<li><strong>To Do List:</strong> Specify the role to which the first task will be assigned after the process starts. Drag from <strong>Roles</strong> to <strong>Selected Roles</strong>.</li>
+<li><strong>To Do List:</strong> Indicates the role to which the first task will be assigned after the process starts. This can be done by dragging the role from the <strong>Roles</strong> section and dropping it into the <strong>Selected Roles</strong> section.</li>
 </ul>
-<p><img src="/TimyaBPM-Documents/roller8.png" alt="Roles"></p>
+<p><img src="/TimyaBPM-Documents/roller8.png" alt="alt text"></p>
 <ul>
-<li><strong>Form List:</strong> Select the form to be used when the process is started.</li>
+<li><strong>Form List:</strong> Select the form to be used when the process starts.</li>
 </ul>
-<p><img src="/TimyaBPM-Documents/surecc4.png" alt="Form List"></p>
-<h4 id="flow-and-action" tabindex="-1"><a class="header-anchor" href="#flow-and-action"><span>Flow and Action</span></a></h4>
-<p>Click the square icon next to the <strong>Start</strong> button. Define <strong>Flow</strong> and <strong>Action</strong> sections as shown below.</p>
-<p><img src="/TimyaBPM-Documents/surecg1.png" alt="Flow and Action"></p>
-<p>For the action event, select <strong>Change Element</strong>.</p>
-<p><img src="/TimyaBPM-Documents/anahtar.png" alt="Action Event"></p>
-<h4 id="end-process" tabindex="-1"><a class="header-anchor" href="#end-process"><span>End Process</span></a></h4>
-<p>To end the process, select the process end event as shown in the image.</p>
-<p><img src="/TimyaBPM-Documents/son1.png" alt="End Process 1">
-<img src="/TimyaBPM-Documents/son2.png" alt="End Process 2"></p>
+<p><img src="/TimyaBPM-Documents/surecc4.png" alt="alt text"></p>
+<h4 id="flow-and-task-action" tabindex="-1"><a class="header-anchor" href="#flow-and-task-action"><span>Flow and Task Action</span></a></h4>
+<ul>
+<li>
+<p><strong>Flow:</strong> Defines the flow and connections between process steps. It is represented by an arrow symbol. When a flow action is added, a button is created for users. For example, flows defined after &quot;start&quot; and &quot;user task&quot; steps represent actions that are shown as buttons that users can click.</p>
+</li>
+<li>
+<p><strong>Task:</strong> Defines the actions or tasks to be performed at a specific step. It is represented by a square symbol.</p>
+</li>
+<li>
+<p>Click the square icon next to the <strong>Start</strong> button. The <strong>Flow</strong> and <strong>Task</strong> sections are created as follows.</p>
+</li>
+</ul>
+<p><img src="/TimyaBPM-Documents/surecg1.png" alt="alt text"></p>
+<p>For the task action, click the key icon and select <strong>Change Element</strong>. This option allows tasks to be specified according to the needs of the process and structured according to the process requirements. For example:</p>
+<ul>
+<li><strong>User Task:</strong> Indicates tasks that need to be completed by the user.</li>
+<li><strong>Service Task:</strong> Enables document creation and running DLL libraries.</li>
+</ul>
+<p><img src="/TimyaBPM-Documents/anahtar.png" alt="alt text"></p>
+<h4 id="end-process-action" tabindex="-1"><a class="header-anchor" href="#end-process-action"><span>End Process Action</span></a></h4>
+<ul>
+<li>To end the process, select the &quot;End Process&quot; action shown in the image.</li>
+</ul>
+<p><img src="/TimyaBPM-Documents/son1.png" alt="alt text">
+<img src="/TimyaBPM-Documents/son2.png" alt="alt text"></p>
+<hr>
 <h2 id="_1-2-publishing-the-process" tabindex="-1"><a class="header-anchor" href="#_1-2-publishing-the-process"><span>1.2. Publishing the Process</span></a></h2>
-<p>To put the process into use, it must first be published. For this, click <strong>Projects</strong> under the &quot;Admin Menu&quot; and press the <strong>Publish</strong> button on the relevant project.</p>
-<p><img src="/TimyaBPM-Documents/surecc5.png" alt="Publish Process"></p>
-<p>Then click <strong>Start Process</strong> and use the <strong>Start</strong> option to initiate the process.</p>
-<p><img src="/TimyaBPM-Documents/surecc6.png" alt="Start Process"></p>
+<ul>
+<li>To make the process available, it must first be published. To do this, click the &quot;Admin Menu&quot; <strong>Projects</strong> option and press the <strong>Publish</strong> button on the relevant project. (See Image 1)</li>
+</ul>
+<p>Then, click on the <strong>Start Process</strong> section and use the <strong>Start</strong> option to begin the process. (See Image 2)</p>
+<p><em>Image 1: Publishing the Process</em>
+<img src="/TimyaBPM-Documents/surecc5.png" alt="alt text"></p>
+<p><em>Image 2: Starting the Process</em>
+<img src="/TimyaBPM-Documents/surecc6.png" alt="alt text"></p>
 </div></template>
 
 

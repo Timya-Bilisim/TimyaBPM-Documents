@@ -1,61 +1,55 @@
-# Listeler
+# Lists
 
-- _Tanımlanan iş nesnelerinin raporda görünmesini sağlamak için listeler oluşturulmalıdır._
+- _To ensure that defined business objects appear in the report, lists must be created._
 
- - _Listelerin nasıl oluşturulduğu, örnek bir iş nesnesi üzerinden detaylıca açıklanmış ve aralarındaki bağlantılar gösterilmiştir._
+- _The process of creating lists is explained in detail using an example business object, and the connections between them are demonstrated._
 
+### Example Business Object
 
+![Figure 2](/TimyaBPM-Documents/rapor.png)
 
-### Örnek İş Nesnesi
+Here is an example of an SQL query used to list the data of a business object:
 
-
-![Şekil 2](/TimyaBPM-Documents/rapor.png) 
-
-
-İş nesnesinin verilerini listelemek için kullanılan SQL sorgusu örneği: 
 ```json
 select ProcessId, m.Title MapName, ProcessName, p.Title, StageCaption, CreatedTime, UpdatedTime, DoubleField1, StringField1, StringField2 
 from Processes p 
 inner join Maps m on m.Name = p.MapName 
 where p.Deleted <> 1 and p.Archived = 1
 ```
-### Listenin Tanımlanması
+### Defining the List
 
- - Listeler, sol kısımda yer alan **Listeler** bölümünden artı işaretine tıklanarak oluşturulur.
+- Lists are created by clicking the plus sign in the **Lists** section on the left side.
 
- - **CustomList** kısmında aşağıdaki alanlar doldurulur:
+- In the **CustomList** section, fill in the following fields:
 
-- **Adı:** Listenin sistemde görünen ismidir.
-- **İş Nesnesi:** Sistemde daha önce oluşturulmuş bir iş nesnesi seçilir.
-- **Rol:** Bu alanda, raporu kimlerin görebileceği seçilir.
-- **Kaydet:** Tüm alanlar doldurulduktan sonra Kaydet butonuna basılır.
+- **Name:** The name of the list as it appears in the system.
+- **Business Object:** Select a previously created business object from the system.
+- **Role:** Choose who will be able to view the report.
+- **Save:** After filling out all fields, click the Save button.
 
-![Şekil 2](/TimyaBPM-Documents/liste65.png) 
+![Figure 2](/TimyaBPM-Documents/liste65.png)
 
-### Kolonlar
+### Columns
 
- - _Kaydetme işlemi sonrası, raporda gösterilecek sütunlar aşağıda listelenir. Bu sütunlar, iş nesnesinden alınan verilere dayalı olarak yapılandırılır. Sütunların eklenmesi veya çıkarılması için **Ekle** ve **Çıkar** butonları kullanılır._
+- _After saving, the columns to be displayed in the report are listed below. These columns are configured based on the data retrieved from the business object. Use the **Add** and **Remove** buttons to include or exclude columns._
 
-![Şekil 2](/TimyaBPM-Documents/liste100.png) 
+![Figure 2](/TimyaBPM-Documents/liste100.png)
 
-Doldurlması gereken alanlar:
+Fields to be filled:
 
-- **ID :** Her sütun için benzersiz bir kimlik numarası.
-- **Squence :** Belirtilen kolonun raporda hangi sırada gözükeceğini belirtir.
-- **Kolon Adı :** Verinin alındığı kaynağın kolon adını ifade eder.
-- **Kolon Görünen İsim :** Tabloda kolonun kullanıcıya nasıl görüneceği belirlenir.
-- **Kaynak Kolon Adı :** Verinin hangi kaynaktan alındığını gösterir.Kolon Adı ile aynı olmalır.
-- **Süreç numarası mı ? :** Süreç numarası ise evet değil ise hayır seçilir.
-- **Veri Tipi :** Verinin tipini belirler.
+- **ID:** A unique identifier for each column.
+- **Sequence:** Indicates the order in which the column will appear in the report.
+- **Column Name:** Represents the column name from the source of the data.
+- **Column Display Name:** Defines how the column will appear to the user in the table.
+- **Source Column Name:** Shows which source the data comes from. Should be the same as the Column Name.
+- **Process Number?:** Select yes if it is a process number, otherwise select no.
+- **Data Type:** Determines the type of the data.
 
-Yukarıda tanımlanan iş nesnesine göre oluşturulan **Liste**. (Bkz.Liste Örnek)
+**Example List** created based on the defined business object. (See List Example)
 
+**List Example**  
+![Figure 2](/TimyaBPM-Documents/rapor2.png)
 
-**Liste Örnek**
-![Şekil 2](/TimyaBPM-Documents/rapor2.png) 
+The information that should appear in the report is as follows:
 
-
-
-Rapor kısmında gözükmesi gereken bilgiler aşağıdaki gibidir.
-
-![Şekil 2](/TimyaBPM-Documents/rapor3.png) 
+![Figure 2](/TimyaBPM-Documents/rapor3.png)

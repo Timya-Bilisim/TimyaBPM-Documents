@@ -168,7 +168,34 @@ export default defineUserConfig({
               '/en/nesne.md',               
             ],
           },
-        
+          {
+            text: 'Roles',
+            collapsible: true,
+            children: [
+              '/en/roller.md',               
+              
+            ],
+            
+          },
+          {
+            text: 'Connections',
+            collapsible: true,
+            children: [
+              '/en/baglanti.md',               
+              
+            ],
+            
+          },
+         
+          {
+            text: 'Lists',
+            collapsible: true,
+            children: [
+              '/en/listeler.md',               
+              
+            ],
+            
+          },
         ],
       },
     },
