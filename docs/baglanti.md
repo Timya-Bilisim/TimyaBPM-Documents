@@ -1,6 +1,6 @@
 # Bağlantı Kurma Adımları
 
-> - _Bağlantılar,   veri alışverişi  sağlamak için kullanılır._ 
+ - _Bağlantılar, veri alışverişi  sağlamak için kullanılır._ 
 
 
 ![Şekil 2](/TimyaBPM-Documents/baglantii1.png) 
@@ -13,6 +13,7 @@
 **Bağlantı Metni Örneği**
 
 
+**Örnek**
 
 ```json
 Server=myServerAddress; Database=myDataBase; User Id=myUsername; Password=myPassword;
@@ -24,10 +25,11 @@ Server=myServerAddress; Database=myDataBase; User Id=myUsername; Password=myPass
 ■ **Password=myPassword**: Kullanıcının erişim şifresidir.
 
 
-- **Login Adress**: LDAP sunucusunun IP adresi veya domain adı girilir.
-- **Kullanıcı Adı**: LDAP sunucusuna erişim yetkisi olan kullanıcı adı girilir.
-- **LDAP Filtre**:   LDAP filtreleri, verilerde belirli kriterleri kullanarak sadece gerekli bilgileri senkronize etmeyi sağlar.
- - **Secure Socket**: Bağlantının güvenli olup olmadığını belirten seçenekler.
+- **Login Adress**: LDAP sunucusunun IP adresi veya domain adı girilir.**ActiveDirectorySync** bağlantı tipi seçili olduğunda çalışır.
+- **Kullanıcı Adı**: LDAP sunucusuna erişim yetkisi olan kullanıcı adıgirilir.**ActiveDirectorySync** bağlantı tipi seçili olduğunda çalışır.
+
+- **LDAP Filtre**:   LDAP filtreleri, verilerde belirli kriterleri kullanarak sadece gerekli bilgileri senkronize etmeyi sağlar.**ActiveDirectorySync** bağlantı tipi seçili olduğunda çalışır.
+ - **Secure Socket**: Bağlantının güvenli olup olmadığını belirten seçenekler.**ActiveDirectorySync** bağlantı tipi seçili olduğunda çalışır.
    - **None**: Şifreleme yok, veriler düz metin olarak iletilir.
     - **Secure Sockets Layer**: Veriler SSL (Secure Sockets Layer) üzerinden şifrelenir, daha güvenli bir bağlantı sağlar.
 - **Bağlantı Tipi**
@@ -43,10 +45,7 @@ _Aşağıda farklı bağlantı tiplerinin nasıl yapılandırılacağını göst
 ####  Veritabanı Bağlantısı
 - **Bağlantı Adı**: Veritabanı_Baglanti
 - **Bağlantı Metni**:`Server=myServerAddress; Database=myDataBase; User Id=myUsername; Password=myPassword;
-- **Login Address**: Admin
-- **Bağlantı Tipi**: Database
-- **Şifre**: ********
-- **Test**:Kaydedilir ve ardından teste tıklanır.
+
 
 ####  Active Directory Bağlantısı
 - **Bağlantı Adı**: ADL_AD
@@ -55,6 +54,7 @@ _Aşağıda farklı bağlantı tiplerinin nasıl yapılandırılacağını göst
 - **Şifre**: ********
 - **Bağlantı Tipi**: ActiveDirectorySync
 - **LDAP Filtre**: (mail=ali@example.com)
-- **Test**: Kaydedilir ve ardından teste tıklanır.
 
+
+_➜ Bağlantılar tanımlandıktan sonra, bağlantının çalışıp çalışmadığı test butonu ile kontrol edilir._
 

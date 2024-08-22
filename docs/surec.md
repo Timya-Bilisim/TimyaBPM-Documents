@@ -4,7 +4,7 @@
 
 ## 1.1. Süreç Geliştirme
 
-> - Yeni bir süreç geliştirmek için, süreç bölümünde artı işaretine tıklanır ve **"New Map"** seçeneği ile yeni bir süreç haritası oluşturulur. Süreç haritası üzerinde boş bir alana tıklandığında, süreç için eklenmesi gereken alanlar sağ tarafta görüntülenir.
+ - _Yeni bir süreç geliştirmek için, süreç bölümünde artı işaretine tıklanır ve **"New Map"** seçeneği ile yeni bir süreç haritası oluşturulur. Süreç haritası üzerinde boş bir alana tıklandığında, süreç için eklenmesi gereken alanlar sağ tarafta görüntülenir._
 
 
 
@@ -18,44 +18,22 @@
 ![alt text](/TimyaBPM-Documents/surecc2.png) 
 
 ---
-➜ **Properties** kısmında, **Number Prefix** bölümünde,  süreç numaralandırmasının aşağıdaki yönergelere göre yapılandırılması gerekmektedir:
+➜ **Properties** kısmında, **Number Prefix** bölümünde,  belge numaralandırması yapılır .
+Örnek belge numaralandırmaları aşağıdaki gibi olabilir:
 
-`GLN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}`
+`GLN-{yyyy}-{ID:000}{IDTABLE:GLOBALID}`
 
- **Yıl Bilgisi:** `GLN-{yyyy}`
+ **GLN:**
+- Gelen Evrak belgesinin adıdır.
 
-   
- **Sıra Numarası:** `{ID:000}`
-   - Belgeye verilen sıra numarasını belirtir.
-   
- **Tablo Numarası:** `{IDTABLE:GLOBALID}`
-   - Numaralandırmanın yapılacağı tabloyu gösterir. `GLOBALID` ifadesinin önüne tablo adı eklenir. Aynı tablolarda ve farklı tablolarda numaralandırma sistemleri aşağıdaki gibi farklılık gösterir:
+**{yyyy}:** 
+- Belgenin yılını belirtir.
 
-#### Farklı Tablolara Göre Numaralandırma
+**{ID:000}:** 
+- Belgeye verilen sıra numarasını belirtir. Basamak sayısı kadar sıfır eklenir.
 
-- **Format:** `GLN-{yyyy} - {ID:000} {IDTABLE:GELENGLOBALID}`
-
-  - GLN-2024-001
-  - GLN-2024-002
-  - GLN-2024-003
-
-- **Format:** `GDN-{yyyy} - {ID:000} {IDTABLE:GIDENGLOBALID}`
-
-  - GDN-2024-001
-  - GDN-2024-002
-
-#### Aynı Tablolara Göre Numaralandırma
-
-- **Format:** `GLN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}`
-
-  - GLN-2024-001
-  - GLN-2024-003
-  - GLN-2024-004
-
-- **Format:** `GDN-{yyyy} - {ID:000} {IDTABLE:GLOBALID}`
-
-  - GDN-2024-002
-  - GDN-2024-005
+**{IDTABLE:GLOBALID}:** 
+- Sıralı numara verecek olan database tablosunu belirtir.
 
 ![alt text](/TimyaBPM-Documents/sıralama.png) 
 ---
@@ -66,7 +44,7 @@ _Süreç aksiyonları, iş süreçlerinin adımlarını ve bu adımlar arasında
 
 #### Başlat Aksiyonu
 
-> - Yuvarlak (çember) sembollerle gösterilir.Süreç haritasındaki yuvarlak şekiller, süreç başlatma aksiyonlarını ifade eder. Bu aksiyona tıklanarak sağ tarafta görüntülenecek alanlar aşağıda belirtildiği şekilde tanımlanmalıdır.
+ - Yuvarlak (çember) sembollerle gösterilir.Süreç haritasındaki yuvarlak şekiller, süreç başlatma aksiyonlarını ifade eder. Bu aksiyona tıklanarak sağ tarafta görüntülenecek alanlar aşağıda belirtildiği şekilde tanımlanmalıdır.
 
 - **Name:** Kullanıcının süreci başlatmak için tıklaması gereken butonun adıdır.
 .
@@ -91,11 +69,12 @@ _Süreç aksiyonları, iş süreçlerinin adımlarını ve bu adımlar arasında
 
 #### Flow ve Task Aksiyonu 
 
-- **Flow:** Süreç adımları arasındaki akışı ve bağlantıları tanımlar. Ok sembolü ile temsil edilir.
+- **Flow:** Süreç adımları arasındaki akışı ve bağlantıları tanımlar. Ok sembolü ile temsil edilir. Flow aksiyonu eklendiğinde, kullanıcılar için bir buton oluşturulur. Örneğin, "start" ve "user task" adımlarından sonra tanımlanan flow'lar, kullanıcıların tıklayabileceği bir buton ile gösterilen aksiyonları ifade eder.
+
 - **Task:** Belirli bir adımda gerçekleştirilecek işlemleri veya görevleri tanımlar.Kare
 sembolü ile temsil edilir.
 
-> - **Başlat** butonunun yanındaki kare işaretine tıklanır. **Flow** ve **Task** kısımları aşağıdaki gibi oluşturulur.
+ - **Başlat** butonunun yanındaki kare işaretine tıklanır. **Flow** ve **Task** kısımları aşağıdaki gibi oluşturulur.
 
 
 
@@ -104,7 +83,7 @@ sembolü ile temsil edilir.
 Task aksiyonu için anahtar işaretine tıklanarak **Change Element** seçilir. Bu seçenek, sürecin ihtiyaçlarına uygun görevlerin  belirlenmesini sağlar ve sürecin gereksinimlerine göre yapılandırılır. Örneğin:
 
 - **User Task:** Kullanıcının   tamamlaması gereken görevleri ifade eder.
-- **Send Task:** Mesaj veya e-posta  gönderen görevleri ifade eder.
+- **Service Task:** Dökuman oluşturma ve DLL kütüphanelerini çalıştırmasını sağlar.
 
 
 
@@ -113,7 +92,7 @@ Task aksiyonu için anahtar işaretine tıklanarak **Change Element** seçilir. 
 
 
  #### Süreci Sonlandırma Aksiyonu 
-> - Süreci sonlandırmak için  görselde gösterilen "Süreç Sonlandırma" aksiyonu  seçilir.
+ - Süreci sonlandırmak için  görselde gösterilen "Süreç Sonlandırma" aksiyonu  seçilir.
 
 ![alt text](/TimyaBPM-Documents/son1.png) 
 ![alt text](/TimyaBPM-Documents/son2.png) 
@@ -123,7 +102,7 @@ Task aksiyonu için anahtar işaretine tıklanarak **Change Element** seçilir. 
 ## 1.2. Süreci Yayınlama
 
 
-> - Süreci kullanıma almak için ilk olarak süreç yayınlanmalıdır. Bunun için "Admin Menü " **Projeler** seçeneğini tıklanır ve ilgili proje üzerinde **Yayınla** butonuna basılır. (Bkz. Görsel 1)
+ - Süreci kullanıma almak için ilk olarak süreç yayınlanmalıdır. Bunun için "Admin Menü " **Projeler** seçeneğini tıklanır ve ilgili proje üzerinde **Yayınla** butonuna basılır. (Bkz. Görsel 1)
 
 Ardından **İş Başlatma** kısmına tıklanır ve **Başlat** seçeneğini kullanarak süreç başlatılır.(Bkz. Görsel 2)
 

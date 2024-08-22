@@ -5,7 +5,7 @@
 ## 1. Veri Tanımları
 
 
-Girilecek veriler tablo şeklinde birden fazla oluşan veriler değilse, veri tanımlarında saklanır. Veriler "Ekle" butonuna tıklanarak yazılır. Enter tuşuna basarak veriler girilir. Tüm veriler girildikten sonra kaydet butonuna tıklanır.
+_Girilecek veriler tablo şeklinde birden fazla oluşan veriler değilse, veri tanımlarında saklanır. Veriler "Ekle" butonuna tıklanarak yazılır. Enter tuşuna basarak veriler girilir. Tüm veriler girildikten sonra kaydet butonuna tıklanır._
 
 <img src="/TimyaBPM-Documents/vt1.png" alt="alt text" width="800"/>
 

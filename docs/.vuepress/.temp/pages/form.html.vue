@@ -11,7 +11,7 @@
 </ul>
 <p><strong>Form Bileşenleri ve Tanımlama Alanları:</strong></p>
 <ul>
-<li>Gerekli form bileşenlerini seçip sürükle-bırak yöntemiyle form üzerine tanımlanır. Ardından, seçilen bileşene tıklayarak form içeriğini sağ bölümdeki alanlara doldurulur. Bu kısım, &quot;Form Bileşenleri Tanımlama&quot; başlığı altında detaylı olarak anlatılmıştır. (Bkz. 1.3. Form Bileşenlerini Tanımlama)</li>
+<li><em>Gerekli form bileşenlerini seçip sürükle-bırak yöntemiyle form üzerine tanımlanır. Ardından, seçilen bileşene tıklayarak form içeriğini sağ bölümdeki alanlara doldurulur. Bu kısım, &quot;Form Bileşenleri Tanımlama&quot; başlığı altında detaylı olarak anlatılmıştır. (Bkz. 1.3. Form Bileşenlerini Tanımlama)</em></li>
 </ul>
 <p><img src="/TimyaBPM-Documents/frm1.png" alt="alt text"></p>
 <h2 id="_1-2-form-bilesenleri" tabindex="-1"><a class="header-anchor" href="#_1-2-form-bilesenleri"><span>1.2.  Form Bileşenleri</span></a></h2>
@@ -66,7 +66,7 @@
 <p><img src="/TimyaBPM-Documents/saat3.png" alt="Şekil 3"></p>
 <h2 id="_1-3-form-bilesenlerini-tanımlama" tabindex="-1"><a class="header-anchor" href="#_1-3-form-bilesenlerini-tanımlama"><span>1.3. Form Bileşenlerini Tanımlama</span></a></h2>
 <ul>
-<li>Form içeriğini doldurmak için aşağıda gösterilen  alanlar doldurulur:</li>
+<li><em>Form içeriğini doldurmak için aşağıda gösterilen  alanlar doldurulur:</em></li>
 </ul>
 <p><img src="/TimyaBPM-Documents/frm2.png" alt="alt text"></p>
 <ul>

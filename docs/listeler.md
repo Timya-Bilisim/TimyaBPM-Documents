@@ -1,8 +1,8 @@
 # Listeler
 
-> - _Tanımlanan iş nesnelerinin raporda görünmesini sağlamak için listeler oluşturulmalıdır._
+- _Tanımlanan iş nesnelerinin raporda görünmesini sağlamak için listeler oluşturulmalıdır._
 
-> - _Listelerin nasıl oluşturulduğu, örnek bir iş nesnesi üzerinden detaylıca açıklanmış ve aralarındaki bağlantılar gösterilmiştir._
+ - _Listelerin nasıl oluşturulduğu, örnek bir iş nesnesi üzerinden detaylıca açıklanmış ve aralarındaki bağlantılar gösterilmiştir._
 
 
 
@@ -21,9 +21,9 @@ where p.Deleted <> 1 and p.Archived = 1
 ```
 ### Listenin Tanımlanması
 
-> - Listeler, sol kısımda yer alan **Listeler** bölümünden artı işaretine tıklanarak oluşturulur.
+ - Listeler, sol kısımda yer alan **Listeler** bölümünden artı işaretine tıklanarak oluşturulur.
 
-> - **CustomList** kısmında aşağıdaki alanlar doldurulur:
+ - **CustomList** kısmında aşağıdaki alanlar doldurulur:
 
 - **Adı:** Listenin sistemde görünen ismidir.
 - **İş Nesnesi:** Sistemde daha önce oluşturulmuş bir iş nesnesi seçilir.
@@ -34,17 +34,19 @@ where p.Deleted <> 1 and p.Archived = 1
 
 ### Kolonlar
 
-> - Kaydetme işlemi sonrası, raporda gösterilecek sütunlar aşağıda listelenir. Bu sütunlar, iş nesnesinden alınan verilere dayalı olarak yapılandırılır. Sütunların eklenmesi veya çıkarılması için **Ekle** ve **Çıkar** butonları kullanılır.
+ - _Kaydetme işlemi sonrası, raporda gösterilecek sütunlar aşağıda listelenir. Bu sütunlar, iş nesnesinden alınan verilere dayalı olarak yapılandırılır. Sütunların eklenmesi veya çıkarılması için **Ekle** ve **Çıkar** butonları kullanılır._
 
 ![Şekil 2](/TimyaBPM-Documents/liste100.png) 
 
-Doldurlması gereken alanlar.
-- **ID:** Her sütun için benzersiz bir kimlik numarası.
-- **Kolon Adı (Source Column Name):** Verinin alındığı kaynağın kolon adını ifade eder.
-- **Kolon Görünen İsim:** Tabloda bu kolonun kullanıcıya nasıl görüneceğini belirler.
-- **Kaynak Kolon Adı (Source Column):** Verinin hangi kaynaktan alındığını gösterir.Kolon Adı ile aynıdır.
-- **Sıralı mı?:** İlgili sütunun sıralanabilir olup olmadığını belirler. Evet/Hayır olarak işaretlenir.
-- **Tip (Type):** Verinin tipini belirler.
+Doldurlması gereken alanlar:
+
+- **ID :** Her sütun için benzersiz bir kimlik numarası.
+- **Squence :** Belirtilen kolonun raporda hangi sırada gözükeceğini belirtir.
+- **Kolon Adı :** Verinin alındığı kaynağın kolon adını ifade eder.
+- **Kolon Görünen İsim :** Tabloda kolonun kullanıcıya nasıl görüneceği belirlenir.
+- **Kaynak Kolon Adı :** Verinin hangi kaynaktan alındığını gösterir.Kolon Adı ile aynı olmalır.
+- **Süreç numarası mı ? :** Süreç numarası ise evet değil ise hayır seçilir.
+- **Veri Tipi :** Verinin tipini belirler.
 
 Yukarıda tanımlanan iş nesnesine göre oluşturulan **Liste**. (Bkz.Liste Örnek)
 

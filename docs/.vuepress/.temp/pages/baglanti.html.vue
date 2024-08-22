@@ -1,9 +1,7 @@
 <template><div><h1 id="baglantı-kurma-adımları" tabindex="-1"><a class="header-anchor" href="#baglantı-kurma-adımları"><span>Bağlantı Kurma Adımları</span></a></h1>
-<blockquote>
 <ul>
-<li><em>Bağlantılar,   veri alışverişi  sağlamak için kullanılır.</em></li>
+<li><em>Bağlantılar, veri alışverişi  sağlamak için kullanılır.</em></li>
 </ul>
-</blockquote>
 <p><img src="/TimyaBPM-Documents/baglantii1.png" alt="Şekil 2"></p>
 <h2 id="baglantı-ozellikleri" tabindex="-1"><a class="header-anchor" href="#baglantı-ozellikleri"><span>Bağlantı Özellikleri</span></a></h2>
 <ul>
@@ -11,6 +9,7 @@
 <li><strong>Bağlantı Metni</strong>:  Veritabanına bağlanabilmesi için gereken bilgileri içerir. Veri kaynağına erişirken kullandığı kimlik bilgilerini, sunucu adresi gibi diğer ayarları tanımlar.</li>
 </ul>
 <p><strong>Bağlantı Metni Örneği</strong></p>
+<p><strong>Örnek</strong></p>
 <div class="language-json line-numbers-mode" data-highlighter="prismjs" data-ext="json" data-title="json"><pre v-pre class="language-json"><code><span class="line">Server=myServerAddress; Database=myDataBase; User Id=myUsername; Password=myPassword;</span>
 <span class="line"></span>
 <span class="line"></span></code></pre>
@@ -19,16 +18,24 @@
 ■ <strong>User Id=myUsername</strong>: Veritabanına giriş için kullanılan kullanıcı adıdır.<br>
 ■ <strong>Password=myPassword</strong>: Kullanıcının erişim şifresidir.</p>
 <ul>
-<li><strong>Login Adress</strong>: LDAP sunucusunun IP adresi veya domain adı girilir.</li>
-<li><strong>Kullanıcı Adı</strong>: LDAP sunucusuna erişim yetkisi olan kullanıcı adı girilir.</li>
-<li><strong>LDAP Filtre</strong>:   LDAP filtreleri, verilerde belirli kriterleri kullanarak sadece gerekli bilgileri senkronize etmeyi sağlar.</li>
-<li><strong>Secure Socket</strong>: Bağlantının güvenli olup olmadığını belirten seçenekler.
+<li>
+<p><strong>Login Adress</strong>: LDAP sunucusunun IP adresi veya domain adı girilir.<strong>ActiveDirectorySync</strong> bağlantı tipi seçili olduğunda çalışır.</p>
+</li>
+<li>
+<p><strong>Kullanıcı Adı</strong>: LDAP sunucusuna erişim yetkisi olan kullanıcı adıgirilir.<strong>ActiveDirectorySync</strong> bağlantı tipi seçili olduğunda çalışır.</p>
+</li>
+<li>
+<p><strong>LDAP Filtre</strong>:   LDAP filtreleri, verilerde belirli kriterleri kullanarak sadece gerekli bilgileri senkronize etmeyi sağlar.<strong>ActiveDirectorySync</strong> bağlantı tipi seçili olduğunda çalışır.</p>
+</li>
+<li>
+<p><strong>Secure Socket</strong>: Bağlantının güvenli olup olmadığını belirten seçenekler.<strong>ActiveDirectorySync</strong> bağlantı tipi seçili olduğunda çalışır.</p>
 <ul>
 <li><strong>None</strong>: Şifreleme yok, veriler düz metin olarak iletilir.</li>
 <li><strong>Secure Sockets Layer</strong>: Veriler SSL (Secure Sockets Layer) üzerinden şifrelenir, daha güvenli bir bağlantı sağlar.</li>
 </ul>
 </li>
-<li><strong>Bağlantı Tipi</strong>
+<li>
+<p><strong>Bağlantı Tipi</strong></p>
 <ul>
 <li><strong>Database</strong>:SQL veya diğer veritabanlarına bağlanarak veri yönetimi yapar.</li>
 <li><strong>ActiveDirectorySync</strong>: Active Directory ile LDAP protokolü kullanarak senkronizasyon işlemleri yapar.</li>
@@ -41,10 +48,6 @@
 <ul>
 <li><strong>Bağlantı Adı</strong>: Veritabanı_Baglanti</li>
 <li><strong>Bağlantı Metni</strong>:`Server=myServerAddress; Database=myDataBase; User Id=myUsername; Password=myPassword;</li>
-<li><strong>Login Address</strong>: Admin</li>
-<li><strong>Bağlantı Tipi</strong>: Database</li>
-<li><strong>Şifre</strong>: ********</li>
-<li><strong>Test</strong>:Kaydedilir ve ardından teste tıklanır.</li>
 </ul>
 <h4 id="active-directory-baglantısı" tabindex="-1"><a class="header-anchor" href="#active-directory-baglantısı"><span>Active Directory Bağlantısı</span></a></h4>
 <ul>
@@ -54,8 +57,8 @@
 <li><strong>Şifre</strong>: ********</li>
 <li><strong>Bağlantı Tipi</strong>: ActiveDirectorySync</li>
 <li><strong>LDAP Filtre</strong>: (mail=ali@example.com)</li>
-<li><strong>Test</strong>: Kaydedilir ve ardından teste tıklanır.</li>
 </ul>
+<p><em>➜ Bağlantılar tanımlandıktan sonra, bağlantının çalışıp çalışmadığı test butonu ile kontrol edilir.</em></p>
 </div></template>
 
 

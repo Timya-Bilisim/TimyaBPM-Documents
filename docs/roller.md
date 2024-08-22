@@ -1,21 +1,13 @@
 # Roller Yönetimi ve Yapılandırılması
 
- Roller, iki ana kategoriye ayrılır: **Dinamik** ve **Statik**. Her iki kategori için rollerin nasıl ekleneceği ve tanımlanacağı detaylı olarak açıklanmıştır:
+ _Roller, iki ana kategoriye ayrılır: **Dinamik** ve **Statik**. Her iki kategori için rollerin nasıl ekleneceği ve tanımlanacağı detaylı olarak açıklanmıştır:_
 
 
 ## Dinamik Roller
 
 
-> - Dinamik roller, süreçlere  bağlı olarak atanır. Bu atama, süreç içindeki  koşullara bağlı olarak değişir.
+ - _Dinamik roller, süreçlere  bağlı olarak atanır. Bu atama, süreç içindeki  koşullara bağlı olarak değişir._
 
-➜ _Veri tanımlarında dinamik olarak atanacak rol için gerekli olan bilginin nerede tutulacağını belirlenmesi gerekmektedir.Bu,rolün dinamik olarak atanmasını sağlar.Örneğin, Görsel 1'de "ilgiliKisi" adlı veri tanımı gösterilmiştir._
-
-
-
-**Görsel1** 
-![alt text](/TimyaBPM-Documents/roller2.png) 
-
-Veri tanımı yapıldıktan sonra, dinamik rolün tanımlanması gerekir.
 
 
 ➜ _Dinamik roller **Roller** bölümünden eklenir. Aşağıdaki alanların doldurulması gerekmektedir:_
@@ -37,16 +29,10 @@ if (ilgiliKisi == null)
 else
     return 1;
 ```
-■ Formülde, "GelenEvrak" tablosundan "İlgiliKisi" bilgisi alınarak dinamik bir atama yapılır. Eğer "İlgiliKisi" bilgisi mevcut değilse, varsayılan olarak 1 değeri döndürülür. Aksi takdirde, "İlgiliKisi" değeri döndürülür.
+■ Formülde, "GelenEvrak" tablosundan alınan "İlgiliKisi" bilgisi kullanılarak dinamik bir atama yapılır. Eğer "İlgiliKisi" bilgisi mevcut değilse, varsayılan olarak 1 değeri döndürülür. Bu değer, admin kullanıcısını temsil eder. Aksi takdirde, "İlgiliKisi" değeri döndürülür.
 
 
-
-➜ _Tanımlanan rol, iş sürecinde belirli adımlarda otomatik olarak atanır._
-
-
-
-
-Görsel 3'te, "gelenEvrakSureci" adlı bir süreçte "ilgiliKisi" rolü seçilmiştir. Bu, dinamik olarak tanımlanan "ilgiliKisi" rolünün, sürecin belirli bir adımında otomatik olarak atanmasını sağlar.
+Görsel 3'te,  "ilgiliKisi" rolünün nasıl seçildiği gösterilmiştir.
 
 **Görsel3** 
 ![alt text](/TimyaBPM-Documents/roller3.png)
@@ -54,7 +40,7 @@ Görsel 3'te, "gelenEvrakSureci" adlı bir süreçte "ilgiliKisi" rolü seçilmi
 
 ##  Statik Roller
 
-> - Statik roller, belirli  görevler için sabit olarak atanmış rollerdir.
+ - _Statik roller, belirli  görevler için sabit olarak atanmış rollerdir._
 
 Statik roller, **Admin menüsü** üzerinden **Ayarlar** kısmından seçilerek tanımlanır. Yeni bir rol eklemek için şu adımlar izlenir:
 

@@ -11,7 +11,7 @@
 
  **Form Bileşenleri ve Tanımlama Alanları:**
 
-- Gerekli form bileşenlerini seçip sürükle-bırak yöntemiyle form üzerine tanımlanır. Ardından, seçilen bileşene tıklayarak form içeriğini sağ bölümdeki alanlara doldurulur. Bu kısım, "Form Bileşenleri Tanımlama" başlığı altında detaylı olarak anlatılmıştır. (Bkz. 1.3. Form Bileşenlerini Tanımlama)
+- _Gerekli form bileşenlerini seçip sürükle-bırak yöntemiyle form üzerine tanımlanır. Ardından, seçilen bileşene tıklayarak form içeriğini sağ bölümdeki alanlara doldurulur. Bu kısım, "Form Bileşenleri Tanımlama" başlığı altında detaylı olarak anlatılmıştır. (Bkz. 1.3. Form Bileşenlerini Tanımlama)_
 
 ![alt text](/TimyaBPM-Documents/frm1.png)
 
@@ -86,7 +86,7 @@
 
 ## 1.3. Form Bileşenlerini Tanımlama
 
-- Form içeriğini doldurmak için aşağıda gösterilen  alanlar doldurulur:
+- _Form içeriğini doldurmak için aşağıda gösterilen  alanlar doldurulur:_
 
  ![alt text](/TimyaBPM-Documents/frm2.png)
 - **ID:** Sistemde görünecek isimdir. Türkçe karakter ve boşluk kullanılmamalıdır.

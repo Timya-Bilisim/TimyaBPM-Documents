@@ -1,6 +1,6 @@
 <template><div><h1 id="veri-tanımlama-adımları" tabindex="-1"><a class="header-anchor" href="#veri-tanımlama-adımları"><span>Veri Tanımlama Adımları</span></a></h1>
 <h2 id="_1-veri-tanımları" tabindex="-1"><a class="header-anchor" href="#_1-veri-tanımları"><span>1. Veri Tanımları</span></a></h2>
-<p>Girilecek veriler tablo şeklinde birden fazla oluşan veriler değilse, veri tanımlarında saklanır. Veriler &quot;Ekle&quot; butonuna tıklanarak yazılır. Enter tuşuna basarak veriler girilir. Tüm veriler girildikten sonra kaydet butonuna tıklanır.</p>
+<p><em>Girilecek veriler tablo şeklinde birden fazla oluşan veriler değilse, veri tanımlarında saklanır. Veriler &quot;Ekle&quot; butonuna tıklanarak yazılır. Enter tuşuna basarak veriler girilir. Tüm veriler girildikten sonra kaydet butonuna tıklanır.</em></p>
 <img src="/TimyaBPM-Documents/vt1.png" alt="alt text" width="800"/>
 <h3 id="_1-1-key" tabindex="-1"><a class="header-anchor" href="#_1-1-key"><span>1.1. Key</span></a></h3>
 <p>Veritabanında saklanacak alanlar yazılır; yani, veritabanında sütunlar oluşturulur. Örneğin, formda bulunan &quot;Başlık Konu&quot; adındaki bir bölüm için resimdeki isimlendirme yapılabilir:</p>
