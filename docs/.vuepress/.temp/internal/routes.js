@@ -5,7 +5,7 @@ export const routes = Object.fromEntries([
   ["/form.html", { loader: () => import(/* webpackChunkName: "form.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/form.html.js"), meta: {"title":"Form Oluşturma Adımları"} }],
   ["/get-started.html", { loader: () => import(/* webpackChunkName: "get-started.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/get-started.html.js"), meta: {"title":"Kurulum"} }],
   ["/getting-started.html", { loader: () => import(/* webpackChunkName: "getting-started.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/getting-started.html.js"), meta: {"title":"Başlangıç"} }],
-  ["/listeler.html", { loader: () => import(/* webpackChunkName: "listeler.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/listeler.html.js"), meta: {"title":"Lists"} }],
+  ["/listeler.html", { loader: () => import(/* webpackChunkName: "listeler.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/listeler.html.js"), meta: {"title":"List Creation Steps"} }],
   ["/markdown-cheat-sheet.html", { loader: () => import(/* webpackChunkName: "markdown-cheat-sheet.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/markdown-cheat-sheet.html.js"), meta: {"title":"Markdown Cheat Sheet"} }],
   ["/nesne.html", { loader: () => import(/* webpackChunkName: "nesne.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/nesne.html.js"), meta: {"title":"İş Nesnesi Ekleme"} }],
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Anasayfa - Timya/BPM"} }],
@@ -24,6 +24,7 @@ export const routes = Object.fromEntries([
   ["/en/veritanim.html", { loader: () => import(/* webpackChunkName: "en_veritanim.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/en/veritanim.html.js"), meta: {"title":"Data Specifications"} }],
   ["/en/yeniproje.html", { loader: () => import(/* webpackChunkName: "en_yeniproje.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/en/yeniproje.html.js"), meta: {"title":"Creating Project"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
+  ["/en/listeler.html", { loader: () => import(/* webpackChunkName: "en_listeler.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/en/listeler.html.js"), meta: {"title":"Lists"} }],
 ]);
 
 if (import.meta.webpackHot) {
