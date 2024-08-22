@@ -1,4 +1,4 @@
-<template><div><h1 id="lists" tabindex="-1"><a class="header-anchor" href="#lists"><span>Lists</span></a></h1>
+<template><div><h1 id="list-creation-steps" tabindex="-1"><a class="header-anchor" href="#list-creation-steps"><span>List Creation Steps</span></a></h1>
 <ul>
 <li>
 <p><em>To ensure that defined business objects appear in the report, lists must be created.</em></p>

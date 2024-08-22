@@ -1,4 +1,4 @@
-# List Creation Steps
+# Liste Oluşturma Adımları
 
 - _Tanımlanan iş nesnelerinin raporda görünmesini sağlamak için listeler oluşturulmalıdır._
 

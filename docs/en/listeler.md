@@ -1,4 +1,4 @@
-# Lists
+# List Creation Steps
 
 - _To ensure that defined business objects appear in the report, lists must be created._
 

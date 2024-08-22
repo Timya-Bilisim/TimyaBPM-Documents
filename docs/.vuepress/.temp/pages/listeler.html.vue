@@ -1,4 +1,4 @@
-<template><div><h1 id="list-creation-steps" tabindex="-1"><a class="header-anchor" href="#list-creation-steps"><span>List Creation Steps</span></a></h1>
+<template><div><h1 id="liste-olusturma-adımları" tabindex="-1"><a class="header-anchor" href="#liste-olusturma-adımları"><span>Liste Oluşturma Adımları</span></a></h1>
 <ul>
 <li>
 <p><em>Tanımlanan iş nesnelerinin raporda görünmesini sağlamak için listeler oluşturulmalıdır.</em></p>
