@@ -54,7 +54,7 @@
 ### User Select
 
 - **Kullanım Alanı:** Rolleri seçmek ve sürece dahil etmek için kullanılır.
--  Formda "User Select" bileşeni seçilir ve forma eklenir. İş başlat kısmında artı işaretine basılarak eklenmesi istenilen roller eklenir.
+-  Formda "User Select" bileşeni seçilir ve forma eklenir. Artı işaretine basılarak eklenmesi istenilen roller eklenir.
 
  ![alt text](/TimyaBPM-Documents/userselect1.png)
 ![alt text](/TimyaBPM-Documents/userselect2.png)

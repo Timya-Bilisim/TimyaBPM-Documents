@@ -17,6 +17,7 @@ export const routes = Object.fromEntries([
   ["/en/form.html", { loader: () => import(/* webpackChunkName: "en_form.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/en/form.html.js"), meta: {"title":"Form Creation Steps"} }],
   ["/en/get-started.html", { loader: () => import(/* webpackChunkName: "en_get-started.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/en/get-started.html.js"), meta: {"title":"SET UP"} }],
   ["/en/getting-started.html", { loader: () => import(/* webpackChunkName: "en_getting-started.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/en/getting-started.html.js"), meta: {"title":"Start Up"} }],
+  ["/en/listeler.html", { loader: () => import(/* webpackChunkName: "en_listeler.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/en/listeler.html.js"), meta: {"title":"List Creation Steps"} }],
   ["/en/nesne.html", { loader: () => import(/* webpackChunkName: "en_nesne.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/en/nesne.html.js"), meta: {"title":"Adding a Business Object"} }],
   ["/en/", { loader: () => import(/* webpackChunkName: "en_index.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/en/index.html.js"), meta: {"title":"Home Page - Timya/BPM"} }],
   ["/en/roller.html", { loader: () => import(/* webpackChunkName: "en_roller.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/en/roller.html.js"), meta: {"title":"Role Management and Configuration"} }],
@@ -24,7 +25,6 @@ export const routes = Object.fromEntries([
   ["/en/veritanim.html", { loader: () => import(/* webpackChunkName: "en_veritanim.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/en/veritanim.html.js"), meta: {"title":"Data Specifications"} }],
   ["/en/yeniproje.html", { loader: () => import(/* webpackChunkName: "en_yeniproje.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/en/yeniproje.html.js"), meta: {"title":"Creating Project"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
-  ["/en/listeler.html", { loader: () => import(/* webpackChunkName: "en_listeler.html" */"C:/Users/Nursah.LAPTOP-TA4CIEMF/Desktop/github/TimyaBPM-Documents/docs/.vuepress/.temp/pages/en/listeler.html.js"), meta: {"title":"List Creation Steps"} }],
 ]);
 
 if (import.meta.webpackHot) {

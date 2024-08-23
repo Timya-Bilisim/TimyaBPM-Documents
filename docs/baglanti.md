@@ -13,8 +13,6 @@
 **Bağlantı Metni Örneği**
 
 
-**Örnek**
-
 ```json
 Server=myServerAddress; Database=myDataBase; User Id=myUsername; Password=myPassword;
 

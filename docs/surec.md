@@ -9,9 +9,9 @@
 
 
 ➜ **"Process General"** kısmında **Name** alanına sürecin kullanıcılara gözükecek ismi girilir. **ID** kısmı sistemde saklanacak olan isimdir. Boşluk ve Türkçe karakterler kullanılmaz.
+**Üç nokta** kısmından kaydedilir.
 
-
-![alt text](/TimyaBPM-Documents/surecc1.png) 
+![alt text](/TimyaBPM-Documents/surec1.png) 
 
 ➜ **Properties** kısmında, **Accessing Roles** bölümünde, sürece erişebilecek roller seçilir (roller ayrıca açıklanacaktır).
 

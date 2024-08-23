@@ -1,6 +1,7 @@
 # Liste Oluşturma Adımları
 
-- _Tanımlanan iş nesnelerinin raporda görünmesini sağlamak için listeler oluşturulmalıdır._
+- _Tanımlanan iş nesnelerinin **Raporlar** kısmında görünmesini sağlamak için listeler oluşturulmalıdır._
+![Şekil 2](/TimyaBPM-Documents/raporlar1.png) 
 
  - _Listelerin nasıl oluşturulduğu, örnek bir iş nesnesi üzerinden detaylıca açıklanmış ve aralarındaki bağlantılar gösterilmiştir._
 

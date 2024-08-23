@@ -6,7 +6,7 @@
 
 ➜ In the **"Process General"** section, enter the name that will be visible to users in the **Name** field. The **ID** field is the name that will be stored in the system. Spaces and Turkish characters should not be used.
 
-![alt text](/TimyaBPM-Documents/surecc1.png)
+![alt text](/TimyaBPM-Documents/surec1.png)
 
 ➜ In the **Properties** section, select the roles that will have access to the process in the **Accessing Roles** field (roles will be explained separately).
 

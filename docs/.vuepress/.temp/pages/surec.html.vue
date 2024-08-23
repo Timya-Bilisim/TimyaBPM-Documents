@@ -3,8 +3,9 @@
 <ul>
 <li><em>Yeni bir süreç geliştirmek için, süreç bölümünde artı işaretine tıklanır ve <strong>&quot;New Map&quot;</strong> seçeneği ile yeni bir süreç haritası oluşturulur. Süreç haritası üzerinde boş bir alana tıklandığında, süreç için eklenmesi gereken alanlar sağ tarafta görüntülenir.</em></li>
 </ul>
-<p>➜ <strong>&quot;Process General&quot;</strong> kısmında <strong>Name</strong> alanına sürecin kullanıcılara gözükecek ismi girilir. <strong>ID</strong> kısmı sistemde saklanacak olan isimdir. Boşluk ve Türkçe karakterler kullanılmaz.</p>
-<p><img src="/TimyaBPM-Documents/surecc1.png" alt="alt text"></p>
+<p>➜ <strong>&quot;Process General&quot;</strong> kısmında <strong>Name</strong> alanına sürecin kullanıcılara gözükecek ismi girilir. <strong>ID</strong> kısmı sistemde saklanacak olan isimdir. Boşluk ve Türkçe karakterler kullanılmaz.
+<strong>Üç nokta</strong> kısmından kaydedilir.</p>
+<p><img src="/TimyaBPM-Documents/surec1.png" alt="alt text"></p>
 <p>➜ <strong>Properties</strong> kısmında, <strong>Accessing Roles</strong> bölümünde, sürece erişebilecek roller seçilir (roller ayrıca açıklanacaktır).</p>
 <p><img src="/TimyaBPM-Documents/surecc2.png" alt="alt text"></p>
 <hr>

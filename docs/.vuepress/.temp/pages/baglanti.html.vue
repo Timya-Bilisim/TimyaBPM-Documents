@@ -9,7 +9,6 @@
 <li><strong>Bağlantı Metni</strong>:  Veritabanına bağlanabilmesi için gereken bilgileri içerir. Veri kaynağına erişirken kullandığı kimlik bilgilerini, sunucu adresi gibi diğer ayarları tanımlar.</li>
 </ul>
 <p><strong>Bağlantı Metni Örneği</strong></p>
-<p><strong>Örnek</strong></p>
 <div class="language-json line-numbers-mode" data-highlighter="prismjs" data-ext="json" data-title="json"><pre v-pre class="language-json"><code><span class="line">Server=myServerAddress; Database=myDataBase; User Id=myUsername; Password=myPassword;</span>
 <span class="line"></span>
 <span class="line"></span></code></pre>

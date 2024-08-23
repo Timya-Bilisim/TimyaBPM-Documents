@@ -4,7 +4,7 @@
 <li><em>To create a new process, click the plus sign in the process section and select <strong>&quot;New Map&quot;</strong> to create a new process map. When you click on an empty area on the process map, the fields that need to be added to the process are displayed on the right side.</em></li>
 </ul>
 <p>➜ In the <strong>&quot;Process General&quot;</strong> section, enter the name that will be visible to users in the <strong>Name</strong> field. The <strong>ID</strong> field is the name that will be stored in the system. Spaces and Turkish characters should not be used.</p>
-<p><img src="/TimyaBPM-Documents/surecc1.png" alt="alt text"></p>
+<p><img src="/TimyaBPM-Documents/surec1.png" alt="alt text"></p>
 <p>➜ In the <strong>Properties</strong> section, select the roles that will have access to the process in the <strong>Accessing Roles</strong> field (roles will be explained separately).</p>
 <p><img src="/TimyaBPM-Documents/surecc2.png" alt="alt text"></p>
 <hr>

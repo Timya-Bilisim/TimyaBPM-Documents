@@ -20,6 +20,8 @@
 
 
 **Görsel 2**
+
+**Örnek**:
 ![alt text](/TimyaBPM-Documents/roller1.png)
 
 ```json

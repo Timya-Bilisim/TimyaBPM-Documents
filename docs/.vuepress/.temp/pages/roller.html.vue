@@ -10,7 +10,8 @@
 <li><strong>ID</strong>: Sistem tarafından otomatik olarak atanır.</li>
 <li><strong>Harita</strong>: Bu alanda, veri tanımlarına uygun bir kod yapısı yazılır. Yani, rolün hangi koşullara göre ve kime atanacağını belirleyen dinamik bir formül tanımlanır. (Bkz. Görsel 2)</li>
 </ul>
-<p><strong>Görsel 2</strong>
+<p><strong>Görsel 2</strong></p>
+<p><strong>Örnek</strong>:
 <img src="/TimyaBPM-Documents/roller1.png" alt="alt text"></p>
 <div class="language-json line-numbers-mode" data-highlighter="prismjs" data-ext="json" data-title="json"><pre v-pre class="language-json"><code><span class="line">object ilgiliKisi = getVal(<span class="token string">"GelenEvrak"</span><span class="token punctuation">,</span> <span class="token string">"IlgiliKisi"</span>);</span>
 <span class="line">if (ilgiliKisi == <span class="token null keyword">null</span>)</span>

@@ -46,7 +46,7 @@
 <h3 id="user-select" tabindex="-1"><a class="header-anchor" href="#user-select"><span>User Select</span></a></h3>
 <ul>
 <li><strong>Kullanım Alanı:</strong> Rolleri seçmek ve sürece dahil etmek için kullanılır.</li>
-<li>Formda &quot;User Select&quot; bileşeni seçilir ve forma eklenir. İş başlat kısmında artı işaretine basılarak eklenmesi istenilen roller eklenir.</li>
+<li>Formda &quot;User Select&quot; bileşeni seçilir ve forma eklenir. Artı işaretine basılarak eklenmesi istenilen roller eklenir.</li>
 </ul>
 <p><img src="/TimyaBPM-Documents/userselect1.png" alt="alt text">
 <img src="/TimyaBPM-Documents/userselect2.png" alt="alt text">

@@ -1,7 +1,8 @@
 <template><div><h1 id="liste-olusturma-adımları" tabindex="-1"><a class="header-anchor" href="#liste-olusturma-adımları"><span>Liste Oluşturma Adımları</span></a></h1>
 <ul>
 <li>
-<p><em>Tanımlanan iş nesnelerinin raporda görünmesini sağlamak için listeler oluşturulmalıdır.</em></p>
+<p><em>Tanımlanan iş nesnelerinin <strong>Raporlar</strong> kısmında görünmesini sağlamak için listeler oluşturulmalıdır.</em>
+<img src="/TimyaBPM-Documents/raporlar1.png" alt="Şekil 2"></p>
 </li>
 <li>
 <p><em>Listelerin nasıl oluşturulduğu, örnek bir iş nesnesi üzerinden detaylıca açıklanmış ve aralarındaki bağlantılar gösterilmiştir.</em></p>
