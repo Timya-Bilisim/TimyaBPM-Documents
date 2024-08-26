@@ -16,7 +16,35 @@
 <p><img src="/TimyaBPM-Documents/frm1.png" alt="alt text"></p>
 </li>
 </ul>
-<h2 id="_1-2-form-components" tabindex="-1"><a class="header-anchor" href="#_1-2-form-components"><span>1.2.  Form Components</span></a></h2>
+<h2 id="_1-2-defining-form-components" tabindex="-1"><a class="header-anchor" href="#_1-2-defining-form-components"><span>1.2. Defining Form Components</span></a></h2>
+<ul>
+<li>The fields shown below are filled in to complete the form content:</li>
+</ul>
+<p><img src="/TimyaBPM-Documents/frm2.png" alt="alt text"></p>
+<ul>
+<li><strong>ID:</strong> This is the name that will be visible in the system. Turkish characters and spaces should not be used.</li>
+<li><strong>Title:</strong> This is the name that the user will see.</li>
+<li><strong>Grid Structure:</strong> Used for design. The size of the text boxes is defined according to the grid structure:
+<ul>
+<li><strong>XS:</strong> For small screens</li>
+<li><strong>S:</strong> For screens like tablets</li>
+<li><strong>MD:</strong> For small computers</li>
+<li><strong>LG:</strong> For larger monitors</li>
+</ul>
+</li>
+<li><strong>Mandatory Field Formula:</strong>
+<ul>
+<li><strong>Readonly:</strong> Read-only.</li>
+<li><strong>Editable:</strong> Editable.</li>
+<li><strong>Required:</strong> Mandatory.</li>
+<li><strong>Hidden:</strong> Hidden.</li>
+</ul>
+</li>
+<li><strong>Maximum Character Count:</strong> The number of characters defined in the database is entered.</li>
+<li><strong>Table:</strong> The created table is selected.</li>
+<li><strong>Field:</strong> The field of the table is selected.</li>
+</ul>
+<h2 id="_1-3-form-components" tabindex="-1"><a class="header-anchor" href="#_1-3-form-components"><span>1.3.  Form Components</span></a></h2>
 <p><img src="/TimyaBPM-Documents/frm3.png" alt="alt text"></p>
 <h3 id="textbox" tabindex="-1"><a class="header-anchor" href="#textbox"><span>Textbox</span></a></h3>
 <ul>
@@ -61,34 +89,36 @@
 <p><img src="/TimyaBPM-Documents/saat1.png" alt="Figure 1"></p>
 <p><img src="/TimyaBPM-Documents/saat2.png" alt="Figure 2"></p>
 <p><img src="/TimyaBPM-Documents/saat3.png" alt="Figure 3"></p>
-<h2 id="_1-3-defining-form-components" tabindex="-1"><a class="header-anchor" href="#_1-3-defining-form-components"><span>1.3. Defining Form Components</span></a></h2>
+<h3 id="file" tabindex="-1"><a class="header-anchor" href="#file"><span>File</span></a></h3>
+<p><strong>Adding the File Component:</strong></p>
 <ul>
-<li>The fields shown below are filled in to complete the form content:</li>
+<li>Once the file component is added to the form, <strong>Title</strong> and <strong>Tag</strong> definitions must be the same. (See Example 1)</li>
 </ul>
-<p><img src="/TimyaBPM-Documents/frm2.png" alt="alt text"></p>
+<p><strong>Selecting and Displaying Files:</strong></p>
 <ul>
-<li><strong>ID:</strong> This is the name that will be visible in the system. Turkish characters and spaces should not be used.</li>
-<li><strong>Title:</strong> This is the name that the user will see.</li>
-<li><strong>Grid Structure:</strong> Used for design. The size of the text boxes is defined according to the grid structure:
+<li>Start the process from the <strong>Start Process</strong> section and select the file you want to add.</li>
+<li>After selecting the file, the added files will be displayed in the <strong>Files</strong> section on the right side. (See Example 2)</li>
+</ul>
+<p><strong>Example 1</strong><br>
+<img src="/TimyaBPM-Documents/dosya1.png" alt="Figure 2"></p>
+<p><strong>Example 2</strong><br>
+<img src="/TimyaBPM-Documents/dosyalar2.png" alt="Figure 3"></p>
+<h3 id="money" tabindex="-1"><a class="header-anchor" href="#money"><span>Money</span></a></h3>
 <ul>
-<li><strong>XS:</strong> For small screens</li>
-<li><strong>S:</strong> For screens like tablets</li>
-<li><strong>MD:</strong> For small computers</li>
-<li><strong>LG:</strong> For larger monitors</li>
+<li>For the money component, DataValueType should be set to Money in data definitions. (See Example 1)</li>
+<li>To set the money format, you can use the standard numeric format strings page provided by Microsoft. For example, in the image shown, the <strong>N6</strong> format is used. This format displays the number with six decimal places. (See Example 2)</li>
 </ul>
-</li>
-<li><strong>Mandatory Field Formula:</strong>
+<p><em>For more information about different formats, visit the link and choose the one that suits your needs: <a href="https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings" target="_blank" rel="noopener noreferrer">Standard Numeric Format Strings</a>.</em></p>
+<p><strong>Example 1</strong><br>
+<img src="/TimyaBPM-Documents/para.png" alt="Figure 2"></p>
+<p><strong>Example 2</strong><br>
+<img src="/TimyaBPM-Documents/para1.png" alt="Figure 3"></p>
+<h3 id="comment" tabindex="-1"><a class="header-anchor" href="#comment"><span>Comment</span></a></h3>
 <ul>
-<li><strong>Readonly:</strong> Read-only.</li>
-<li><strong>Editable:</strong> Editable.</li>
-<li><strong>Required:</strong> Mandatory.</li>
-<li><strong>Hidden:</strong> Hidden.</li>
+<li>After adding the comment component to the form, start the process from the <strong>Start Process</strong> section, and add a comment from the <strong>Comments</strong> field on the right side.</li>
 </ul>
-</li>
-<li><strong>Maximum Character Count:</strong> The number of characters defined in the database is entered.</li>
-<li><strong>Table:</strong> The created table is selected.</li>
-<li><strong>Field:</strong> The field of the table is selected.</li>
-</ul>
+<p><img src="/TimyaBPM-Documents/yorum1.png" alt="Figure 2"></p>
+<p><img src="/TimyaBPM-Documents/yorum2.png" alt="Figure 3"></p>
 </div></template>
 
 

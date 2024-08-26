@@ -15,7 +15,29 @@
 
 ![alt text](/TimyaBPM-Documents/frm1.png)
 
-## 1.2.  Form Bileşenleri
+## 1.2. Form Bileşenlerini Tanımlama
+
+- _Form içeriğini doldurmak için aşağıda gösterilen  alanlar doldurulur:_
+
+ ![alt text](/TimyaBPM-Documents/frm2.png)
+- **ID:** Sistemde görünecek isimdir. Türkçe karakter ve boşluk kullanılmamalıdır.
+- **Title:** Kullanıcının göreceği isimdir.
+- **Grid Yapısı:** Tasarım için kullanılır. Textboxların boyutunu grid yapısına göre tanımlanır:
+  - **XS:** Küçük ekranlarda
+  - **S:** Tabletler gibi ekranlarda
+  - **MD:** Küçük bilgisayarlarda
+  - **LG:** Daha büyük monitörlerde
+- **Zorunlu Alan Formulu:**
+  - **Readonly:** Sadece okunabilir.
+  - **Editable:** Düzenlenebilir.
+  - **Required:** Zorunlu.
+  - **Hidden:** Gizli.
+- **Azami Karakter Sayısı:** Veritabanında tanımlanan karakter sayısı girilir.
+- **Table:** Oluşturulan tablo seçilir.
+- **Field:** Tablonun alanı seçilir.
+
+
+## 1.3.  Form Bileşenleri
 
  ![alt text](/TimyaBPM-Documents/frm3.png)
 ### Textbox 
@@ -83,24 +105,42 @@
 
 ![Şekil 3](/TimyaBPM-Documents/saat3.png)
 
+### Dosya
 
-## 1.3. Form Bileşenlerini Tanımlama
+ **Dosya Bileşenini Ekleme:**
+   - Dosya bileşeni forma eklendikten sonra, **Title** ve **Tag** tanımlamaları aynı olmalıdır. (Bkz. Örnek 1)
 
-- _Form içeriğini doldurmak için aşağıda gösterilen  alanlar doldurulur:_
+ **Dosya Seçimi ve Görüntüleme:**
+   - **İş Başlat** kısmından süreç başlatılır  ve eklenilmek istenilen dosya seçilir.
+   - Dosya seçildikten sonra, sağ taraftaki **Dosyalar** bölümünde eklenilen dosyalar görüntülenir.(Bkz. Örnek 2)
 
- ![alt text](/TimyaBPM-Documents/frm2.png)
-- **ID:** Sistemde görünecek isimdir. Türkçe karakter ve boşluk kullanılmamalıdır.
-- **Title:** Kullanıcının göreceği isimdir.
-- **Grid Yapısı:** Tasarım için kullanılır. Textboxların boyutunu grid yapısına göre tanımlanır:
-  - **XS:** Küçük ekranlarda
-  - **S:** Tabletler gibi ekranlarda
-  - **MD:** Küçük bilgisayarlarda
-  - **LG:** Daha büyük monitörlerde
-- **Zorunlu Alan Formulu:**
-  - **Readonly:** Sadece okunabilir.
-  - **Editable:** Düzenlenebilir.
-  - **Required:** Zorunlu.
-  - **Hidden:** Gizli.
-- **Azami Karakter Sayısı:** Veritabanında tanımlanan karakter sayısı girilir.
-- **Table:** Oluşturulan tablo seçilir.
-- **Field:** Tablonun alanı seçilir.
+**Örnek 1**
+![Şekil 2](/TimyaBPM-Documents/dosya1.png)
+
+
+  **Örnek 2**
+![Şekil 3](/TimyaBPM-Documents/dosyalar2.png)
+
+### Para
+ - Para bileşeni için veri tanımlarında DataValueType Money seçilmelidir.(Bkz. Örnek 1)
+- Para formatını ayarlamak için Microsoft'un sağladığı standard numeric format strings sayfası kullanılabilir. Örneğin, resimde gösterilen yerde **N6** formatı kullanılmış. Bu format, sayıyı virgülden sonra 6 basamak olacak şekilde formatlar.(Bkz. Örnek 2)
+
+_Bağlantıya giderek farklı formatlar hakkında daha fazla bilgi edinebilir ve ihtiyacınıza uygun olanı seçebilirsiniz: [Standard Numeric Format Strings](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings)._
+
+  **Örnek 1**
+   ![Şekil 2](/TimyaBPM-Documents/para.png)
+
+
+  **Örnek 2**
+![Şekil 3](/TimyaBPM-Documents/para1.png)
+
+### Comments
+- Yorum bileşeni forma eklendikten sonra, **İş Başlat** kısmından süreç başlatılır ve sağ kısımdaki **Yorumlar** alanından yorum eklenir
+.
+ 
+![Şekil 2](/TimyaBPM-Documents/yorum1.png)
+
+
+    
+![Şekil 3](/TimyaBPM-Documents/yorum2.png)
+

@@ -15,7 +15,32 @@
 
    ![alt text](/TimyaBPM-Documents/frm1.png)
 
-## 1.2.  Form Components
+
+   
+## 1.2. Defining Form Components
+
+- The fields shown below are filled in to complete the form content:
+
+ ![alt text](/TimyaBPM-Documents/frm2.png)
+
+- **ID:** This is the name that will be visible in the system. Turkish characters and spaces should not be used.
+- **Title:** This is the name that the user will see.
+- **Grid Structure:** Used for design. The size of the text boxes is defined according to the grid structure:
+  - **XS:** For small screens
+  - **S:** For screens like tablets
+  - **MD:** For small computers
+  - **LG:** For larger monitors
+- **Mandatory Field Formula:**
+  - **Readonly:** Read-only.
+  - **Editable:** Editable.
+  - **Required:** Mandatory.
+  - **Hidden:** Hidden.
+- **Maximum Character Count:** The number of characters defined in the database is entered.
+- **Table:** The created table is selected.
+- **Field:** The field of the table is selected.
+
+
+## 1.3.  Form Components
  ![alt text](/TimyaBPM-Documents/frm3.png)
 
 ### Textbox 
@@ -66,24 +91,38 @@
 
 ![Figure 3](/TimyaBPM-Documents/saat3.png)
 
-## 1.3. Defining Form Components
+### File
 
-- The fields shown below are filled in to complete the form content:
+ **Adding the File Component:**
+   - Once the file component is added to the form, **Title** and **Tag** definitions must be the same. (See Example 1)
 
- ![alt text](/TimyaBPM-Documents/frm2.png)
+ **Selecting and Displaying Files:**
+   - Start the process from the **Start Process** section and select the file you want to add.
+   - After selecting the file, the added files will be displayed in the **Files** section on the right side. (See Example 2)
 
-- **ID:** This is the name that will be visible in the system. Turkish characters and spaces should not be used.
-- **Title:** This is the name that the user will see.
-- **Grid Structure:** Used for design. The size of the text boxes is defined according to the grid structure:
-  - **XS:** For small screens
-  - **S:** For screens like tablets
-  - **MD:** For small computers
-  - **LG:** For larger monitors
-- **Mandatory Field Formula:**
-  - **Readonly:** Read-only.
-  - **Editable:** Editable.
-  - **Required:** Mandatory.
-  - **Hidden:** Hidden.
-- **Maximum Character Count:** The number of characters defined in the database is entered.
-- **Table:** The created table is selected.
-- **Field:** The field of the table is selected.
+**Example 1**  
+![Figure 2](/TimyaBPM-Documents/dosya1.png)
+
+**Example 2**  
+![Figure 3](/TimyaBPM-Documents/dosyalar2.png)
+
+### Money
+
+- For the money component, DataValueType should be set to Money in data definitions. (See Example 1)
+- To set the money format, you can use the standard numeric format strings page provided by Microsoft. For example, in the image shown, the **N6** format is used. This format displays the number with six decimal places. (See Example 2)
+
+_For more information about different formats, visit the link and choose the one that suits your needs: [Standard Numeric Format Strings](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings)._
+
+**Example 1**  
+![Figure 2](/TimyaBPM-Documents/para.png)
+
+**Example 2**  
+![Figure 3](/TimyaBPM-Documents/para1.png)
+
+### Comment
+
+- After adding the comment component to the form, start the process from the **Start Process** section, and add a comment from the **Comments** field on the right side.
+
+![Figure 2](/TimyaBPM-Documents/yorum1.png)
+
+![Figure 3](/TimyaBPM-Documents/yorum2.png)

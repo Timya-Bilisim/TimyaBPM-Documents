@@ -14,7 +14,35 @@
 <li><em>Gerekli form bileşenlerini seçip sürükle-bırak yöntemiyle form üzerine tanımlanır. Ardından, seçilen bileşene tıklayarak form içeriğini sağ bölümdeki alanlara doldurulur. Bu kısım, &quot;Form Bileşenleri Tanımlama&quot; başlığı altında detaylı olarak anlatılmıştır. (Bkz. 1.3. Form Bileşenlerini Tanımlama)</em></li>
 </ul>
 <p><img src="/TimyaBPM-Documents/frm1.png" alt="alt text"></p>
-<h2 id="_1-2-form-bilesenleri" tabindex="-1"><a class="header-anchor" href="#_1-2-form-bilesenleri"><span>1.2.  Form Bileşenleri</span></a></h2>
+<h2 id="_1-2-form-bilesenlerini-tanımlama" tabindex="-1"><a class="header-anchor" href="#_1-2-form-bilesenlerini-tanımlama"><span>1.2. Form Bileşenlerini Tanımlama</span></a></h2>
+<ul>
+<li><em>Form içeriğini doldurmak için aşağıda gösterilen  alanlar doldurulur:</em></li>
+</ul>
+<p><img src="/TimyaBPM-Documents/frm2.png" alt="alt text"></p>
+<ul>
+<li><strong>ID:</strong> Sistemde görünecek isimdir. Türkçe karakter ve boşluk kullanılmamalıdır.</li>
+<li><strong>Title:</strong> Kullanıcının göreceği isimdir.</li>
+<li><strong>Grid Yapısı:</strong> Tasarım için kullanılır. Textboxların boyutunu grid yapısına göre tanımlanır:
+<ul>
+<li><strong>XS:</strong> Küçük ekranlarda</li>
+<li><strong>S:</strong> Tabletler gibi ekranlarda</li>
+<li><strong>MD:</strong> Küçük bilgisayarlarda</li>
+<li><strong>LG:</strong> Daha büyük monitörlerde</li>
+</ul>
+</li>
+<li><strong>Zorunlu Alan Formulu:</strong>
+<ul>
+<li><strong>Readonly:</strong> Sadece okunabilir.</li>
+<li><strong>Editable:</strong> Düzenlenebilir.</li>
+<li><strong>Required:</strong> Zorunlu.</li>
+<li><strong>Hidden:</strong> Gizli.</li>
+</ul>
+</li>
+<li><strong>Azami Karakter Sayısı:</strong> Veritabanında tanımlanan karakter sayısı girilir.</li>
+<li><strong>Table:</strong> Oluşturulan tablo seçilir.</li>
+<li><strong>Field:</strong> Tablonun alanı seçilir.</li>
+</ul>
+<h2 id="_1-3-form-bilesenleri" tabindex="-1"><a class="header-anchor" href="#_1-3-form-bilesenleri"><span>1.3.  Form Bileşenleri</span></a></h2>
 <p><img src="/TimyaBPM-Documents/frm3.png" alt="alt text"></p>
 <h3 id="textbox" tabindex="-1"><a class="header-anchor" href="#textbox"><span>Textbox</span></a></h3>
 <ul>
@@ -64,34 +92,37 @@
 <p><img src="/TimyaBPM-Documents/saat1.png" alt="Şekil 1"></p>
 <p><img src="/TimyaBPM-Documents/saat2.png" alt="Şekil 2"></p>
 <p><img src="/TimyaBPM-Documents/saat3.png" alt="Şekil 3"></p>
-<h2 id="_1-3-form-bilesenlerini-tanımlama" tabindex="-1"><a class="header-anchor" href="#_1-3-form-bilesenlerini-tanımlama"><span>1.3. Form Bileşenlerini Tanımlama</span></a></h2>
+<h3 id="dosya" tabindex="-1"><a class="header-anchor" href="#dosya"><span>Dosya</span></a></h3>
+<p><strong>Dosya Bileşenini Ekleme:</strong></p>
 <ul>
-<li><em>Form içeriğini doldurmak için aşağıda gösterilen  alanlar doldurulur:</em></li>
+<li>Dosya bileşeni forma eklendikten sonra, <strong>Title</strong> ve <strong>Tag</strong> tanımlamaları aynı olmalıdır. (Bkz. Örnek 1)</li>
 </ul>
-<p><img src="/TimyaBPM-Documents/frm2.png" alt="alt text"></p>
+<p><strong>Dosya Seçimi ve Görüntüleme:</strong></p>
 <ul>
-<li><strong>ID:</strong> Sistemde görünecek isimdir. Türkçe karakter ve boşluk kullanılmamalıdır.</li>
-<li><strong>Title:</strong> Kullanıcının göreceği isimdir.</li>
-<li><strong>Grid Yapısı:</strong> Tasarım için kullanılır. Textboxların boyutunu grid yapısına göre tanımlanır:
+<li><strong>İş Başlat</strong> kısmından süreç başlatılır  ve eklenilmek istenilen dosya seçilir.</li>
+<li>Dosya seçildikten sonra, sağ taraftaki <strong>Dosyalar</strong> bölümünde eklenilen dosyalar görüntülenir.(Bkz. Örnek 2)</li>
+</ul>
+<p><strong>Örnek 1</strong>
+<img src="/TimyaBPM-Documents/dosya1.png" alt="Şekil 2"></p>
+<p><strong>Örnek 2</strong>
+<img src="/TimyaBPM-Documents/dosyalar2.png" alt="Şekil 3"></p>
+<h3 id="para" tabindex="-1"><a class="header-anchor" href="#para"><span>Para</span></a></h3>
 <ul>
-<li><strong>XS:</strong> Küçük ekranlarda</li>
-<li><strong>S:</strong> Tabletler gibi ekranlarda</li>
-<li><strong>MD:</strong> Küçük bilgisayarlarda</li>
-<li><strong>LG:</strong> Daha büyük monitörlerde</li>
+<li>Para bileşeni için veri tanımlarında DataValueType Money seçilmelidir.(Bkz. Örnek 1)</li>
+<li>Para formatını ayarlamak için Microsoft'un sağladığı standard numeric format strings sayfası kullanılabilir. Örneğin, resimde gösterilen yerde <strong>N6</strong> formatı kullanılmış. Bu format, sayıyı virgülden sonra 6 basamak olacak şekilde formatlar.(Bkz. Örnek 2)</li>
 </ul>
-</li>
-<li><strong>Zorunlu Alan Formulu:</strong>
+<p><em>Bağlantıya giderek farklı formatlar hakkında daha fazla bilgi edinebilir ve ihtiyacınıza uygun olanı seçebilirsiniz: <a href="https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings" target="_blank" rel="noopener noreferrer">Standard Numeric Format Strings</a>.</em></p>
+<p><strong>Örnek 1</strong>
+<img src="/TimyaBPM-Documents/para.png" alt="Şekil 2"></p>
+<p><strong>Örnek 2</strong>
+<img src="/TimyaBPM-Documents/para1.png" alt="Şekil 3"></p>
+<h3 id="comments" tabindex="-1"><a class="header-anchor" href="#comments"><span>Comments</span></a></h3>
 <ul>
-<li><strong>Readonly:</strong> Sadece okunabilir.</li>
-<li><strong>Editable:</strong> Düzenlenebilir.</li>
-<li><strong>Required:</strong> Zorunlu.</li>
-<li><strong>Hidden:</strong> Gizli.</li>
+<li>Yorum bileşeni forma eklendikten sonra, <strong>İş Başlat</strong> kısmından süreç başlatılır ve sağ kısımdaki <strong>Yorumlar</strong> alanından yorum eklenir
+.</li>
 </ul>
-</li>
-<li><strong>Azami Karakter Sayısı:</strong> Veritabanında tanımlanan karakter sayısı girilir.</li>
-<li><strong>Table:</strong> Oluşturulan tablo seçilir.</li>
-<li><strong>Field:</strong> Tablonun alanı seçilir.</li>
-</ul>
+<p><img src="/TimyaBPM-Documents/yorum1.png" alt="Şekil 2"></p>
+<p><img src="/TimyaBPM-Documents/yorum2.png" alt="Şekil 3"></p>
 </div></template>
 
 
