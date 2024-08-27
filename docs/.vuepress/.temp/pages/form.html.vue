@@ -132,15 +132,17 @@
 <img src="/TimyaBPM-Documents/datapicker1.png" alt="Şekil 3">
 <img src="/TimyaBPM-Documents/datapicker2.png" alt="Şekil 3"></p>
 <ul>
-<li>Data Binding: Form bileşenlerini   Data Picker’dan seçilen verilerle doldurulmasını sağlar.</li>
+<li>Data Binding: Form bileşenlerini   Data Picker’dan seçilen verilerle doldurulmasını sağlar.
+Form Kısmından ;</li>
 <li><strong>ColumnName:Veri tabanındaki sütunlar seçilir.</strong></li>
 <li><strong>Formula:Table ve field alanları  sağ taraftaki <em>Form Bileşenlerini Tanımlama</em> alanından seçilir ve süslü parantez içinde formula kısmında belirtilir.</strong></li>
 </ul>
 <p>Aşağıdaki örnekte sütun olarak
-<em>UrunAdı seçilmiş ve formüle {CikisEvrak.EvrakNo} yazılmıştır. Bu sayede, ürün adı Evrak No alanında gözükür.</em>
-<em>Urun Açıklaması sütunu seçilmiş ve formüle {CikisEvrak.Notlar} yazılmıştır. Bu sayede, ürün açıklaması Notlar kısmında gözükür. (Örnek 2)</em></p>
+<em>UrunAdı seçilmiş ve formüle {CikisEvrak.EvrakNo} yazılmıştır. Bu sayede, süreç başlatılıp veriler seçildikten sonra  ürün adı Evrak No alanında gözükür.</em>
+<em>Urun Açıklaması sütunu seçilmiş ve formüle {CikisEvrak.Notlar} yazılmıştır. Bu sayede,süreç başlatılıp veriler seçildikten sonra  ürün açıklaması Notlar kısmında gözükür. (Örnek 2)</em></p>
 <p><strong>Örnek2</strong>
 <img src="/TimyaBPM-Documents/datapicker3.png" alt="Şekil 3">
+<img src="/TimyaBPM-Documents/datapicker.png" alt="Şekil 3">
 <img src="/TimyaBPM-Documents/datapicker4.png" alt="Şekil 3"></p>
 </div></template>
 

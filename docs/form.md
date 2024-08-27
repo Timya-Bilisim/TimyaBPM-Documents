@@ -156,15 +156,17 @@ _Bağlantıya giderek farklı formatlar hakkında daha fazla bilgi edinebilir ve
 
 
 - Data Binding: Form bileşenlerini   Data Picker’dan seçilen verilerle doldurulmasını sağlar. 
+Form Kısmından ;
 - **ColumnName:Veri tabanındaki sütunlar seçilir.**
 - **Formula:Table ve field alanları  sağ taraftaki _Form Bileşenlerini Tanımlama_ alanından seçilir ve süslü parantez içinde formula kısmında belirtilir.**
 
-
 Aşağıdaki örnekte sütun olarak 
-_UrunAdı seçilmiş ve formüle {CikisEvrak.EvrakNo} yazılmıştır. Bu sayede, ürün adı Evrak No alanında gözükür._
- _Urun Açıklaması sütunu seçilmiş ve formüle {CikisEvrak.Notlar} yazılmıştır. Bu sayede, ürün açıklaması Notlar kısmında gözükür. (Örnek 2)_
+_UrunAdı seçilmiş ve formüle {CikisEvrak.EvrakNo} yazılmıştır. Bu sayede, süreç başlatılıp veriler seçildikten sonra  ürün adı Evrak No alanında gözükür._
+ _Urun Açıklaması sütunu seçilmiş ve formüle {CikisEvrak.Notlar} yazılmıştır. Bu sayede,süreç başlatılıp veriler seçildikten sonra  ürün açıklaması Notlar kısmında gözükür. (Örnek 2)_
+
 
 
 **Örnek2**
 ![Şekil 3](/TimyaBPM-Documents/datapicker3.png)
+![Şekil 3](/TimyaBPM-Documents/datapicker.png)
 ![Şekil 3](/TimyaBPM-Documents/datapicker4.png)
