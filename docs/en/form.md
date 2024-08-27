@@ -126,3 +126,22 @@ _For more information about different formats, visit the link and choose the one
 ![Figure 2](/TimyaBPM-Documents/yorum1.png)
 
 ![Figure 3](/TimyaBPM-Documents/yorum2.png)
+### Data Picker
+
+- The Data Picker allows selecting data from the database. Connections and Business Objects are defined, and these concepts are explained in detail in the Connection and Business Objects sections. Examples of connections and business objects related to the Data Picker are shown (Example 1).
+
+ **Example 1**  
+![Figure 3](/TimyaBPM-Documents/datapicker1.png)  
+![Figure 3](/TimyaBPM-Documents/datapicker2.png)
+
+- Data Binding: Allows filling form components with data selected from the Data Picker.
+- **ColumnName: Selects the columns from the database.**
+- **Formula: Table and field areas are selected from the form component definition area on the right and specified in the formula section within curly braces.**
+
+In the example below,  
+_UrunAdı is selected as a column, and {CikisEvrak.EvrakNo} is written in the formula. This way, the product name appears in the Document Number field._  
+_Urun Açıklaması column is selected, and {CikisEvrak.Notlar} is written in the formula. This way, the product description appears in the Notes section (Example 2)._
+
+**Example 2**  
+![Figure 3](/TimyaBPM-Documents/datapicker3.png)  
+![Figure 3](/TimyaBPM-Documents/datapicker4.png)
