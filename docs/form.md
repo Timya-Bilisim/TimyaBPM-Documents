@@ -144,3 +144,26 @@ _Bağlantıya giderek farklı formatlar hakkında daha fazla bilgi edinebilir ve
     
 ![Şekil 3](/TimyaBPM-Documents/yorum2.png)
 
+### Data Picker
+- Data Picker,  veri tabanından veri seçilmesini sağlar.  Bağlantılar ve İş Nesneleri tanımlanır. Bu kavramlar ayrıntılı olarak Bağlantı ve İş Nesneleri bölümlerde detaylıca açıklanmıştır.  Data Picker ile ilgili bağlantı ve iş nesnesi örnekleri gösterilmiştir.(Örnek 1)
+
+
+ **Örnek1**
+![Şekil 3](/TimyaBPM-Documents/datapicker1.png)
+![Şekil 3](/TimyaBPM-Documents/datapicker2.png)
+
+
+
+- Data Binding: Form bileşenlerini   Data Picker’dan seçilen verilerle doldurulmasını sağlar. 
+- **ColumnName:Veri tabanındaki sutunlar seçilir.**
+- **Formula:Table ve field alanları  sağ taraftaki form bileşenlerini tanımlama alanından seçilir ve süslü parantez içinde formula kısmında belirtilir**
+
+
+Aşağıdaki örnekte sütun olarak 
+_UrunAdı seçilmiş ve formüle {CikisEvrak.EvrakNo} yazılmıştır. Bu sayede, ürün adı Evrak No alanında gözükür._
+ _Urun Açıklaması sütunu seçilmiş ve formüle {CikisEvrak.Notlar} yazılmıştır. Bu sayede, ürün açıklaması Notlar kısmında gözükür. (Örnek 2)_
+
+
+**Örnek2**
+![Şekil 3](/TimyaBPM-Documents/datapicker3.png)
+![Şekil 3](/TimyaBPM-Documents/datapicker4.png)
