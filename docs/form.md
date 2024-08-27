@@ -135,7 +135,7 @@ _Bağlantıya giderek farklı formatlar hakkında daha fazla bilgi edinebilir ve
 ![Şekil 3](/TimyaBPM-Documents/para1.png)
 
 ### Comments
-- Yorum bileşeni forma eklendikten sonra, **İş Başlat** kısmından süreç başlatılır ve sağ kısımdaki **Yorumlar** alanından yorum eklenir
+- Yorum bileşeni forma eklendikten sonra, **İş Başlat** kısmından süreç başlatılır ve sağ kısımdaki **Yorumlar** alanından yorum eklenir.
 .
  
 ![Şekil 2](/TimyaBPM-Documents/yorum1.png)
@@ -155,8 +155,8 @@ _Bağlantıya giderek farklı formatlar hakkında daha fazla bilgi edinebilir ve
 
 
 - Data Binding: Form bileşenlerini   Data Picker’dan seçilen verilerle doldurulmasını sağlar. 
-- **ColumnName:Veri tabanındaki sutunlar seçilir.**
-- **Formula:Table ve field alanları  sağ taraftaki form bileşenlerini tanımlama alanından seçilir ve süslü parantez içinde formula kısmında belirtilir**
+- **ColumnName:Veri tabanındaki sütunlar seçilir.**
+- **Formula:Table ve field alanları  sağ taraftaki _Form Bileşenlerini Tanımlama_ alanından seçilir ve süslü parantez içinde formula kısmında belirtilir.**
 
 
 Aşağıdaki örnekte sütun olarak 

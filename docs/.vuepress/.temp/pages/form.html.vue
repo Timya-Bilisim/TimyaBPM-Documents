@@ -118,7 +118,7 @@
 <img src="/TimyaBPM-Documents/para1.png" alt="Şekil 3"></p>
 <h3 id="comments" tabindex="-1"><a class="header-anchor" href="#comments"><span>Comments</span></a></h3>
 <ul>
-<li>Yorum bileşeni forma eklendikten sonra, <strong>İş Başlat</strong> kısmından süreç başlatılır ve sağ kısımdaki <strong>Yorumlar</strong> alanından yorum eklenir
+<li>Yorum bileşeni forma eklendikten sonra, <strong>İş Başlat</strong> kısmından süreç başlatılır ve sağ kısımdaki <strong>Yorumlar</strong> alanından yorum eklenir.
 .</li>
 </ul>
 <p><img src="/TimyaBPM-Documents/yorum1.png" alt="Şekil 2"></p>
@@ -132,8 +132,8 @@
 <img src="/TimyaBPM-Documents/datapicker2.png" alt="Şekil 3"></p>
 <ul>
 <li>Data Binding: Form bileşenlerini   Data Picker’dan seçilen verilerle doldurulmasını sağlar.</li>
-<li><strong>ColumnName:Veri tabanındaki sutunlar seçilir.</strong></li>
-<li><strong>Formula:Table ve field alanları  sağ taraftaki form bileşenlerini tanımlama alanından seçilir ve süslü parantez içinde formula kısmında belirtilir</strong></li>
+<li><strong>ColumnName:Veri tabanındaki sütunlar seçilir.</strong></li>
+<li><strong>Formula:Table ve field alanları  sağ taraftaki <em>Form Bileşenlerini Tanımlama</em> alanından seçilir ve süslü parantez içinde formula kısmında belirtilir.</strong></li>
 </ul>
 <p>Aşağıdaki örnekte sütun olarak
 <em>UrunAdı seçilmiş ve formüle {CikisEvrak.EvrakNo} yazılmıştır. Bu sayede, ürün adı Evrak No alanında gözükür.</em>
