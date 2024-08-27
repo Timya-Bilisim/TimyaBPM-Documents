@@ -125,7 +125,8 @@
 <p><img src="/TimyaBPM-Documents/yorum2.png" alt="Şekil 3"></p>
 <h3 id="data-picker" tabindex="-1"><a class="header-anchor" href="#data-picker"><span>Data Picker</span></a></h3>
 <ul>
-<li>Data Picker,  veri tabanından veri seçilmesini sağlar.  Bağlantılar ve İş Nesneleri tanımlanır. Bu kavramlar ayrıntılı olarak Bağlantı ve İş Nesneleri bölümlerde detaylıca açıklanmıştır.  Data Picker ile ilgili bağlantı ve iş nesnesi örnekleri gösterilmiştir.(Örnek 1)</li>
+<li>Data Picker,  veri tabanından veri seçilmesini sağlar.  Bağlantılar ve İş Nesneleri tanımlanır. Bu kavramlar ayrıntılı olarak Bağlantı ve İş Nesneleri bölümlerde detaylıca açıklanmıştır.</li>
+<li>Data Picker ile ilgili bağlantı ve iş nesnesi örnekleri gösterilmiştir.(Örnek 1)</li>
 </ul>
 <p><strong>Örnek1</strong>
 <img src="/TimyaBPM-Documents/datapicker1.png" alt="Şekil 3">
