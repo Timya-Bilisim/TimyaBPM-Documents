@@ -94,7 +94,7 @@
 ### File
 
  **Adding the File Component:**
-   - Once the file component is added to the form, **Title** and **Tag** definitions must be the same. (See Example 1)
+   - After the file component is added to the form, the **Title** and **Tag** parts must be filled in. Especially in order to add a file, **Tag** must be registered. (See Example 1)
 
  **Selecting and Displaying Files:**
    - Start the process from the **Start Process** section and select the file you want to add.

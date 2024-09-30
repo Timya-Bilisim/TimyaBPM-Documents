@@ -108,7 +108,8 @@
 ### Dosya
 
  **Dosya Bileşenini Ekleme:**
-   - Dosya bileşeni forma eklendikten sonra, **Title** ve **Tag** tanımlamaları aynı olmalıdır. (Bkz. Örnek 1)
+   - Dosya bileşeni forma eklendikten sonra, **Title** ve **Tag** kısımları doldurulmalıdır.Özellikle dosya ekleyebilmek için **Tag** alanının doldurulması gerekmektedir.
+   (Bkz. Örnek 1)
 
  **Dosya Seçimi ve Görüntüleme:**
    - **İş Başlat** kısmından süreç başlatılır  ve eklenilmek istenilen dosya seçilir.
