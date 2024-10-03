@@ -1,6 +1,6 @@
 # Process Creation Steps
 
-## 1.1. Process Development
+## 1. Process Development
 
 - _To create a new process, click the plus sign in the process section and select **"New Map"** to create a new process map. When you click on an empty area on the process map, the fields that need to be added to the process are displayed on the right side._
 
@@ -34,58 +34,78 @@
 
 ---
 
-### Process Actions
+## 2. Process Actions
+_Process actions are fundamental components that visualize the steps of business processes and the relationships between these steps. Various symbols are used to represent these steps. Each symbol represents a specific phase of the business process. Comprehensive descriptions and uses of these symbols are detailed in the sections below._
 
-_Process actions are the core components that visualize the steps of business processes and the relationships between these steps. Various symbols are used to represent these steps, with each symbol denoting a specific phase of the business process. Detailed explanations and usage of these symbols are covered in the following sections._
+### 2.1. Start Event
 
-#### Start Action
+- Represented by round (circle) symbols. The round shapes in the process map represent the actions to start the process. Clicking on this action should define the fields that will be displayed on the right side as described below.
 
-- Represented by circular (round) symbols. Circles in the process map indicate the actions that initiate the process. The fields displayed on the right side when clicking on this action should be defined as described below.
+- **Name:** This is the name of the button that the user must click to start the process.
 
-- **Name:** The name of the button that the user must click to start the process.
-
-- **ID:** The name that will be stored in the system. Spaces and Turkish characters should not be used.
+- **ID:** This is the name that will be stored in the system. No spaces or Turkish characters are allowed.
 
 ![alt text](/TimyaBPM-Documents/surecc3.png)
 
-➜ The **Properties** section is defined as follows:
+➜ **Properties** section is defined as follows:
 
-- **Available to Roles:** Select the roles that can start the process.
-- **To Do List:** Indicates the role to which the first task will be assigned after the process starts. This can be done by dragging the role from the **Roles** section and dropping it into the **Selected Roles** section.
+- **Available to Roles:** The roles that can initiate the process are selected.
+- **To Do List:** Specifies the role to which the first task assignment will be made after the process starts. It is assigned by dragging from the **Roles** section to the **Selected Roles** section using the mouse.
 
 ![alt text](/TimyaBPM-Documents/roller8.png)
 
-- **Form List:** Select the form to be used when the process starts.
+- **Form List:** Selects the form that will be used when the process is initiated.
 
 ![alt text](/TimyaBPM-Documents/surecc4.png)
 
-#### Flow and Task Action
+### 2.2. Sequence Flow
 
-- **Flow:** Defines the flow and connections between process steps. It is represented by an arrow symbol. When a flow action is added, a button is created for users. For example, flows defined after "start" and "user task" steps represent actions that are shown as buttons that users can click.
+- **Flow:** Defines the flow and connections between process steps. It is represented by an arrow symbol. When the flow action is added, a button is created for users.
 
-- **Task:** Defines the actions or tasks to be performed at a specific step. It is represented by a square symbol.
+### 2.3. Task
 
-- Click the square icon next to the **Start** button. The **Flow** and **Task** sections are created as follows.
+- **Task:** Defines the operations or tasks to be performed at a specific step. It is represented by a square symbol.
+
+- Click on the square symbol next to the **Start** button. The **Flow** and **Task** sections are created as shown below.
 
 ![alt text](/TimyaBPM-Documents/surecg1.png)
 
-For the task action, click the key icon and select **Change Element**. This option allows tasks to be specified according to the needs of the process and structured according to the process requirements. For example:
+For the task action, click on the key symbol and select **Change Element**. This option allows for the identification of tasks suitable for the needs of the process and can be configured according to the process requirements. For example:
 
-- **User Task:** Indicates tasks that need to be completed by the user.
-- **Service Task:** Enables document creation and running DLL libraries.
+- **User Task:** Represents tasks that the user must complete.
+- **Service Task:** Allows document creation and execution of DLL libraries.
 
 ![alt text](/TimyaBPM-Documents/anahtar.png)
 
-#### End Process Action
+### 2.4. End Event
 
-- To end the process, select the "End Process" action shown in the image.
+- To terminate the process, select the "Process Termination" action shown in the visual.
 
 ![alt text](/TimyaBPM-Documents/son1.png)
 ![alt text](/TimyaBPM-Documents/son2.png)
 
----
+### 2.5. Timer Event
 
-## 1.2. Publishing the Process
+- Drag and drop the **Boundary Event** onto the **Task**. Then click the **Change Type** button and select the **Timer Boundary Event** option.
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="/TimyaBPM-Documents/timer.png" alt="Timer Event" width="400" style="margin-right: 20px;"/>
+  <img src="/TimyaBPM-Documents/timer2.png" alt="Timer Boundary Event" width="400"/>
+</div>
+
+- Click on the **Timer Boundary Event**. In the **Timer** section on the right, select **Cycle** as the **Type**. The definition in the **Value** section must be a cycle specified in ISO 8601 repeating interval format. 
+For example:
+  - **`R5/PT10S`**: Repeats every 10 seconds, for a total of 5 times.
+  - **`R5/PT5M`**: Repeats every 5 minutes, for a total of 5 times.
+  - **`R10/PT1H`**: Repeats every hour, for a total of 10 times.
+  - **`R/P2D`**: Repeats every 2 days, indefinitely.
+
+   👉 **For more information about ISO 8601:** Visit the [Camunda Timer Events - Time Cycle](https://docs.camunda.org/manual/latest/reference/bpmn20/events/timer-events/#time-cycle) page.
+
+![alt text](/TimyaBPM-Documents/timer3.png)
+
+
+## 3. Publishing the Process
 
 - To make the process available, it must first be published. To do this, click the "Admin Menu" **Projects** option and press the **Publish** button on the relevant project. (See Image 1)
 

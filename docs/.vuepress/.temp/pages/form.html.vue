@@ -95,7 +95,8 @@
 <h3 id="dosya" tabindex="-1"><a class="header-anchor" href="#dosya"><span>Dosya</span></a></h3>
 <p><strong>Dosya Bileşenini Ekleme:</strong></p>
 <ul>
-<li>Dosya bileşeni forma eklendikten sonra, <strong>Title</strong> ve <strong>Tag</strong> tanımlamaları aynı olmalıdır. (Bkz. Örnek 1)</li>
+<li>Dosya bileşeni forma eklendikten sonra, <strong>Title</strong> ve <strong>Tag</strong> kısımları doldurulmalıdır.Özellikle dosya ekleyebilmek için <strong>Tag</strong> alanının doldurulması gerekmektedir.
+(Bkz. Örnek 1)</li>
 </ul>
 <p><strong>Dosya Seçimi ve Görüntüleme:</strong></p>
 <ul>

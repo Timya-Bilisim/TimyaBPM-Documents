@@ -92,7 +92,7 @@
 <h3 id="file" tabindex="-1"><a class="header-anchor" href="#file"><span>File</span></a></h3>
 <p><strong>Adding the File Component:</strong></p>
 <ul>
-<li>Once the file component is added to the form, <strong>Title</strong> and <strong>Tag</strong> definitions must be the same. (See Example 1)</li>
+<li>After the file component is added to the form, the <strong>Title</strong> and <strong>Tag</strong> parts must be filled in. Especially in order to add a file, <strong>Tag</strong> must be registered. (See Example 1)</li>
 </ul>
 <p><strong>Selecting and Displaying Files:</strong></p>
 <ul>

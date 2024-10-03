@@ -2,7 +2,7 @@
 # Süreç Oluşturma Adımları
 
 
-## 1.1. Süreç Geliştirme
+## 1.Süreç Geliştirme
 
  - _Yeni bir süreç geliştirmek için, süreç bölümünde artı işaretine tıklanır ve **"New Map"** seçeneği ile yeni bir süreç haritası oluşturulur. Süreç haritası üzerinde boş bir alana tıklandığında, süreç için eklenmesi gereken alanlar sağ tarafta görüntülenir._
 
@@ -39,10 +39,10 @@
 ---
 
 ---
-### Süreç Aksiyonları
+## 2.Süreç Aksiyonları
 _Süreç aksiyonları, iş süreçlerinin adımlarını ve bu adımlar arasındaki ilişkileri görselleştiren temel bileşenlerdir. Bu adımları temsil etmek için çeşitli semboller kullanılır. Her sembol, iş sürecinin belirli bir aşamasını  ifade eder. Bu sembollerin kapsamlı açıklamaları ve kullanımları, aşağıdaki bölümlerde detaylı olarak ele alınmıştır._
 
-#### Başlat Aksiyonu
+### 2.1. Start Event 
 
  - Yuvarlak (çember) sembollerle gösterilir.Süreç haritasındaki yuvarlak şekiller, süreç başlatma aksiyonlarını ifade eder. Bu aksiyona tıklanarak sağ tarafta görüntülenecek alanlar aşağıda belirtildiği şekilde tanımlanmalıdır.
 
@@ -67,9 +67,10 @@ _Süreç aksiyonları, iş süreçlerinin adımlarını ve bu adımlar arasında
 ![alt text](/TimyaBPM-Documents/surecc4.png) 
 
 
-#### Flow ve Task Aksiyonu 
+### 2.2. Squence Flow 
+- **Flow:** Süreç adımları arasındaki akışı ve bağlantıları tanımlar. Ok sembolü ile temsil edilir. Flow aksiyonu eklendiğinde, kullanıcılar için bir buton oluşturulur.
 
-- **Flow:** Süreç adımları arasındaki akışı ve bağlantıları tanımlar. Ok sembolü ile temsil edilir. Flow aksiyonu eklendiğinde, kullanıcılar için bir buton oluşturulur. Örneğin, "start" ve "user task" adımlarından sonra tanımlanan flow'lar, kullanıcıların tıklayabileceği bir buton ile gösterilen aksiyonları ifade eder.
+### 2.3. Task 
 
 - **Task:** Belirli bir adımda gerçekleştirilecek işlemleri veya görevleri tanımlar.Kare
 sembolü ile temsil edilir.
@@ -82,8 +83,8 @@ sembolü ile temsil edilir.
 
 Task aksiyonu için anahtar işaretine tıklanarak **Change Element** seçilir. Bu seçenek, sürecin ihtiyaçlarına uygun görevlerin  belirlenmesini sağlar ve sürecin gereksinimlerine göre yapılandırılır. Örneğin:
 
-- **User Task:** Kullanıcının   tamamlaması gereken görevleri ifade eder.
-- **Service Task:** Dökuman oluşturma ve DLL kütüphanelerini çalıştırmasını sağlar.
+-  **User Task:** Kullanıcının   tamamlaması gereken görevleri ifade eder.
+-   **Service Task:** Dökuman oluşturma ve DLL kütüphanelerini çalıştırmasını sağlar.
 
 
 
@@ -91,15 +92,41 @@ Task aksiyonu için anahtar işaretine tıklanarak **Change Element** seçilir. 
 
 
 
- #### Süreci Sonlandırma Aksiyonu 
+### 2.4. End Event 
  - Süreci sonlandırmak için  görselde gösterilen "Süreç Sonlandırma" aksiyonu  seçilir.
 
 ![alt text](/TimyaBPM-Documents/son1.png) 
 ![alt text](/TimyaBPM-Documents/son2.png) 
 
+
+### 2.5. Timer Event
+
+- **Boundary Event**  **Task** üzerine sürükleyip bırakın. Daha sonra **Change Type** butonuna tıklayın ve **Timer Boundary Event** seçeneğini seçin.
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="/TimyaBPM-Documents/timer.png" alt="Timer Event" width="400" style="margin-right: 20px;"/>
+  <img src="/TimyaBPM-Documents/timer2.png" alt="Timer Boundary Event" width="400"/>
+</div>
+
+
+
+
+
+ - **Timer Boundary Event**'ın üzerine tıklayın.Sağ taraftaki **Timer** bölümünde, **Type** olarak **Cycle**'ı seçin.**Value**  kısmında yapılan tanımlama, ISO 8601 yinelenen aralık formatı olarak belirtilen bir döngü olmalıdır .
+ Örneğin;
+   - **`R5/PT10S`**: Her 10 saniyede bir, toplamda 5 kez tekrarlanır.
+   - **`R5/PT5M`**: Her 5 dakikada bir, toplamda 5 kez tekrarlanır.
+   - **`R10/PT1H`**: Her 1 saatte bir, toplamda 10 kez tekrarlanır.
+   - **`R/P2D`**: Her 2 günde bir tekrarlanır, süresizdir.
+
+   👉 **ISO 8601 hakkında daha fazla bilgi için:** [Camunda Timer Events - Time Cycle](https://docs.camunda.org/manual/latest/reference/bpmn20/events/timer-events/#time-cycle)sayfasını ziyaret edebilirsiniz.
+
+
+![alt text](/TimyaBPM-Documents/timer3.png) 
+
 ---
 
-## 1.2. Süreci Yayınlama
+## 3. Süreci Yayınlama
 
 
  - Süreci kullanıma almak için ilk olarak süreç yayınlanmalıdır. Bunun için "Admin Menü " **Projeler** seçeneğini tıklanır ve ilgili proje üzerinde **Yayınla** butonuna basılır. (Bkz. Görsel 1)
