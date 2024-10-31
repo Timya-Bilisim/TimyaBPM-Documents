@@ -110,6 +110,16 @@ export default defineUserConfig({
             ],
             
           },
+
+          {
+            text: 'Scripts',
+            collapsible: true,
+            children: [
+              '/script.md',               
+              
+            ],
+            
+          },
         ],
       },
       '/en/': {
@@ -196,6 +206,16 @@ export default defineUserConfig({
             ],
             
           },
+
+          {
+            text: 'Script',
+            collapsible: true,
+            children: [
+              '/en/script.md',               
+              
+            ],
+            
+          },
         ],
       },
     },
@@ -220,9 +240,5 @@ export default defineUserConfig({
     },
   },
 
-  plugins: [
-    ['@vuepress/search', {
-      searchMaxSuggestions: 10
-    }]
-  ]
+ 
 });
