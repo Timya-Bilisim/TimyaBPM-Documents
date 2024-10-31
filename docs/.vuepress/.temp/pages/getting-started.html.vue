@@ -17,7 +17,7 @@
 <h2 id="_6-formlar" tabindex="-1"><a class="header-anchor" href="#_6-formlar"><span>6. Formlar</span></a></h2>
 <p>Bir sürecin parçası olmayan formlar bu sekmede görüntülenir. Genel olarak ayarlar için kullanılır.</p>
 <h2 id="_7-ayarlar" tabindex="-1"><a class="header-anchor" href="#_7-ayarlar"><span>7. Ayarlar</span></a></h2>
-<p>Bu bölümde kullanıcılar, roller, unvanlar, departmanlar, lokasyonlar ve global değişkenler bulunmaktadır.</p>
+<p>Bu bölümde kullanıcılar, roller, unvanlar, departmanlar, lokasyonlar ve global variables (ortak değerler)bulunmaktadır.</p>
 </div></template>
 
 

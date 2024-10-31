@@ -34,4 +34,4 @@ Bir sürecin parçası olmayan formlar bu sekmede görüntülenir. Genel olarak 
 
  ## 7. Ayarlar
 
- Bu bölümde kullanıcılar, roller, unvanlar, departmanlar, lokasyonlar ve global değişkenler bulunmaktadır. 
+ Bu bölümde kullanıcılar, roller, unvanlar, departmanlar, lokasyonlar ve global variables (ortak değerler)bulunmaktadır. 
