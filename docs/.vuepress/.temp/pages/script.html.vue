@@ -39,7 +39,7 @@ setVal("GidenEvrak", "Konu", "Konu alanı scriptten geldi");
 <pre style="background-color: black; color: white; padding: 10px;">
 Select("SELECT * FROM Departments");
 </pre>
-<h3> 5.1. getDataTable Metodu </h3>
+<h3 id="getdatatable-metodu" tabindex="-1"><a class="header-anchor" href="#getdatatable-metodu"><span>getDataTable Metodu</span></a></h3>
 <p>
 <p><code v-pre>SELECT</code> sorgusunun sonuçlarını <strong>DataTable</strong> formatında döndürür. Bu yöntem, verilerin <strong>tablo şeklinde organize edilmesini</strong> sağlar .</p>
 </p>
@@ -51,7 +51,7 @@ Select("SELECT * FROM Departments");
 DataTable dt = Select("SELECT * FROM Departments").getDataTable();
 </pre>
 <p>Bu örnekte, <code>Departments</code> tablosundaki tüm veriler alınarak <code>dt</code> adlı bir DataTable nesnesine atanır.</p>
-<h3>5.2. text Metodu</h3>
+<h3 id="text-metodu" tabindex="-1"><a class="header-anchor" href="#text-metodu"><span>text Metodu</span></a></h3>
 <p>
 <code>SELECT</code> sorgusundan dönen veriyi <strong>metin formatında</strong> döndürür.
 </p>
@@ -62,14 +62,14 @@ string departman = Select("SELECT TOP 1 DepartmentName FROM Departments").Text()
 <p>
   Bu örnek, <code>Departments</code> tablosundan ilk departman adını metin formatında alarak <code>departman</code> adlı string değişkenine atar.
 </p>
-<h3> 5.3. int Metodu</h3>
+<h3 id="int-metodu" tabindex="-1"><a class="header-anchor" href="#int-metodu"><span>int Metodu</span></a></h3>
 <p><code>SELECT</code> sorgusundan dönen veriyi   tam sayı değeri döndürür. </p>
 <p><strong>Kullanım Örneği:</strong></p>
 <pre style="background-color: black; color: white; padding: 10px;">
 int departman = Select("SELECT COUNT(*) FROM Departments").Int();
 </pre>
 <p>Bu örnek, <code>Departments</code> tablosundaki toplam departman sayısını tam sayı formatında alarak <code>departman</code> adlı int değişkenine atar.</p>
-<h3>5.4. listInt Metodu</h3>
+<h3 id="listint-metodu" tabindex="-1"><a class="header-anchor" href="#listint-metodu"><span>listInt Metodu</span></a></h3>
 <p>
    <code>SELECT</code> sorgusundan dönen veriyi <strong>tam sayılardan oluşan bir liste</strong> olarak döndürür.
 </p>
@@ -80,7 +80,7 @@ List&lt;int&gt; departmanlar = Select("SELECT DepartmentId FROM Departments").Li
 <p>
   Bu örnek, <code>Departments</code> tablosundaki tüm departman kimliklerini (<code>DepartmentId</code>) alarak <code>departmanlar</code> adlı <code>List&lt;int&gt;</code> tipindeki değişkene atar.
 </p>
-<h3>5.5.listStr Metodu</h3>
+<h3 id="liststr-metodu" tabindex="-1"><a class="header-anchor" href="#liststr-metodu"><span>listStr Metodu</span></a></h3>
 <p>
  <code>SELECT</code> sorgusundan dönen veriyi <strong>string tipi bir liste</strong> olarak döndürür. Eğer veri bulunamazsa boş bir dizi döner (null döndürmez).
 </p>
@@ -114,7 +114,7 @@ SendMails(List&lt;string&gt; recipientEmails, string subject, string body);
 </pre>
 <h2 id="_8-globalvariables-metodu" tabindex="-1"><a class="header-anchor" href="#_8-globalvariables-metodu"><span>8. GlobalVariables Metodu</span></a></h2>
 <p>GlobalVariables, tüm süreçler tarafından erişilebilen ve ortak değişkenleri yöneten bir yapıdır.</p>
-<h3>8.1. setGlobalVal Metodu </h3>
+<h3 id="setglobalval-metodu" tabindex="-1"><a class="header-anchor" href="#setglobalval-metodu"><span>setGlobalVal Metodu</span></a></h3>
 <p>
   Ortak bir değişkenin <strong> değerini kaydetmek</strong> için kullanılır ve tüm süreçlerde erişilebilir.
 </p>
@@ -126,7 +126,7 @@ SendMails(List&lt;string&gt; recipientEmails, string subject, string body);
 <pre style="background-color: black; color: white; padding: 10px;">
 <code class="csharp">setGlobalVal("Ortak_gonderen", "firma adı");</code>
 </pre>
-<h3>8.2. getGlobalVal Metodu </h3>
+<h3 id="getglobalval-metodu" tabindex="-1"><a class="header-anchor" href="#getglobalval-metodu"><span>getGlobalVal Metodu</span></a></h3>
 <p>
   Ortak bir değişkenin <strong>değerini almak </strong>için kullanılır ve tüm süreçlerde erişilebilir.
 </p>
